@@ -125,8 +125,8 @@ try
             end
             tok = regexp(txt, 'Peak CAI:\s*(\d+)\s*\(([^)]+)\)', 'tokens', 'once');
             if ~isempty(tok), C = add(C, 'Peak CAI', 'info', sprintf('%s (%s)', tok{1}, tok{2}), 'INFO'); end
-            % run_S4 intends output/, but RUN(fullpath) executes the script
-            % in its own folder, so take whichever copy is newest.
+            % run_S4 writes to output/ (older versions wrote next to the
+            % script), so take whichever copy is newest.
             st44 = st; st44.jsonFile = newestFile({fullfile(st.folder, 'output', 'S4_4_telemetry.json'), ...
                 fullfile(st.folder, 'S4_4_telemetry.json')});
             C = jsonRow(C, st44, R);
