@@ -46,10 +46,10 @@
     "Wind direction is meteorological FROM degrees, retained separately from the synthetic u/v convention."
   ],
   "output_files": {
-    "observations": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\kma_observations\\S3_KMA_observation_replay.csv",
-    "report": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\kma_observations\\S3_KMA_observation_report.json",
-    "provenance": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\kma_observations\\S3_KMA_source_provenance.json",
-    "plot": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\kma_observations\\S3_KMA_observations.png"
+    "observations": "C:\\Users\\123\\Documents\\GitHub\\Songdo-Urban-Sensing\\project_source_code_Group_A\\S3_Micro_Weather\\S3_micro_weather\\outputs\\kma_observations\\S3_KMA_observation_replay.csv",
+    "report": "C:\\Users\\123\\Documents\\GitHub\\Songdo-Urban-Sensing\\project_source_code_Group_A\\S3_Micro_Weather\\S3_micro_weather\\outputs\\kma_observations\\S3_KMA_observation_report.json",
+    "provenance": "C:\\Users\\123\\Documents\\GitHub\\Songdo-Urban-Sensing\\project_source_code_Group_A\\S3_Micro_Weather\\S3_micro_weather\\outputs\\kma_observations\\S3_KMA_source_provenance.json",
+    "plot": "C:\\Users\\123\\Documents\\GitHub\\Songdo-Urban-Sensing\\project_source_code_Group_A\\S3_Micro_Weather\\S3_micro_weather\\outputs\\kma_observations\\S3_KMA_observations.png"
   },
   "plot_export_status": "EXPORTED"
 }

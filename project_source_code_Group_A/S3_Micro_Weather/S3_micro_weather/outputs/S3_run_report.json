@@ -1,0 +1,20 @@
+{
+  "scope": "S3 only",
+  "runtime": "MATLAB",
+  "source_type": "SYNTHETIC",
+  "processed_sample_count": 1800,
+  "temperature_delay_metric": "First linearly interpolated 50% crossing after a clean 5 C plunge at t=30 s",
+  "raw_delay_seconds": 8.317827095340121,
+  "compensated_delay_seconds": 2.0246018468481068,
+  "delay_reduction_percent": 75.659486261954825,
+  "temperature_acceptance_pass": true,
+  "telemetry_schema_violations": 0,
+  "real_KMA_benchmark": "NOT_RUN: use run_KMA_observations separately; paired station pressure is unavailable",
+  "output_files": {
+    "sensor_grid": "C:\\Users\\123\\Documents\\GitHub\\Songdo-Urban-Sensing\\project_source_code_Group_A\\S3_Micro_Weather\\S3_micro_weather\\outputs\\S3_sensor_grid.json",
+    "kma_mock": "C:\\Users\\123\\Documents\\GitHub\\Songdo-Urban-Sensing\\project_source_code_Group_A\\S3_Micro_Weather\\S3_micro_weather\\outputs\\S3_kma_style_mock.json",
+    "csv": "C:\\Users\\123\\Documents\\GitHub\\Songdo-Urban-Sensing\\project_source_code_Group_A\\S3_Micro_Weather\\S3_micro_weather\\outputs\\S3_minute_weather.csv",
+    "processed": "C:\\Users\\123\\Documents\\GitHub\\Songdo-Urban-Sensing\\project_source_code_Group_A\\S3_Micro_Weather\\S3_micro_weather\\outputs\\S3_processed_samples.csv"
+  },
+  "plot_export_status": "EXPORTED"
+}

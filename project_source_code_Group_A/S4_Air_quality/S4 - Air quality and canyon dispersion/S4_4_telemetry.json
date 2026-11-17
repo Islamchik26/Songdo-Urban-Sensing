@@ -1,0 +1,1377 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-17T14:54:48Z",
+  "station_id": "STATION_TECHNOPARK_AIRQUALITY",
+  "latitude": 37.3812,
+  "longitude": 126.662,
+  "records": [
+    {
+      "timestamp": "2026-10-19T15:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 9.86,
+      "filtered_value": 13.9,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T15:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 33,
+      "filtered_value": 47,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-19T16:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 14.63,
+      "filtered_value": 10.62,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T16:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 50,
+      "filtered_value": 48,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-19T17:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 13.42,
+      "filtered_value": 10.13,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T17:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 43,
+      "filtered_value": 38,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Good",
+      "cai_grade_ko": "좋음",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-19T18:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 14.78,
+      "filtered_value": 13.21,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T18:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 50,
+      "filtered_value": 43,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Good",
+      "cai_grade_ko": "좋음",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-19T19:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 10.14,
+      "filtered_value": 14.91,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T19:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 33,
+      "filtered_value": 51,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-19T20:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 15.76,
+      "filtered_value": 12.68,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T20:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 51,
+      "filtered_value": 52,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-19T21:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 19.31,
+      "filtered_value": 19.48,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T21:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 59,
+      "filtered_value": 59,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-19T22:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 37.75,
+      "filtered_value": 27.53,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T22:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 109,
+      "filtered_value": 82,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-19T23:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 41.69,
+      "filtered_value": 42.97,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-19T23:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 124,
+      "filtered_value": 128,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T00:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 18.98,
+      "filtered_value": 31.89,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T00:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 59,
+      "filtered_value": 92,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T01:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 15.96,
+      "filtered_value": 20.45,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T01:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 51,
+      "filtered_value": 69,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T02:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 17.85,
+      "filtered_value": 21.54,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T02:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 56,
+      "filtered_value": 66,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T03:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 20.94,
+      "filtered_value": 23.78,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T03:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 64,
+      "filtered_value": 72,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T04:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 21.36,
+      "filtered_value": 24.07,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T04:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 64,
+      "filtered_value": 72,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T05:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 19.21,
+      "filtered_value": 19.4,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T05:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 59,
+      "filtered_value": 66,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T06:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 25.61,
+      "filtered_value": 24.23,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T06:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 77,
+      "filtered_value": 73,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T07:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 30.46,
+      "filtered_value": 29.54,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T07:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 87,
+      "filtered_value": 87,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T08:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 41.53,
+      "filtered_value": 36.28,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T08:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 124,
+      "filtered_value": 101,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T09:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 40.58,
+      "filtered_value": 40.53,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T09:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 120,
+      "filtered_value": 120,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T10:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 32.09,
+      "filtered_value": 34.47,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T10:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 92,
+      "filtered_value": 97,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T11:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 12.42,
+      "filtered_value": 22.83,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T11:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 40,
+      "filtered_value": 69,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T12:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 16.63,
+      "filtered_value": 17.08,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T12:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 54,
+      "filtered_value": 57,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T13:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 18.16,
+      "filtered_value": 16,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T13:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 56,
+      "filtered_value": 52,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T14:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 22.42,
+      "filtered_value": 16.59,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T14:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 66,
+      "filtered_value": 54,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T15:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 13.61,
+      "filtered_value": 13.86,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T15:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 47,
+      "filtered_value": 51,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T16:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 8.98,
+      "filtered_value": 11.66,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T16:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 30,
+      "filtered_value": 47,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T17:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 11.36,
+      "filtered_value": 12.03,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T17:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 37,
+      "filtered_value": 40,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Good",
+      "cai_grade_ko": "좋음",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T18:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 8.32,
+      "filtered_value": 12.7,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T18:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 27,
+      "filtered_value": 47,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Good",
+      "cai_grade_ko": "좋음",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T19:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 13.03,
+      "filtered_value": 9.9,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T19:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 43,
+      "filtered_value": 51,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T20:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 17.19,
+      "filtered_value": 13.88,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T20:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 54,
+      "filtered_value": 50,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-20T21:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 20.15,
+      "filtered_value": 19.66,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T21:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 61,
+      "filtered_value": 61,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T22:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 34.89,
+      "filtered_value": 28.91,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T22:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 100,
+      "filtered_value": 85,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-20T23:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 35.97,
+      "filtered_value": 36.35,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-20T23:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 101,
+      "filtered_value": 101,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T00:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 26.45,
+      "filtered_value": 32.57,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T00:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 77,
+      "filtered_value": 95,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T01:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 25.86,
+      "filtered_value": 26.9,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T01:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 77,
+      "filtered_value": 79,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T02:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 26.35,
+      "filtered_value": 23.02,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T02:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 77,
+      "filtered_value": 70,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-21T03:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 25.95,
+      "filtered_value": 24.62,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T03:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 77,
+      "filtered_value": 74,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T04:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 23.76,
+      "filtered_value": 21.28,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T04:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 72,
+      "filtered_value": 72,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-21T05:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 24.98,
+      "filtered_value": 22.68,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T05:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 74,
+      "filtered_value": 70,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-21T06:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 24.91,
+      "filtered_value": 22.44,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T06:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 74,
+      "filtered_value": 69,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-21T07:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 33.53,
+      "filtered_value": 29.62,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T07:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 97,
+      "filtered_value": 87,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T08:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 39.23,
+      "filtered_value": 36.83,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T08:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 112,
+      "filtered_value": 105,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T09:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 41.82,
+      "filtered_value": 38.94,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T09:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 124,
+      "filtered_value": 112,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T10:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 27.4,
+      "filtered_value": 32.35,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T10:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 79,
+      "filtered_value": 92,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T11:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 15.82,
+      "filtered_value": 24.45,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T11:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 51,
+      "filtered_value": 73,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-21T12:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 19.54,
+      "filtered_value": 20.47,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T12:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 61,
+      "filtered_value": 62,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-21T13:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 22.52,
+      "filtered_value": 20.79,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T13:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 69,
+      "filtered_value": 64,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T14:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 23.13,
+      "filtered_value": 21.99,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T14:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 69,
+      "filtered_value": 66,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T15:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 26.52,
+      "filtered_value": 25.47,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T15:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 79,
+      "filtered_value": 74,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T16:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 27.73,
+      "filtered_value": 24.49,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T16:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 82,
+      "filtered_value": 76,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-21T17:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 39.33,
+      "filtered_value": 29.64,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T17:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 112,
+      "filtered_value": 87,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T18:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 45.45,
+      "filtered_value": 38.08,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T18:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 135,
+      "filtered_value": 109,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T19:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 43.76,
+      "filtered_value": 43.59,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T19:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 132,
+      "filtered_value": 132,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T20:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 54.33,
+      "filtered_value": 52.35,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T20:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 170,
+      "filtered_value": 162,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T21:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 67.37,
+      "filtered_value": 65.45,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T21:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 219,
+      "filtered_value": 212,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T22:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 98.88,
+      "filtered_value": 81.86,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T22:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 265,
+      "filtered_value": 255,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Very Unhealthy",
+      "cai_grade_ko": "매우나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-21T23:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 102.21,
+      "filtered_value": 98.19,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-21T23:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 266,
+      "filtered_value": 266,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Very Unhealthy",
+      "cai_grade_ko": "매우나쁨",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-22T00:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 89.42,
+      "filtered_value": 91.04,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T00:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 259,
+      "filtered_value": 262,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Very Unhealthy",
+      "cai_grade_ko": "매우나쁨",
+      "dominant_pollutant": "PM10"
+    },
+    {
+      "timestamp": "2026-10-22T01:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 78.34,
+      "filtered_value": 84.23,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T01:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 252,
+      "filtered_value": 256,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Very Unhealthy",
+      "cai_grade_ko": "매우나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T02:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 77,
+      "filtered_value": 75.7,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T02:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 252,
+      "filtered_value": 251,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Very Unhealthy",
+      "cai_grade_ko": "매우나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T03:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 76.2,
+      "filtered_value": 76.7,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T03:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 251,
+      "filtered_value": 252,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Very Unhealthy",
+      "cai_grade_ko": "매우나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T04:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 65.97,
+      "filtered_value": 69.86,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T04:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 216,
+      "filtered_value": 231,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T05:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 57.5,
+      "filtered_value": 62.39,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T05:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 185,
+      "filtered_value": 200,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T06:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 52.73,
+      "filtered_value": 58.38,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T06:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 166,
+      "filtered_value": 185,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T07:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 50.5,
+      "filtered_value": 50.41,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T07:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 158,
+      "filtered_value": 154,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T08:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 57.84,
+      "filtered_value": 53.7,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T08:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 185,
+      "filtered_value": 170,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T09:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 48.12,
+      "filtered_value": 53.23,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T09:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 147,
+      "filtered_value": 166,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T10:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 38.74,
+      "filtered_value": 42.52,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T10:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 112,
+      "filtered_value": 128,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Unhealthy",
+      "cai_grade_ko": "나쁨",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T11:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 22.87,
+      "filtered_value": 29.23,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T11:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 69,
+      "filtered_value": 85,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T12:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 19.37,
+      "filtered_value": 21.44,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T12:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 59,
+      "filtered_value": 64,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T13:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 17.04,
+      "filtered_value": 20.23,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T13:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 54,
+      "filtered_value": 61,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM25"
+    },
+    {
+      "timestamp": "2026-10-22T14:59:00.000Z",
+      "channel": "PM25_UG_M3",
+      "raw_value": 14.17,
+      "filtered_value": 10.36,
+      "unit": "ug/m3",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-22T14:59:00.000Z",
+      "channel": "AQI_CAI_LEVEL",
+      "raw_value": 47,
+      "filtered_value": 54,
+      "unit": "index",
+      "quality_flag": "GOOD",
+      "cai_grade": "Moderate",
+      "cai_grade_ko": "보통",
+      "dominant_pollutant": "PM10"
+    }
+  ]
+}

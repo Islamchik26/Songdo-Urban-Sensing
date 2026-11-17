@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-25T14:22:28Z",
+  "generated_at": "2026-11-17T23:55:27Z",
   "station_id": "STATION_WATERFRONT_CANAL",
   "latitude": 37.398,
   "longitude": 126.621,
   "records": [
     {
-      "timestamp": "2026-10-25T14:22:27.886Z",
+      "timestamp": "2026-11-17T23:55:27.548Z",
       "channel": "WATER_LEVEL_M",
       "raw_value": 1.019,
       "filtered_value": 1.336,
@@ -14,7 +14,7 @@
       "quality_flag": "GOOD"
     },
     {
-      "timestamp": "2026-10-25T14:22:27.996Z",
+      "timestamp": "2026-11-17T23:55:27.566Z",
       "channel": "WATER_LEVEL_M",
       "raw_value": 1.427,
       "filtered_value": 1.338,
@@ -22,7 +22,7 @@
       "quality_flag": "GOOD"
     },
     {
-      "timestamp": "2026-10-25T14:22:28.003Z",
+      "timestamp": "2026-11-17T23:55:27.568Z",
       "channel": "WATER_LEVEL_M",
       "raw_value": 1.254,
       "filtered_value": 1.339,
@@ -30,7 +30,7 @@
       "quality_flag": "GOOD"
     },
     {
-      "timestamp": "2026-10-25T14:22:28.012Z",
+      "timestamp": "2026-11-17T23:55:27.570Z",
       "channel": "WATER_LEVEL_M",
       "raw_value": 1.369,
       "filtered_value": 1.339,
@@ -38,7 +38,7 @@
       "quality_flag": "GOOD"
     },
     {
-      "timestamp": "2026-10-25T14:22:28.019Z",
+      "timestamp": "2026-11-17T23:55:27.573Z",
       "channel": "WATER_LEVEL_M",
       "raw_value": 1.241,
       "filtered_value": 1.339,

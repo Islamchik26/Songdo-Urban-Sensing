@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-17T14:53:22.444Z",
+  "station_id": "STATION_CENTRAL_PARK_WEATHER",
+  "latitude": 37.393,
+  "longitude": 126.6345,
+  "records": [
+    {
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "channel": "AIR_TEMP_C",
+      "raw_value": 23.562845865885414,
+      "filtered_value": 22.878442768861404,
+      "unit": "degC",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "channel": "REL_HUMIDITY_PCT",
+      "raw_value": 66.430549238836491,
+      "filtered_value": 66.424856536763173,
+      "unit": "%",
+      "quality_flag": "DROPOUT"
+    },
+    {
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "channel": "WIND_SPEED_MPS",
+      "raw_value": 3.6967994449538568,
+      "filtered_value": 3.6926183684788203,
+      "unit": "m/s",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "channel": "WIND_DIR_DEG",
+      "raw_value": 34.804278230908089,
+      "filtered_value": 34.804278230908089,
+      "unit": "deg",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-01-01T00:01:00.000Z",
+      "channel": "AIR_TEMP_C",
+      "raw_value": 20.310941060384106,
+      "filtered_value": 20.201696151260393,
+      "unit": "degC",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-01-01T00:01:00.000Z",
+      "channel": "REL_HUMIDITY_PCT",
+      "raw_value": 65.056680820132271,
+      "filtered_value": 65.019679229531519,
+      "unit": "%",
+      "quality_flag": "DROPOUT"
+    },
+    {
+      "timestamp": "2026-01-01T00:01:00.000Z",
+      "channel": "WIND_SPEED_MPS",
+      "raw_value": 3.7569215584030511,
+      "filtered_value": 3.6750496776065127,
+      "unit": "m/s",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-01-01T00:01:00.000Z",
+      "channel": "WIND_DIR_DEG",
+      "raw_value": 34.710108856834388,
+      "filtered_value": 34.710108856834388,
+      "unit": "deg",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-01-01T00:02:00.000Z",
+      "channel": "AIR_TEMP_C",
+      "raw_value": 19.882052103678387,
+      "filtered_value": 19.821100787695794,
+      "unit": "degC",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-01-01T00:02:00.000Z",
+      "channel": "REL_HUMIDITY_PCT",
+      "raw_value": 64.811559041341141,
+      "filtered_value": 63.606006969105145,
+      "unit": "%",
+      "quality_flag": "SUSPECT_JUMP"
+    },
+    {
+      "timestamp": "2026-01-01T00:02:00.000Z",
+      "channel": "WIND_SPEED_MPS",
+      "raw_value": 3.6834038172100692,
+      "filtered_value": 3.6707753067911812,
+      "unit": "m/s",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-01-01T00:02:00.000Z",
+      "channel": "WIND_DIR_DEG",
+      "raw_value": 35.020249509906094,
+      "filtered_value": 35.020249509906094,
+      "unit": "deg",
+      "quality_flag": "GOOD"
+    }
+  ]
+}
