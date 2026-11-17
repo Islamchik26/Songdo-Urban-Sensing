@@ -23,6 +23,7 @@ Base MATLAB R2023b or later (tested on R2025b). No toolboxes. The launcher adds 
 | **Console Log** | Everything every member script printed, with timestamps; can be saved. |
 
 The header buttons **Run ALL 5 stations** (a unified end‑to‑end run) and **Run all verification suites** do everything in one click.
+The interface opens in a dark theme; the **Light mode / Dark mode** header button switches it (e.g. for a projector), or call `app.setTheme('light')`. Member figures keep their original white background in both themes.
 
 ## How it maps to the midterm feedback
 

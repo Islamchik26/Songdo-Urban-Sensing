@@ -28,10 +28,13 @@ classdef SongdoIntegratedApp < handle
         UIFigure
         Registry
         Cache            % containers.Map: station code -> run result
+        Theme = 'dark'   % 'dark' | 'light'  (header toggle or setTheme)
     end
 
     properties (Access = private)
         % header / navigation
+        HeaderGrid
+        ThemeButton
         StatusLabel
         Tree
         NodeByKey        % containers.Map: 'S1' / 'S1-3' -> tree node
@@ -56,6 +59,8 @@ classdef SongdoIntegratedApp < handle
         ViewText
         ChecksTable
         ConsoleArea
+        Card
+        ViewPanel
         Views = struct('label', {}, 'kind', {}, 'fig', {}, 'png', {}, 'text', {})
         CropCache        % containers.Map: task id -> cropped figure
         Sel = struct('code', 'S1', 'task', '')
@@ -92,6 +97,7 @@ classdef SongdoIntegratedApp < handle
         StartUtc
         % verification / map / log
         VerifyTable
+        VerifyHint
         VerifyLog
         MapAx
         DistTable
@@ -102,12 +108,7 @@ classdef SongdoIntegratedApp < handle
     end
 
     properties (Constant, Access = private)
-        Navy   = [0.06 0.16 0.33]
         Accent = [0.13 0.55 0.85]
-        Pass   = [0.80 0.94 0.82]
-        Fail   = [0.98 0.80 0.80]
-        Warn   = [1.00 0.93 0.75]
-        Grey   = [0.92 0.92 0.92]
     end
 
     % =====================================================================
@@ -208,6 +209,12 @@ classdef SongdoIntegratedApp < handle
             for k = 1:n, app.processBlock(mod(k, 4) == 0 || k == n); end
         end
 
+        function setTheme(app, mode)
+            %SETTHEME  'dark' or 'light'. Member plots keep their own (white) look.
+            app.Theme = validatestring(mode, {'dark', 'light'});
+            app.applyTheme();
+        end
+
         function showTab(app, name)
             %SHOWTAB  'task' | 'live' | 'verify' | 'map' | 'log'
             tabs = struct('task', app.TabTask, 'live', app.TabLive, 'verify', app.TabVerify, ...
@@ -276,20 +283,20 @@ classdef SongdoIntegratedApp < handle
         % ------------------------------------------------------- building
         function buildUI(app)
             f = uifigure('Name', 'Songdo Urban Sensing - Team A Integrated Engineering Instrument', ...
-                'Position', [40 40 1520 930], 'Visible', 'off', 'Color', [0.96 0.97 0.98]);
+                'Position', [40 40 1520 930], 'Visible', 'off');
             f.CloseRequestFcn = @(~, ~) delete(app);
-            try, theme(f, 'light'); catch, end   % R2025a+: keep the light instrument palette even in dark mode %#ok<NOCOMMA>
             app.UIFigure = f;
             movegui(f, 'center');
             main = uigridlayout(f, [2 1], 'RowHeight', {64, '1x'}, 'Padding', [0 0 0 0], 'RowSpacing', 0);
 
             % header
-            hdr = uigridlayout(main, [2 3], 'ColumnWidth', {'1x', 210, 210}, 'RowHeight', {30, 22}, ...
-                'BackgroundColor', app.Navy, 'Padding', [16 6 16 6], 'RowSpacing', 0);
+            hdr = uigridlayout(main, [2 4], 'ColumnWidth', {'1x', 210, 210, 120}, 'RowHeight', {30, 22}, ...
+                'Padding', [16 6 16 6], 'RowSpacing', 0);
+            app.HeaderGrid = hdr;
             t = uilabel(hdr, 'Text', 'SONGDO URBAN SENSING  |  Team A Integrated Engineering Instrument', ...
                 'FontSize', 20, 'FontWeight', 'bold', 'FontColor', 'w');
             t.Layout.Row = 1; t.Layout.Column = 1;
-            app.StatusLabel = uilabel(hdr, 'Text', 'Ready', 'FontColor', [0.75 0.88 1]);
+            app.StatusLabel = uilabel(hdr, 'Text', 'Ready');
             app.StatusLabel.Layout.Row = 2; app.StatusLabel.Layout.Column = 1;
             b = uibutton(hdr, 'Text', 'Run ALL 5 stations', 'FontWeight', 'bold', ...
                 'BackgroundColor', [0.18 0.62 0.36], 'FontColor', 'w', ...
@@ -300,6 +307,10 @@ classdef SongdoIntegratedApp < handle
                 'BackgroundColor', app.Accent, 'FontColor', 'w', ...
                 'ButtonPushedFcn', @(~, ~) app.safe(@() app.runVerificationSuites()));
             b.Layout.Row = [1 2]; b.Layout.Column = 3;
+            app.ThemeButton = uibutton(hdr, 'Text', '', 'Tooltip', 'Switch between dark and light interface', ...
+                'BackgroundColor', [0.22 0.25 0.32], 'FontColor', 'w', ...
+                'ButtonPushedFcn', @(~, ~) app.safe(@() app.toggleTheme()));
+            app.ThemeButton.Layout.Row = [1 2]; app.ThemeButton.Layout.Column = 4;
 
             body = uigridlayout(main, [1 2], 'ColumnWidth', {370, '1x'}, 'Padding', [8 8 8 8]);
 
@@ -332,6 +343,49 @@ classdef SongdoIntegratedApp < handle
             app.buildVerifyTab();
             app.buildMapTab();
             app.buildLogTab();
+            app.applyTheme();
+        end
+
+        function toggleTheme(app)
+            if strcmp(app.Theme, 'dark'), app.setTheme('light'); else, app.setTheme('dark'); end
+        end
+
+        function applyTheme(app)
+            %APPLYTHEME  Colour every hand-styled component for app.Theme.
+            p = palette(app.Theme);
+            f = app.UIFigure;
+            try, theme(f, app.Theme); catch, end   % R2025a+ themes all standard components %#ok<NOCOMMA>
+            f.Color = p.bg;
+            app.HeaderGrid.BackgroundColor = p.header;
+            app.StatusLabel.FontColor = p.status;
+            if strcmp(app.Theme, 'dark'), app.ThemeButton.Text = 'Light mode'; else, app.ThemeButton.Text = 'Dark mode'; end
+            app.Card.BackgroundColor = p.panel;
+            app.ViewPanel.BackgroundColor = p.panel;
+            app.TaskTitle.FontColor = p.title;
+            app.TaskSpec.FontColor = p.text;
+            app.TaskMeta.FontColor = p.muted;
+            for k = 1:numel(app.StageLabels)
+                set(app.StageLabels(k), 'BackgroundColor', p.stage(k, :), 'FontColor', p.stageText);
+            end
+            set(app.StartButton, 'BackgroundColor', p.start, 'FontColor', p.btnText);
+            set(app.StopButton, 'BackgroundColor', p.stop, 'FontColor', p.btnText);
+            set(app.ExportButton, 'BackgroundColor', p.export, 'FontColor', p.btnText);
+            app.FeatureLabel.FontColor = p.feature;
+            app.LiveState.FontColor = p.title;
+            app.SourceLabel.FontColor = p.muted;
+            app.VerifyHint.FontColor = p.muted;
+            app.RawLine.Color = p.raw;      app.FiltLine.Color = p.filt;
+            app.SpecRawLine.Color = p.raw;  app.SpecFiltLine.Color = p.filt;
+            app.restyleTables();
+            app.drawMap();
+        end
+
+        function restyleTables(app)
+            d = app.ChecksTable.Data;
+            if iscell(d) && size(d, 2) >= 4, app.styleResultTable(app.ChecksTable, d(:, 4)); end
+            for tbl = [app.VerifyTable app.GridTable]
+                if istable(tbl.Data) && height(tbl.Data) > 0, app.styleResultTable(tbl, tbl.Data.Result); end
+            end
         end
 
         function buildTree(app)
@@ -350,15 +404,17 @@ classdef SongdoIntegratedApp < handle
 
         function buildTaskTab(app)
             g = uigridlayout(app.TabTask, [3 1], 'RowHeight', {112, '1x', 170}, 'Padding', [10 8 10 8]);
-            card = uigridlayout(g, [3 1], 'RowHeight', {28, '1x', '1x'}, 'BackgroundColor', 'w', ...
+            card = uigridlayout(g, [3 1], 'RowHeight', {28, '1x', '1x'}, ...
                 'Padding', [12 6 12 6], 'RowSpacing', 2);
-            app.TaskTitle = uilabel(card, 'Text', '', 'FontSize', 18, 'FontWeight', 'bold', 'FontColor', app.Navy);
-            app.TaskSpec = uilabel(card, 'Text', '', 'WordWrap', 'on', 'FontSize', 13, 'FontColor', [0.12 0.12 0.15]);
-            app.TaskMeta = uilabel(card, 'Text', '', 'WordWrap', 'on', 'FontColor', [0.35 0.35 0.4]);
+            app.Card = card;
+            app.TaskTitle = uilabel(card, 'Text', '', 'FontSize', 18, 'FontWeight', 'bold');
+            app.TaskSpec = uilabel(card, 'Text', '', 'WordWrap', 'on', 'FontSize', 13);
+            app.TaskMeta = uilabel(card, 'Text', '', 'WordWrap', 'on');
 
             mid = uigridlayout(g, [1 2], 'ColumnWidth', {'3x', '2x'}, 'Padding', [0 0 0 0]);
             vp = uigridlayout(mid, [2 2], 'RowHeight', {28, '1x'}, 'ColumnWidth', {'1x', 190}, ...
-                'Padding', [0 0 0 0], 'BackgroundColor', 'w');
+                'Padding', [0 0 0 0]);
+            app.ViewPanel = vp;
             app.ViewDrop = uidropdown(vp, 'Items', {'(run the task to see results)'}, ...
                 'ValueChangedFcn', @(~, ~) app.safe(@() app.showView()));
             app.PopButton = uibutton(vp, 'Text', 'Pop out interactive figure', ...
@@ -378,11 +434,10 @@ classdef SongdoIntegratedApp < handle
             strip = uigridlayout(g, [1 13], 'ColumnWidth', repmat({'1x', 14}, 1, 7), 'Padding', [0 0 0 0], 'ColumnSpacing', 2);
             strip.ColumnWidth(end) = [];
             names = {'1 PHENOMENON', '2 TRANSDUCER', '3 ANALOG AAF', '4 ADC', '5 CAUSAL FILTER', '6 FEATURES', '7 TELEMETRY'};
-            cols = [0.86 0.92 0.98; 0.86 0.92 0.98; 0.90 0.88 0.98; 0.90 0.88 0.98; 0.84 0.95 0.88; 0.84 0.95 0.88; 1 0.93 0.82];
             app.StageLabels = gobjects(1, 7);
             for k = 1:7
                 app.StageLabels(k) = uilabel(strip, 'Text', names{k}, 'WordWrap', 'on', ...
-                    'HorizontalAlignment', 'center', 'BackgroundColor', cols(k, :), 'FontSize', 11, 'FontColor', [0.1 0.1 0.15]);
+                    'HorizontalAlignment', 'center', 'FontSize', 11);
                 app.StageLabels(k).Layout.Column = 2*k - 1;
                 if k < 7
                     a = uilabel(strip, 'Text', '>', 'FontWeight', 'bold', 'HorizontalAlignment', 'center');
@@ -403,34 +458,34 @@ classdef SongdoIntegratedApp < handle
             uilabel(ctl, 'Text', 'fc (Hz)', 'HorizontalAlignment', 'right');
             app.CutoffField = uieditfield(ctl, 'numeric', 'Value', 0, 'Tooltip', 'Live cutoff tuning (Hz), applied at next block, state kept', ...
                 'ValueChangedFcn', @(~, ~) app.safe(@() app.onCutoffChanged()));
-            app.StartButton = uibutton(ctl, 'Text', 'START', 'BackgroundColor', [0.80 0.94 0.82], 'FontWeight', 'bold', ...
+            app.StartButton = uibutton(ctl, 'Text', 'START', 'FontWeight', 'bold', ...
                 'ButtonPushedFcn', @(~, ~) app.safe(@() app.liveStart()));
-            app.StopButton = uibutton(ctl, 'Text', 'STOP', 'BackgroundColor', [0.98 0.82 0.82], 'FontWeight', 'bold', ...
+            app.StopButton = uibutton(ctl, 'Text', 'STOP', 'FontWeight', 'bold', ...
                 'Enable', 'off', 'ButtonPushedFcn', @(~, ~) app.safe(@() app.liveStop()));
             app.ResetButton = uibutton(ctl, 'Text', 'RESET', ...
                 'ButtonPushedFcn', @(~, ~) app.safe(@() app.onLiveChannelChanged()));
             uibutton(ctl, 'Text', 'STEP', 'Tooltip', 'Process one block manually', ...
                 'ButtonPushedFcn', @(~, ~) app.safe(@() app.liveStep(1)));
-            app.ExportButton = uibutton(ctl, 'Text', 'EXPORT JSON', 'Tooltip', 'Write the telemetry buffer as Sensor Grid JSON + CSV (Handbook 5.3)', 'BackgroundColor', [0.85 0.92 1], ...
+            app.ExportButton = uibutton(ctl, 'Text', 'EXPORT JSON', 'Tooltip', 'Write the telemetry buffer as Sensor Grid JSON + CSV (Handbook 5.3)', ...
                 'FontWeight', 'bold', 'ButtonPushedFcn', @(~, ~) app.safe(@() app.exportLive()));
 
             info = uigridlayout(g, [1 3], 'ColumnWidth', {'5x', 230, '3x'}, 'Padding', [0 0 0 0]);
-            app.FeatureLabel = uilabel(info, 'Text', '', 'FontColor', [0.1 0.4 0.15], 'FontWeight', 'bold');
-            app.LiveState = uilabel(info, 'Text', '', 'FontWeight', 'bold', 'FontColor', app.Navy, 'HorizontalAlignment', 'center');
-            app.SourceLabel = uilabel(info, 'Text', '', 'FontColor', [0.4 0.4 0.45], 'HorizontalAlignment', 'right', 'FontSize', 11);
+            app.FeatureLabel = uilabel(info, 'Text', '', 'FontWeight', 'bold');
+            app.LiveState = uilabel(info, 'Text', '', 'FontWeight', 'bold', 'HorizontalAlignment', 'center');
+            app.SourceLabel = uilabel(info, 'Text', '', 'HorizontalAlignment', 'right', 'FontSize', 11);
 
             plots = uigridlayout(g, [1 2], 'ColumnWidth', {'5x', '4x'}, 'Padding', [0 0 0 0]);
             app.ScopeAx = uiaxes(plots);
             title(app.ScopeAx, 'Dual-trace oscilloscope  (grey: raw | blue: causal filtered)');
             grid(app.ScopeAx, 'on'); hold(app.ScopeAx, 'on');
-            app.RawLine = plot(app.ScopeAx, NaN, NaN, 'Color', [0.6 0.6 0.6], 'LineWidth', 0.8);
-            app.FiltLine = plot(app.ScopeAx, NaN, NaN, 'Color', [0.05 0.35 0.85], 'LineWidth', 1.6);
+            app.RawLine = plot(app.ScopeAx, NaN, NaN, 'LineWidth', 0.8);
+            app.FiltLine = plot(app.ScopeAx, NaN, NaN, 'LineWidth', 1.6);
             legend(app.ScopeAx, {'Raw', 'Causal filtered'}, 'Location', 'northwest');
             app.SpecAx = uiaxes(plots);
             title(app.SpecAx, 'Real-time spectrum (one-sided, Hann coherent-gain corrected)');
             grid(app.SpecAx, 'on'); hold(app.SpecAx, 'on');
-            app.SpecRawLine = plot(app.SpecAx, NaN, NaN, 'Color', [0.65 0.65 0.65]);
-            app.SpecFiltLine = plot(app.SpecAx, NaN, NaN, 'Color', [0.05 0.35 0.85], 'LineWidth', 1.3);
+            app.SpecRawLine = plot(app.SpecAx, NaN, NaN);
+            app.SpecFiltLine = plot(app.SpecAx, NaN, NaN, 'LineWidth', 1.3);
             app.NyqLine = xline(app.SpecAx, 1, 'r--', 'Nyquist F_s/2 (filtered)', 'LabelVerticalAlignment', 'bottom');
             xlabel(app.SpecAx, 'Frequency (Hz)'); ylabel(app.SpecAx, 'Amplitude (dB re 1 unit)');
             legend(app.SpecAx, {'Raw', 'Filtered'}, 'Location', 'northeast');
@@ -445,9 +500,8 @@ classdef SongdoIntegratedApp < handle
             uibutton(row, 'Text', 'Run all verification suites (~1 min)', 'FontWeight', 'bold', ...
                 'BackgroundColor', app.Accent, 'FontColor', 'w', ...
                 'ButtonPushedFcn', @(~, ~) app.safe(@() app.runVerificationSuites()));
-            uilabel(row, 'Text', ['S1 test_S1 | S2 test_S2 | S3 run_all_tests | S4 test_S4 + asserts | ' ...
-                'S5 output-based checks | Sensor Grid schema for all stations | registry + Haversine'], ...
-                'FontColor', [0.35 0.35 0.4]);
+            app.VerifyHint = uilabel(row, 'Text', ['S1 test_S1 | S2 test_S2 | S3 run_all_tests | S4 test_S4 + asserts | ' ...
+                'S5 output-based checks | Sensor Grid schema for all stations | registry + Haversine']);
             app.VerifyTable = uitable(g, 'ColumnName', {'Station', 'Suite', 'Result', 'Detail'}, ...
                 'ColumnWidth', {70, '2x', 70, '3x'}, 'RowName', {});
             app.VerifyLog = uitextarea(g, 'Editable', 'off', 'FontName', 'Consolas', 'FontSize', 11);
@@ -780,7 +834,7 @@ classdef SongdoIntegratedApp < handle
                 app.Records(end+1) = rec;
                 if numel(app.Records) > 20000, app.Records(1) = []; end
                 app.LiveState.Text = sprintf('t = %s | Blocks %d | %s', timeText(tf(end)), s.Blocks, flag);
-                app.LiveState.FontColor = flagColor(flag);
+                app.LiveState.FontColor = flagColor(flag, app.Theme);
                 app.FeatureLabel.Text = feat;
                 if heavyRefresh && mod(s.Blocks, 8) == 0 || numel(app.Records) <= 1
                     n = min(25, numel(app.Records));
@@ -849,19 +903,20 @@ classdef SongdoIntegratedApp < handle
         % ------------------------------------------------------------ map
         function drawMap(app)
             ax = app.MapAx; cla(ax); hold(ax, 'on');
+            p = palette(app.Theme);
             S = app.Registry.stations;
             lat0 = mean([S.lat]);
             for k = 1:numel(S)
                 for j = k+1:numel(S)
-                    plot(ax, [S(k).lon S(j).lon], [S(k).lat S(j).lat], ':', 'Color', [0.8 0.8 0.85], 'HitTest', 'off');
+                    plot(ax, [S(k).lon S(j).lon], [S(k).lat S(j).lat], ':', 'Color', p.mapLink, 'HitTest', 'off');
                 end
             end
             for st = S
-                h = scatter(ax, st.lon, st.lat, 260, st.color, 'filled', 'MarkerEdgeColor', 'k', 'LineWidth', 1.2);
+                h = scatter(ax, st.lon, st.lat, 260, st.color, 'filled', 'MarkerEdgeColor', p.mapEdge, 'LineWidth', 1.2);
                 h.ButtonDownFcn = @(~, ~) app.safe(@() app.mapClick(st.code));
                 dy = 0.0006; if strcmp(st.code, 'S4'), dy = -0.0016; end      % S2/S4 are 0.5 km apart
                 text(ax, st.lon + 0.0012, st.lat + dy, sprintf('%s  %s\n%s', st.code, st.name, st.site), ...
-                    'FontSize', 10, 'FontWeight', 'bold', 'HitTest', 'off');
+                    'FontSize', 10, 'FontWeight', 'bold', 'Color', p.text, 'HitTest', 'off');
             end
             ax.DataAspectRatio = [1 cosd(lat0) 1];
             pad = 0.006;
@@ -890,10 +945,11 @@ classdef SongdoIntegratedApp < handle
         function styleResultTable(app, tbl, results)
             removeStyle(tbl);
             results = cellstr(results);
-            map = {'PASS', app.Pass; 'FAIL', app.Fail; 'WARN', app.Warn; 'MISSING', app.Grey; 'PENDING', app.Grey};
+            p = palette(app.Theme);
+            map = {'PASS', p.pass; 'FAIL', p.fail; 'WARN', p.warn; 'MISSING', p.grey; 'PENDING', p.grey};
             for k = 1:size(map, 1)
                 r = find(strcmp(results, map{k, 1}));
-                if ~isempty(r), addStyle(tbl, uistyle('BackgroundColor', map{k, 2}, 'FontColor', [0.1 0.1 0.12]), 'row', r); end
+                if ~isempty(r), addStyle(tbl, uistyle('BackgroundColor', map{k, 2}, 'FontColor', p.rowText), 'row', r); end
             end
         end
 
@@ -1014,11 +1070,46 @@ dt.TimeZone = 'UTC';
 s = char(dt, 'yyyy-MM-dd''T''HH:mm:ss.SSS''Z''');
 end
 
-function c = flagColor(flag)
+function c = flagColor(flag, mode)
+p = palette(mode);
 switch flag
-    case 'GOOD', c = [0.1 0.5 0.2];
-    case 'SUSPECT_JUMP', c = [0.8 0.5 0];
-    otherwise, c = [0.8 0.1 0.1];
+    case 'GOOD', c = p.good;
+    case 'SUSPECT_JUMP', c = p.suspect;
+    otherwise, c = p.bad;
+end
+end
+
+function p = palette(mode)
+%PALETTE  Colours for the hand-styled parts of the UI (standard components
+%   follow theme()). Member figures are not recoloured.
+if strcmp(mode, 'dark')
+    p.bg = [0.10 0.11 0.13];  p.panel = [0.15 0.16 0.19];  p.header = [0.04 0.08 0.17];
+    p.text = [0.92 0.93 0.95]; p.muted = [0.62 0.66 0.72]; p.title = [0.47 0.75 1.00];
+    p.status = [0.70 0.84 1.00];
+    p.stage = [0.14 0.24 0.36; 0.14 0.24 0.36; 0.24 0.20 0.38; 0.24 0.20 0.38; ...
+               0.12 0.30 0.21; 0.12 0.30 0.21; 0.36 0.27 0.11];
+    p.stageText = [0.93 0.95 0.98];
+    p.start = [0.16 0.45 0.25]; p.stop = [0.58 0.18 0.18]; p.export = [0.14 0.38 0.62]; p.btnText = [1 1 1];
+    p.feature = [0.45 0.87 0.56];
+    p.pass = [0.12 0.31 0.18]; p.fail = [0.47 0.14 0.14]; p.warn = [0.42 0.33 0.08]; p.grey = [0.24 0.25 0.28];
+    p.rowText = [0.95 0.95 0.96];
+    p.good = [0.42 0.88 0.52]; p.suspect = [1.00 0.72 0.30]; p.bad = [1.00 0.45 0.45];
+    p.raw = [0.55 0.57 0.62]; p.filt = [0.30 0.66 1.00];
+    p.mapLink = [0.32 0.34 0.40]; p.mapEdge = [0.95 0.95 0.95];
+else
+    p.bg = [0.96 0.97 0.98];  p.panel = [1 1 1];  p.header = [0.06 0.16 0.33];
+    p.text = [0.12 0.12 0.15]; p.muted = [0.35 0.35 0.40]; p.title = [0.06 0.16 0.33];
+    p.status = [0.75 0.88 1.00];
+    p.stage = [0.86 0.92 0.98; 0.86 0.92 0.98; 0.90 0.88 0.98; 0.90 0.88 0.98; ...
+               0.84 0.95 0.88; 0.84 0.95 0.88; 1.00 0.93 0.82];
+    p.stageText = [0.10 0.10 0.15];
+    p.start = [0.80 0.94 0.82]; p.stop = [0.98 0.82 0.82]; p.export = [0.85 0.92 1.00]; p.btnText = [0.10 0.10 0.15];
+    p.feature = [0.10 0.40 0.15];
+    p.pass = [0.80 0.94 0.82]; p.fail = [0.98 0.80 0.80]; p.warn = [1.00 0.93 0.75]; p.grey = [0.92 0.92 0.92];
+    p.rowText = [0.10 0.10 0.12];
+    p.good = [0.10 0.50 0.20]; p.suspect = [0.80 0.50 0.00]; p.bad = [0.80 0.10 0.10];
+    p.raw = [0.60 0.60 0.60]; p.filt = [0.05 0.35 0.85];
+    p.mapLink = [0.80 0.80 0.85]; p.mapEdge = [0 0 0];
 end
 end
 
