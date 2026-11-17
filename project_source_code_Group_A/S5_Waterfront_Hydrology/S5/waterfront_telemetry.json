@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-25T14:22:28Z",
+  "station_id": "STATION_WATERFRONT_CANAL",
+  "latitude": 37.398,
+  "longitude": 126.621,
+  "records": [
+    {
+      "timestamp": "2026-10-25T14:22:27.886Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.019,
+      "filtered_value": 1.336,
+      "unit": "meters",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-25T14:22:27.996Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.427,
+      "filtered_value": 1.338,
+      "unit": "meters",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-25T14:22:28.003Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.254,
+      "filtered_value": 1.339,
+      "unit": "meters",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-25T14:22:28.012Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.369,
+      "filtered_value": 1.339,
+      "unit": "meters",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-25T14:22:28.019Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.241,
+      "filtered_value": 1.339,
+      "unit": "meters",
+      "quality_flag": "GOOD"
+    }
+  ]
+}

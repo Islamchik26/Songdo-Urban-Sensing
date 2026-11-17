@@ -1,0 +1,20 @@
+{
+  "scope": "S3 only",
+  "runtime": "MATLAB",
+  "source_type": "SYNTHETIC",
+  "processed_sample_count": 1800,
+  "temperature_delay_metric": "First linearly interpolated 50% crossing after a clean 5 C plunge at t=30 s",
+  "raw_delay_seconds": 8.317827095340121,
+  "compensated_delay_seconds": 2.0246018468481068,
+  "delay_reduction_percent": 75.659486261954825,
+  "temperature_acceptance_pass": true,
+  "telemetry_schema_violations": 0,
+  "real_KMA_benchmark": "NOT_RUN: use run_KMA_observations separately; paired station pressure is unavailable",
+  "output_files": {
+    "sensor_grid": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\validation_20261023_184123_479\\S3_sensor_grid.json",
+    "kma_mock": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\validation_20261023_184123_479\\S3_kma_style_mock.json",
+    "csv": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\validation_20261023_184123_479\\S3_minute_weather.csv",
+    "processed": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\validation_20261023_184123_479\\S3_processed_samples.csv"
+  },
+  "plot_export_status": "EXPORTED"
+}

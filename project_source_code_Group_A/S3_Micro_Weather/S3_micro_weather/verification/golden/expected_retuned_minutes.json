@@ -1,0 +1,40 @@
+[
+  {
+    "timestamp": "2026-01-01T00:00:00.000Z",
+    "ta_c": 22.7016461871636,
+    "rh_pct": 52.55,
+    "ws_mps": 0.9982876280360369,
+    "wd_deg": 0.8686260109556951,
+    "gust3s_mps": 9.0,
+    "station_pressure_hpa": 1012.0,
+    "sea_level_pressure_hpa": 1012.7442087321464,
+    "sample_count": 600,
+    "temperature_good_count": 594,
+    "humidity_good_count": 400,
+    "wind_valid_count": 597,
+    "pressure_good_count": 598,
+    "temperature_quality": "OUT_OF_RANGE",
+    "humidity_quality": "DROPOUT",
+    "wind_quality": "DROPOUT",
+    "pressure_quality": "DROPOUT"
+  },
+  {
+    "timestamp": "2026-01-01T00:01:00.000Z",
+    "ta_c": 19.99960882333045,
+    "rh_pct": 51.69260700389105,
+    "ws_mps": 0.49908925102033475,
+    "wd_deg": 0.0033448212387195892,
+    "gust3s_mps": 1.0,
+    "station_pressure_hpa": 1012.0,
+    "sea_level_pressure_hpa": 1012.7442087321464,
+    "sample_count": 600,
+    "temperature_good_count": 597,
+    "humidity_good_count": 514,
+    "wind_valid_count": 599,
+    "pressure_good_count": 598,
+    "temperature_quality": "DROPOUT",
+    "humidity_quality": "OUT_OF_RANGE",
+    "wind_quality": "DROPOUT",
+    "pressure_quality": "OUT_OF_RANGE"
+  }
+]

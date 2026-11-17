@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SOURCE_AND_FORMULA_CHECK",
+  "evidence_type": "Independent Python, not MATLAB execution",
+  "station_id": "112",
+  "month": "2025-10",
+  "aggregation": "monthly_mean",
+  "station_pressure_mean_hpa": 1011.8,
+  "published_sea_level_pressure_mean_hpa": 1020.0,
+  "barometer_elevation_m": 70.2,
+  "estimated_sea_level_pressure_mean_hpa": 1020.2628840368945,
+  "signed_difference_hpa": 0.26288403689454753,
+  "absolute_difference_hpa": 0.26288403689454753,
+  "acceptance_threshold": null,
+  "exact_assignment_station_512_satisfied": false,
+  "matlab_runtime_validated": false
+}

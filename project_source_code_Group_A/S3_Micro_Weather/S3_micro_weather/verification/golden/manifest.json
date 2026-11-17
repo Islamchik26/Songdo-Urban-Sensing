@@ -1,0 +1,28 @@
+{
+  "provenance": "Independent Python numerical reference; MATLAB comparison NOT yet executed",
+  "input_rows": 1201,
+  "complete_minute_count": 2,
+  "partial_tail_rows": 1,
+  "default": "All rows use per-pole cutoff0.2Hz",
+  "retuned": "Change per-pole cutoff to0.3Hz before processing time_s=60.0; retain all state",
+  "edge_fixtures": "all_invalid and wind_overflow each have600samples/one fullminute and use default0.2Hz cutoff. The corresponding expected_*_samples.csv and expected_*_minutes.json describe them. Missing JSON numeric values are null.",
+  "comparison": "Numeric finite fields: abs error<=1e-9 +1e-10*abs(expected). NaN masks and quality/window flags must match exactly. Direction differences require circular modulo360 comparison. Compare UTC minute fields separately, ignoring wall-clock generated_at.",
+  "input_events": [
+    "Two leading temperature dropouts",
+    "5C plunge at30s with two subsequent temperature gaps and one out-of-range sample",
+    "20pp persistent humidity jump and return",
+    "Explicit0/100 endpoint faults",
+    "6s humidity dropout with recovery",
+    "359/1deg wind seam",
+    "9m/s gust at15s",
+    "Wind gaps and finite-component/hypot overflow",
+    "Long calm tail",
+    "Pressure dropouts/out-of-range",
+    "2full UTC minutes plus1 trailing sample"
+  ],
+  "limitations": [
+    "Does not validate integer numeric-class handling; dedicated MATLAB tests are required",
+    "Does not execute MATLAB parser, app, or timers",
+    "Is not an official KMA contract or observed-weather benchmark"
+  ]
+}

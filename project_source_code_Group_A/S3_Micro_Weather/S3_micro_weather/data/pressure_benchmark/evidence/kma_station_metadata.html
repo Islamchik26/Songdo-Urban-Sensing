@@ -1,0 +1,2786 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <!-- <title>기상관측:지상:자동기상관측_aws [기상기후데이터위키]</title> -->
+    <title>기상기후데이터위키</title>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="theme-color" content="#008800"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="keywords" content="기상관측,지상,자동기상관측_aws"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="기상기후데이터위키"/>
+<link rel="start" href="/"/>
+<link rel="contents" href="/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws&amp;do=index" title="사이트맵"/>
+<link rel="manifest" href="/lib/exe/manifest.php"/>
+<link rel="alternate" type="application/rss+xml" title="최근 바뀜" href="/feed.php"/>
+<link rel="alternate" type="application/rss+xml" title="현재 이름공간" href="/feed.php?mode=list&amp;ns=기상관측:지상"/>
+<link rel="edit" title="문서 편집" href="/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws&amp;do=edit"/>
+<link rel="alternate" type="text/html" title="일반 HTML" href="/doku.php?do=export_xhtml&amp;id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws"/>
+<link rel="alternate" type="text/plain" title="위키 문법" href="/doku.php?do=export_raw&amp;id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws"/>
+<link rel="canonical" href="https://datawiki.kma.go.kr/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws"/>
+<link rel="stylesheet" href="/lib/exe/css.php?t=dokuwiki&amp;tseed=c9d19ae4ff2f0ce71f973600f0ff63bb"/>
+<link type="text/css" rel="stylesheet" href="/lib/plugins/dokuprism/prism/prism.css"/>
+<!--[if gte IE 9]><!-->
+<script >/*<![CDATA[*/var NS='기상관측:지상';var JSINFO = {"isadmin":0,"isauth":0,"id":"\uae30\uc0c1\uad00\uce21:\uc9c0\uc0c1:\uc790\ub3d9\uae30\uc0c1\uad00\uce21_aws","namespace":"\uae30\uc0c1\uad00\uce21:\uc9c0\uc0c1","ACT":"show","useHeadingNavigation":0,"useHeadingContent":0};
+/*!]]>*/</script>
+<script src="/lib/exe/jquery.php?tseed=f0349b609f9b91a485af8fd8ecd4aea4">/*<![CDATA[*/
+/*!]]>*/</script>
+<script src="/lib/exe/js.php?t=dokuwiki&amp;tseed=c9d19ae4ff2f0ce71f973600f0ff63bb">/*<![CDATA[*/
+/*!]]>*/</script>
+<script type="text/javascript" src="/lib/plugins/dokuprism/prism/prism.js">/*<![CDATA[*/
+/*!]]>*/</script>
+<!--<![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/lib/tpl/dokuwiki/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/lib/tpl/dokuwiki/images/apple-touch-icon.png" />
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Nanum+Gothic|Do+Hyeon"> -->
+</head>
+<script>
+    var dokuMenuList = "";
+    const urlParams = new URL(location.href).searchParams;
+    jQuery(document).ready(function(){
+        if(jQuery("#dokuwiki__aside").length){
+            fetch('/lib/tpl/dokuwiki/list.json')
+                .then((response) => response.json())
+                .then((json) => setDocuSideMenu(json));
+        }
+    });
+
+    function setDocuSideMenu(json){
+        json.sort(function(a,b) { 
+            return (a.orderSeq < b.orderSeq) ? -1 : (a.orderSeq > b.orderSeq) ? 1: 0; 
+        });
+
+        dokuMenuList = json;
+        var elem = document.createElement('div');
+        elem.setAttribute('class', 'pad aside include group');
+        var content = document.createElement('div');
+        content.setAttribute('class', 'content');
+        var group = document.createElement('div');
+        group.setAttribute('class', 'group');
+
+        var category = document.createElement('h1');
+        category.setAttribute('class', 'sectionedit1');
+        //category.innerHTML = '카테고리';
+        category.innerHTML = '목차';
+        group.appendChild(category);
+
+        var level1 = document.createElement('div');
+        level1.setAttribute('class', 'level1');
+
+        var dtree = document.createElement('div');
+        dtree.setAttribute('class', 'dtree');
+        dtree.setAttribute('style', 'position:relative;overflow:hidden;width:100%;');
+
+        var dtree2 = document.createElement('div');
+        dtree.setAttribute('class', 'dtree icons8metrobw.png');
+        dtree.setAttribute('style', 'overflow:visible;position:relative;width:100%;');
+
+        var clip = document.createElement('div');
+        clip.setAttribute('class', 'clip');
+        clip.setAttribute('style', 'display:block;');
+
+        for(var i=0;i<json.length;i++){
+            var obj = json[i];
+            if(obj.children.length > 0) {
+                var level = obj.itemId.split('_').length == 2 ? 0 : obj.itemId.split('_').length - 1;
+                var dTreeNode = hasChildrenMenu(obj, level); // main category menu
+                clip.appendChild(dTreeNode);
+
+                var subLevelMenu = document.createElement('div');
+                subLevelMenu.setAttribute('class', 'clip');
+                subLevelMenu.setAttribute('id', obj.itemId+"_subLevel");
+                var params = urlParams.get('id') == undefined ? "" : urlParams.get('id').split(":");
+                if(params == ""){
+                    subLevelMenu.setAttribute('style', 'display:none;');
+                }else{
+                    if(obj.link == params[0])
+                        subLevelMenu.setAttribute('style', 'display:block;');
+                    else
+                        subLevelMenu.setAttribute('style', 'display:none;');
+                }
+    
+                for(var j=0;j<obj.children.length;j++){
+                    if(obj.children[j].children.length > 0){
+                        var subLevel = obj.children[j].itemId.split('_').length - 1;
+                        var subTreeNode = hasChildrenMenu(obj.children[j], subLevel); // 2level category menu
+                        subLevelMenu.appendChild(subTreeNode);
+
+                        var subLevelClip = document.createElement('div');
+                        subLevelClip.setAttribute('class', 'clip');
+                        if(params == ""){
+                            subLevelClip.setAttribute('style', 'display:none;');
+                        }else{
+                            if(params[1] == obj.children[j].link)
+                                subLevelClip.setAttribute('style', 'display:block;');
+                            else
+                                subLevelClip.setAttribute('style', 'display:none;');
+                        }
+                        
+                        subLevelClip.setAttribute('id', obj.children[j].itemId+"_subLevel");
+                        for(var k=0;k<obj.children[j].children.length;k++){
+                            if(obj.children[j].children[k].children.length == 0){
+                                var lastTreeNode = lastTreeMenu(obj.children[j].children[k]);
+                                subLevelClip.appendChild(lastTreeNode);
+                            }
+                        }
+                        subLevelMenu.appendChild(subLevelClip);
+                    }else{
+                        var lastTreeNode = lastTreeMenu(obj.children[j]);
+                        subLevelMenu.appendChild(lastTreeNode);
+                    }
+                }
+                clip.appendChild(subLevelMenu);
+            }
+        }
+
+        level1.appendChild(clip);
+
+        group.appendChild(level1);
+        content.appendChild(group);
+        elem.appendChild(content);
+        jQuery("#dokuwiki__aside").empty();
+        jQuery("#dokuwiki__aside").append(elem);
+    }
+    function lastTreeMenu(obj){
+        var dTreeNode = document.createElement('div');
+        dTreeNode.setAttribute('class', 'dTreeNode');
+
+        var line = document.createElement('img');
+        var join = document.createElement('img');
+        var page = document.createElement('img');
+        line.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/line.png');
+        join.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/join.png');
+        page.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/page.png');
+
+        dTreeNode.appendChild(line);
+
+        var idArr = obj.itemId.split('_');
+        var url = "/doku.php?id=";
+        dokuMenuList.forEach(function(a){ 
+            if(a.itemId == obj.itemId.substr(0, 7)){
+                url += a.link + ":";
+            }
+
+            for(var i=0;i<a.children.length;i++){
+                if(a.children[i].itemId == obj.itemId.substr(0, 10)){
+                    if(a.itemId == obj.parentId){
+                        url += obj.link;
+                        break;
+                    }else{
+                        url += a.children[i].link + ":" + obj.link;
+                        dTreeNode.appendChild(line.cloneNode(line));
+                        break;
+                    }
+                }else{
+                    if(a.itemId == obj.parentId){
+                        url += obj.link;
+                        break;
+                    }
+                }
+            }
+        });
+
+        dTreeNode.appendChild(join);
+        dTreeNode.appendChild(page);
+
+        var dTreeNodeMenu = document.createElement('a');
+        var params = urlParams.get('id') == undefined ? "" : urlParams.get('id').split(":");
+        if(params == ""){
+            dTreeNodeMenu.setAttribute('style', 'color: #2d3c72; text-decoration: none;');
+        }else{
+            if(params[params.length-1] == obj.link)
+                dTreeNodeMenu.setAttribute('style', 'background-color:#2b73b7;color: #fff; text-decoration: none; border:1.5px solid #092341; padding:0.5px 1px 1px 1px; border-radius:3px');
+        }
+        
+        dTreeNodeMenu.setAttribute('class', 'nodeUrl');
+        dTreeNodeMenu.setAttribute('href', url);
+        dTreeNodeMenu.setAttribute('title', obj.desc);
+        if(obj.label.length > 11){
+            dTreeNodeMenu.innerHTML = obj.label.substr(0, 11) + "…";
+        }else{
+            dTreeNodeMenu.innerHTML = obj.label;
+        }
+        dTreeNode.appendChild(dTreeNodeMenu);
+
+        return dTreeNode;
+    }
+    function hasChildrenMenu(obj, level){
+        var dTreeNode = document.createElement('div');
+        dTreeNode.setAttribute('class', 'dTreeNode');
+
+        if(level > 0) {
+            var line = document.createElement('img');
+            line.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/line.png');
+            dTreeNode.appendChild(line);
+        }
+
+        var dTreeNodeAtag = document.createElement('a');
+        dTreeNodeAtag.setAttribute('id', obj.itemId + "_fold");
+        dTreeNodeAtag.setAttribute('href', '#;');
+        dTreeNodeAtag.setAttribute('data-fold', 'false');
+        dTreeNodeAtag.setAttribute('onclick', 'foldMenuEvent(this);');
+        var dTreeNodePlus = document.createElement('img');
+        var dTreeNodeImg = document.createElement('img');
+
+        var params = urlParams.get('id') == undefined ? "" : urlParams.get('id').split(":");
+        if(params == ""){
+            dTreeNodePlus.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/plus.png');
+            dTreeNodeImg.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/folder.png');
+        }else{
+            if(obj.label == params[0] || obj.label == params[1]){
+                dTreeNodePlus.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/minus.png');
+                dTreeNodeImg.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/folderopen.png');
+            }else{
+                dTreeNodePlus.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/plus.png');
+                dTreeNodeImg.setAttribute('src', '/lib/plugins/indexmenu/images/icons8metrobw.png/folder.png');
+            }
+        }
+        
+        dTreeNodeAtag.appendChild(dTreeNodePlus);
+
+        dTreeNodeImg.setAttribute('id', obj.itemId + "_folder");
+        dTreeNodeImg.setAttribute('data-fold', 'false');
+        var dTreeNodeMenu = document.createElement('a');
+        dTreeNodeMenu.setAttribute('href', '#;');
+        dTreeNodeMenu.setAttribute('data-fold', 'false');
+        dTreeNodeMenu.setAttribute('onclick', 'foldMenuEvent(this);');
+        dTreeNodeMenu.setAttribute('class', 'node');
+        dTreeNodeMenu.setAttribute('style', 'color: #2d3c72;background-color: inherit;');
+        dTreeNodeMenu.setAttribute('id', obj.itemId + "_title");
+        dTreeNodeMenu.innerHTML = obj.label;
+
+        dTreeNode.appendChild(dTreeNodeAtag);
+        dTreeNode.appendChild(dTreeNodeImg);
+        dTreeNode.appendChild(dTreeNodeMenu);
+
+        return dTreeNode;
+    }
+
+    function foldMenuEvent(target){
+        var id = target.id.split('_');
+        var setId = id.length == 3 ? id[0]+"_"+id[1] : id[0]+"_"+id[1]+"_"+id[2];
+        var bool = jQuery("#"+setId+"_fold").data('fold');
+
+        if(bool){
+            jQuery("#"+setId+"_fold").children()[0].src = "/lib/plugins/indexmenu/images/icons8metrobw.png/plus.png";
+            jQuery("#"+setId+"_fold").data('fold', false);
+            jQuery("#"+setId+"_folder")[0].src = "/lib/plugins/indexmenu/images/icons8metrobw.png/folder.png";
+            jQuery("#"+setId+"_folder").data('fold', false);
+            jQuery("#"+setId+"_subLevel").css("display", "none");
+            jQuery("#"+setId+"_title").data('fold', false);
+        }else{
+            jQuery("#"+setId+"_fold").children()[0].src = "/lib/plugins/indexmenu/images/icons8metrobw.png/minus.png";
+            jQuery("#"+setId+"_fold").data('fold', true);
+            jQuery("#"+setId+"_folder")[0].src = "/lib/plugins/indexmenu/images/icons8metrobw.png/folderopen.png";
+            jQuery("#"+setId+"_folder").data('fold', true);
+            jQuery("#"+setId+"_subLevel").css("display", "block");
+            jQuery("#"+setId+"_title").data('fold', true);
+        }
+    }
+</script>
+<body>
+    <div id="dokuwiki__site" style="background-color:#f8fcfe;"><div id="dokuwiki__top" class="site dokuwiki mode_show tpl_dokuwiki    showSidebar hasSidebar">
+
+        
+<!-- ********** HEADER ********** -->
+<header id="dokuwiki__header"><div class="pad group">
+
+    
+    <div class="headings group" style="position:relative;">
+        <ul class="a11y skip">
+            <li><a href="#dokuwiki__content">내용으로 건너뛰기</a></li>
+        </ul>
+
+        <h1 class="logo"><a href="/doku.php?id=%EB%A9%94%EC%9D%B8"  accesskey="h" title="Home [h]"><img src="/lib/exe/fetch.php?media=logo.png" width="300" height="82" alt="" /> <div class="ttff">기상기후데이터위키</div></a></h1>
+            </div>
+
+    <div class="tools group">
+        <!-- USER TOOLS -->
+        
+        <!-- SITE TOOLS -->
+        <div id="dokuwiki__sitetools">
+            <h3 class="a11y">사이트 도구</h3>
+            <form action="/doku.php?id=%EB%A9%94%EC%9D%B8" method="get" role="search" class="search doku_form" id="dw__search" accept-charset="utf-8"><input type="hidden" name="do" value="search" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><div class="no"><input name="q" type="text" class="edit" title="[F]" accesskey="f" placeholder="검색" autocomplete="on" id="qsearch__in" value="" /><button value="1" type="submit" title="검색">검색</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>            <div class="mobileTools">
+                <form action="/doku.php" method="get" accept-charset="utf-8"><div class="no"><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><select name="do" class="edit quickselect" title="도구"><option value="">도구</option><optgroup label="문서 도구"><option value="edit">문서 편집</option><option value="revisions">이전 판</option><option value="backlink">역링크</option></optgroup><optgroup label="사이트 도구"><option value="recent">최근 바뀜</option><option value="index">사이트맵</option></optgroup></select><button type="submit">&gt;</button></div></form>            </div>
+            <ul>
+                <li class="action recent"><a href="/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws&amp;do=recent" title="최근 바뀜 [r]" rel="nofollow" accesskey="r">최근 바뀜</a></li><li class="action index"><a href="/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws&amp;do=index" title="사이트맵 [x]" rel="nofollow" accesskey="x">사이트맵</a></li>            </ul>
+        </div>
+
+    </div>
+
+    <!-- BREADCRUMBS -->
+    
+    <hr class="a11y" />
+</div></header><!-- /header -->
+
+        <div class="wrapper group">
+
+                            <!-- ********** ASIDE ********** -->
+                <nav id="dokuwiki__aside" aria-label="사이드바">
+
+                </nav>
+                <!-- /aside -->
+            
+            <!-- ********** CONTENT ********** -->
+            <main id="dokuwiki__content"><div class="pad group">
+                
+                <div class="pageId"><span>기상관측:지상:자동기상관측_aws</span></div>
+
+                <div class="page group">
+                                                            <!-- wikipage start -->
+                    <!-- TOC START -->
+<div id="dw__toc" class="dw__toc">
+<h3 class="toggle">목차</h3>
+<div>
+
+<ul class="toc">
+<li class="level1"><div class="li"><a href="#자동기상관측_데이터">자동기상관측 데이터</a></div>
+<ul class="toc">
+<li class="level2"><div class="li"><a href="#관측장비소개">1. 관측장비소개</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#정의">1.1. 정의</a></div></li>
+<li class="level3"><div class="li"><a href="#구성">1.2. 구성</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#센서부_sensor">1.2.1. 센서부 (Sensor)</a></div></li>
+<li class="level4"><div class="li"><a href="#자료처리부">1.2.2. 자료처리부</a></div></li>
+<li class="level4"><div class="li"><a href="#부대장비_및_부대설비">1.2.3. 부대장비 및 부대설비</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#관측환경">2. 관측환경</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#관측_장소의_요건">2.1. 관측 장소의 요건</a></div></li>
+<li class="level3"><div class="li"><a href="#관측소의_위치">2.2. 관측소의 위치</a></div></li>
+<li class="level3"><div class="li"><a href="#관측소의_주변환경">2.3. 관측소의 주변환경</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#관측센서">3. 관측센서</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#온도계_지면‧초상‧지중온도계_포함">3.1. 온도계(지면‧초상‧지중온도계 포함)</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#온도센서의_표준규격">온도센서의 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#풍향‧풍속계">3.2. 풍향‧풍속계</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#풍향센서의_표준규격">풍향센서의 표준규격</a></div></li>
+<li class="level4"><div class="li"><a href="#풍속센서의_표준규격">풍속센서의 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#기압계">3.3. 기압계</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#기압센서_표준규격">기압센서 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#습도계">3.4. 습도계</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#습도센서의_표준규격">습도센서의 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#강수량계">3.5. 강수량계</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#강수량_센서의_표준규격">강수량 센서의 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#강수유무계">3.6. 강수유무계</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#강수유무_센서의_표준규격">강수유무 센서의 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#시정_현천계">3.7. 시정·현천계</a></div></li>
+<li class="level3"><div class="li"><a href="#일사계">3.8. 일사계</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#일사센서의_표준규격">일사센서의 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#일조계">3.9. 일조계</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#일조센서의_표준규격">일조센서의 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#운고‧운량계">3.10. 운고‧운량계</a></div></li>
+<li class="level3"><div class="li"><a href="#적설계">3.11. 적설계</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#관측지점">4. 관측지점</a></div></li>
+<li class="level2"><div class="li"><a href="#생산">5. 생산</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#관측센서의_표준규격">5.1. 관측센서의 표준규격</a></div></li>
+<li class="level3"><div class="li"><a href="#자료처리기의_표준규격">5.2. 자료처리기의 표준규격</a></div></li>
+<li class="level3"><div class="li"><a href="#신호_및_자료처리의_표준규격">5.3. 신호 및 자료처리의 표준규격</a></div></li>
+<li class="level3"><div class="li"><a href="#자료구조의_표준규격">5.4. 자료구조의 표준규격</a></div></li>
+<li class="level3"><div class="li"><a href="#부대장비의_표준규격">5.5. 부대장비의 표준규격</a></div></li>
+<li class="level3"><div class="li"><a href="#부대설비의_설치위치_및_표준규격">5.6. 부대설비의 설치위치 및 표준규격</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#수집">6. 수집</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#자동기상관측장비_관측자료_수집체계">6.1. 자동기상관측장비 관측자료 수집체계</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#데이터_구조">7. 데이터 구조</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#변수명_기상자료개방포털">7.1. 변수명 (기상자료개방포털)</a></div></li>
+<li class="level3"><div class="li"><a href="#변수명_기상청_api허브">1.7.2. 변수명(기상청 api허브 )</a></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#검색_및_획득">8. 검색 및 획득</a></div>
+<ul class="toc">
+<li class="level3"><div class="li"><a href="#검색_획득_기상자료개방포털​">8.1. 검색·획득 – 기상자료개방포털​</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#자료_접근">8.1.1. 자료 접근</a></div></li>
+<li class="level4"><div class="li"><a href="#자료_검색">8.1.2. 자료 검색</a></div></li>
+</ul>
+</li>
+<li class="level3"><div class="li"><a href="#검색_획득_-_기상청_api허브​">8.2. 검색·획득 - 기상청 API허브​</a></div>
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#자료_접근1">8.2.1. 자료 접근</a></div></li>
+<li class="level4"><div class="li"><a href="#자료_획득">8.2.2. 자료 획득</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"><a href="#활용방안">9. 활용방안</a></div>
+<ul class="toc">
+<li class="clear">
+<ul class="toc">
+<li class="level4"><div class="li"><a href="#라이브러리_설치">9.1. 라이브러리 설치</a></div></li>
+<li class="level4"><div class="li"><a href="#aws_지점_목록_다운로드">9.2. AWS 지점 목록 다운로드</a></div></li>
+<li class="level4"><div class="li"><a href="#시계열_그래프_표출">9.3. 시계열 그래프 표출</a></div></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1" id="자동기상관측_데이터">자동기상관측 데이터</h1>
+<div class="level1">
+
+<p>
+<a href="/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws#활용방안" class="media" title="기상관측:지상:자동기상관측_aws" data-wiki-id="기상관측:지상:자동기상관측_aws"><img src="/lib/exe/fetch.php?w=250&amp;tok=2e8b18&amp;media=wiki:%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88%ED%81%B4%EB%A6%AD.png" class="media" loading="lazy" alt="" width="250" /></a>
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_1"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[자동기상관측 데이터] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="자동기상관측_데이터" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="1-155" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="자동기상관측 데이터">편집</button></div></form></div>
+<h2 class="sectionedit2" id="관측장비소개">1. 관측장비소개</h2>
+<div class="level2">
+
+<p>
+<img src="/lib/exe/fetch.php?w=800&amp;tok=5b45eb&amp;media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EA%B0%95%EB%A6%89asos.jpg" class="media" loading="lazy" title="강릉asos.jpg" alt="강릉asos.jpg" width="800" />800 여더
+ㅈ 저뉴거어저도더800엉
+눠소 800Habsburg 저오노어1
+ Kayo 800
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_2"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[1. 관측장비소개] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="관측장비소개" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="156-322" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="1. 관측장비소개">편집</button></div></form></div>
+<h3 class="sectionedit3" id="정의">1.1. 정의</h3>
+<div class="level3">
+
+<p>
+자동기상관측장비는 사용목적에 따라 종관기상관측장비(ASOS)과 방재기상관측장비(AWS)로 구분합니다. 
+종관기상관측장비(ASOS)는 관측관서에서 목측요소를 제외한 기상요소에 대한 관측업무를 자동화한 것이며, 방재기상관측장비(AWS)는 기상관측 사각지역에 관측 공백 해소 및 국지적인 위험기상을 연속자동 관측하여 방재기상업무를 지원하는 자동기상관측장비를 말합니다.
+또한 농업기상관측장비(AAOS)를 종관기상관측장비(ASOS) 또는 방재기상관측장비(AWS)에 통합하여 운영함(2017. 8. 3.)에 따라 자동기상관측장비의 기준을 적용합니다.
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_3"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[1.1. 정의] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="정의" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="323-1054" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="1.1. 정의">편집</button></div></form></div>
+<h3 class="sectionedit4" id="구성">1.2. 구성</h3>
+<div class="level3">
+
+<p>
+자동기상관측장비는 센서부, 자료처리부, 부대장비 및 부대설비로 구성되어 있다.
+</p>
+
+</div>
+
+<h4 id="센서부_sensor">1.2.1. 센서부 (Sensor)</h4>
+<div class="level4">
+
+<p>
+ 기온, 지면온도, 초상온도, 지중온도, 풍향, 풍속, 기압, 습도, 강수량(0.1mm, 0.5 mm), 강수유무, 시정·현천, 일사, 일조센서 등으로 구성하며, 농업기상관측 지점에서는 토양수분을 추가 구성합니다. 관측목적(농업, 기후 등)에 따라 관측요소 일부를 관측할 수 있습니다.
+</p>
+
+</div>
+
+<h4 id="자료처리부">1.2.2. 자료처리부</h4>
+<div class="level4">
+
+<p>
+ 센서로부터 수신한 아날로그 신호를 디지털 신호로 변환하고, 정해진 처리방법에 따라 수집한 다음 자동기상관측장비 표준규격에 따른 자료구조로 편집한 후 기상실황판으로 전송하고, 또한 매 1분 간격으로 국지수집장치를 통하여 종합기상정보시스템으로 전송합니다. 또한 매 1분 자료는 일정기간 자체 저장장치에 보관합니다.
+</p>
+
+</div>
+
+<h4 id="부대장비_및_부대설비">1.2.3. 부대장비 및 부대설비</h4>
+<div class="level4">
+
+<p>
+(1) 전원공급장치
+ 입력전압은 AC Free Volt이며, 출력전압은 DC 12 V 입니다. 전원의 안정된공급과 장비를 72시간 이상 가동할 수 있는 충전기 및 배터리를 설치해야 합니다.
+</p>
+
+<p>
+(2) 기상실황판
+ 관측지점의 기상실황을 실시간 감시를 목적으로 설치되며, 액정표시장치(liquid crystal display)와 셋톱박스(set top box) 또는 표출제어장치(display control unit) 등으로 구성됩니다. 주로 표출되는 관측요소는 풍향, 풍속, 기온, 습도, 현지기압, 강수유무, 오늘 강수량, 어제 강수량 등 입니다.
+</p>
+
+<p>
+(3) 국지수집장치
+ 국지수집장치는 연결된 자동기상관측장비의 자료를 매분마다 수집하여 종합기상정보시스템으로 전송하는 역할을 합니다. 또한 기상청 표준시각시스템(Network Time Protocol)으로부터 표준시각을 받아 해당 자동기상관측장비의 시각을 동기화하고, 원격지 자동기상관측장비의 전압 및 센서 상태 감시, 자료수집상태, 원격제어 등을 수행합니다.
+</p>
+
+<p>
+(4) 모뎀
+ 자동기상관측장비와 국지수집장치 간의 자료를 교환할 수 있도록 연결하는 기능을 합니다. 자동기상관측장비에 장착되어 있는 모뎀은 전용회선 4선식 전이중방식의 모뎀으로 ITU-T V.29 및 정보통신부 모뎀 표준규격서에 의해 설계된 국제규격의 모뎀입니다.
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_4"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[1.2. 구성] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="구성" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="1055-3539" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="1.2. 구성">편집</button></div></form></div>
+<h2 class="sectionedit5" id="관측환경">2. 관측환경</h2>
+<div class="level2">
+
+</div>
+<div class="secedit editbutton_section editbutton_5"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[2. 관측환경] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="관측환경" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="3540-3567" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="2. 관측환경">편집</button></div></form></div>
+<h3 class="sectionedit6" id="관측_장소의_요건">2.1. 관측 장소의 요건</h3>
+<div class="level3">
+
+<p>
+기상요소는 관측소 부근의 일반적인 기상상태를 대표할 수 있어야 하므로 관측소 위치는 관측에 영향을 줄 수 있는 높은 건물 등이 많은 곳이나 산악, 산림, 호수, 기타 장애물의 영향을 받는 곳은 피해야 하며, 평탄하고 바람의 유통이 잘되고 시야가 넓은 곳에 위치해야 합니다. 또한 관측소는 업무의 수행상 교통과 통신 등 최적의 관측환경 요건을 구비해야 합니다.
+</p>
+<ul>
+<li class="level1"><div class="li"> 관측장소는 지상에 설치하는 것을 원칙으로 한다. 다만, 장애물 등의 영향이나 토지의 사용이 어려운 경우에는 건물의 옥상 등 적절한 장소에 설치할 수 있음</div>
+</li>
+<li class="level1"><div class="li"> 관측장소의 면적은 35제곱미터 이상</div>
+</li>
+<li class="level1"><div class="li"> 관측장소의 형태는 원형 또는 정사각형을 원칙으로 함</div>
+</li>
+<li class="level1"><div class="li"> 관측장소가 지상인 경우에는 지면에 자연잔디를조성하고, 그 길이를 짧게 유지</div>
+</li>
+<li class="level1"><div class="li"> 관측장소에는 기상측기 외의 다른 시설물의 설치를 최소화하여야 함</div>
+</li>
+<li class="level1"><div class="li"> 관측장소에는 기상측기의 보호를 위하여 통풍에 지장이 없는 울타리를 설치</div>
+</li>
+<li class="level1"><div class="li"> 건물 옥상에 온도계를 설치할 경우에는 건물의 복사열을 최소화할 수 있는 조치를 해야 함</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_6"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[2.1. 관측 장소의 요건] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="관측_장소의_요건" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="3568-4876" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="2.1. 관측 장소의 요건">편집</button></div></form></div>
+<h3 class="sectionedit7" id="관측소의_위치">2.2. 관측소의 위치</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> 그 지역의 기상을 대표할 수 있는 곳이어야 함</div>
+</li>
+<li class="level1"><div class="li"> 건물·나무·숲 등 장애물의 영향이 적은 곳이어야 함</div>
+</li>
+<li class="level1"><div class="li"> 아스팔트·콘크리트 등 인공물의 영향이 적은 곳이어야 함</div>
+</li>
+<li class="level1"><div class="li"> 기상관측장비의 유지·관리를 위한 접근성이 용이한 곳이어야 함</div>
+</li>
+<li class="level1"><div class="li"> 관측시설의 보호 등 안정성이 보장될 수 있는 곳이어야 함</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_7"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[2.2. 관측소의 위치] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="관측소의_위치" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="4877-5309" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="2.2. 관측소의 위치">편집</button></div></form></div>
+<h3 class="sectionedit8" id="관측소의_주변환경">2.3. 관측소의 주변환경</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> 기상관측에 영향을 미칠 수 있는 장애물의 영향이 적은 곳이어야 함</div>
+</li>
+<li class="level1"><div class="li"> 주변지형이 평탄한 곳이어야 한다. 다만, 산악지역 등 특수목적을 위한 관측소의 경우에는 그러하지 아니함</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_8"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[2.3. 관측소의 주변환경] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="관측소의_주변환경" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="5310-5595" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="2.3. 관측소의 주변환경">편집</button></div></form></div>
+<h2 class="sectionedit9" id="관측센서">3. 관측센서</h2>
+<div class="level2">
+
+<p>
+<a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EA%B8%B0%EC%83%81%EC%B8%A1%EA%B8%B0%EB%B3%84_%EC%84%A4%EC%B9%98%EA%B8%B0%EC%A4%80_%EC%A0%9C3%EC%A1%B0%EC%A0%9C2%ED%95%AD_%EA%B4%80%EB%A0%A8_.pdf" class="media mediafile mf_pdf" title="기상관측:지상:기상측기별_설치기준_제3조제2항_관련_.pdf (44.2 KB)">기상측기별 설치기준 제3조제2항</a>
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_9"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3. 관측센서] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="관측센서" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="5596-5728" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3. 관측센서">편집</button></div></form></div>
+<h3 class="sectionedit10" id="온도계_지면‧초상‧지중온도계_포함">3.1. 온도계(지면‧초상‧지중온도계 포함)</h3>
+<div class="level3">
+
+<p>
+기온 관측방식은 유리제 온도계, 백금저항 온도계, 서미스터 온도계 등이 있으나, 열전도가 높고 부식이 잘 안되는 백금선을 활용한 백금저항온도계를 주로 사용합니다.
+</p>
+
+</div>
+
+<h4 id="온도센서의_표준규격">온도센서의 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_3">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit11"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서</th><th class="col1">형식</th><th class="col2"> 내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0" rowspan="2"> 온도 센서 </td><td class="col1"> 금속형 </td><td class="col2"> ◦ 측정범위: -40 ℃ ～ +60 ℃ (초상, 지면, 지중온도 : -40 ℃ ～ +100 ℃) <br/>
+◦ 정확도: ±0.3 ℃ 이내 \\◦ 운용환경: -40 ℃～ +60 ℃ <br/>
+◦ 분해능: 0.1 ℃ <br/>
+◦ 기타: 100 Ω 의 백금 4선식 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 박막형 </td><td class="col1"> ◦ 측정범위: -40 ℃ ～ +60 ℃ <br/>
+◦ 정확도: ±0.3 ℃ 이내 <br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃ <br/>
+◦ 분해능: 0.1 ℃ <br/>
+◦ 기타: 100 Ω 의 백금(유리코팅 또는 보호통) </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="백금저항_온도센서_좌_및_지중온도계_우">백금저항 온도센서(좌) 및 지중온도계(우)</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%98%A8%EB%8F%84%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_10"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.1. 온도계(지면‧초상‧지중온도계 포함)] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="온도계_지면‧초상‧지중온도계_포함" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="5729-6747" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.1. 온도계(지면‧초상‧지중온도계 포함)">편집</button></div></form></div>
+<h3 class="sectionedit12" id="풍향‧풍속계">3.2. 풍향‧풍속계</h3>
+<div class="level3">
+
+<p>
+바람(풍향‧풍속) 관측을 위한 장비에는 풍차형, 3배형 풍속계, 초음파 풍속계, 방향타형 풍향계, 로빈손 풍속계, 에어로벤 등이 있으며, 주로 풍배형풍속계를 사용합니다.
+</p>
+
+<p>
+ 세계기상기구(WMO, World Meteorological Organization) 권고에 따라 풍향은 진북을 기준으로 360°의 10°간격(01～36 부호)으로 10분간의 평균풍향을 사용합니다. 풍속 또한 10분간의 평균풍속을 사용합니다. 바람의 관측은 지상의 장애물 높이의 10배 이상 떨어진 평탄한 곳에서 지상 10 m 높이의 풍향, 풍속을 관측하는 것을 표준으로 합니다.
+</p>
+
+</div>
+
+<h4 id="풍향센서의_표준규격">풍향센서의 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_31">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit13"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측센서</th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0" rowspan="3">풍향센서</td><td class="col1">그레이 코드식</td><td class="col2">◦ 측정범위: 0° ～ 360° <br/>
+◦ 정 확 도: 5° 이내 <br/>
+◦ 기동풍속: 0.5 m/s 이하 <br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃, 순간풍속 75 m/s 이내 <br/>
+◦ 분 해 능: 3° </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">전위 차계식</td><td class="col1"> ◦ 측정범위: 0° ～ 360° <br/>
+◦ 정 확 도: 5° 이내 <br/>
+◦ 기동풍속: 1.1 m/s 이하 <br/>
+◦ 운용환경: -50 ℃ ～ +50 ℃ 순간풍속 75 m/s 이내 <br/>
+◦ 분 해 능: 1° </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">초음파식</td><td class="col1">◦ 측정범위: 0° ～ 360°<br/>
+◦ 정 확 도: 2° 이내<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃, 순간풍속 75 m/s 이내<br/>
+◦ 분 해 능: 1° </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h4 id="풍속센서의_표준규격">풍속센서의 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_32">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit14"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서</th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0" rowspan="3"> 풍속 센서 </td><td class="col1"> 광초퍼식 </td><td class="col2"> ◦ 측정범위: 0 ～ 75 m/s <br/>
+◦ 정 확 도: 0.5 m/s 이내(10 m/s 미만), 5 % 이내(10 m/s 이상) <br/>
+◦ 기동풍속: 0.5 m/s 이하 <br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃, 순간풍속 75 m/s 이내 <br/>
+◦ 분 해 능: 0.1 m/s </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 자기 유도식 </td><td class="col1"> ◦ 측정범위: 0 ～ 75 m/s <br/>
+◦ 정 확 도: 0.5 m/s 이내(10 m/s 미만), 5 % 이내(10 m/s 이상) <br/>
+◦ 기동풍속: 1.1 m/s 이하 <br/>
+◦ 운용환경: -50 ℃ ～ +50 ℃, 순간풍속 75 m/s 이내 <br/>
+◦ 분 해 능: 0.1 m/s </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 초음파식 </td><td class="col1"> ◦ 측정범위: 0 ～ 70 m/s <br/>
+◦ 정 확 도: 0.5 m/s 이내(10 m/s 미만), 5 % 이내(10 m/s 이상) <br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃, 순간풍속 75 m/s 이내 <br/>
+◦ 분 해 능: 0.1 m/s <br/>
+◦ 히터내장(히터작동 범위는 강수량 온도조절용 히터에 준함) </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="풍배형풍속계_좌_및_풍차형_에어로벤_풍향풍속계_우">풍배형풍속계(좌) 및 풍차형(에어로벤)풍향풍속계(우)</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%ED%92%8D%ED%96%A5%ED%92%8D%EC%86%8D%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_12"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.2. 풍향‧풍속계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="풍향‧풍속계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="6748-9328" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.2. 풍향‧풍속계">편집</button></div></form></div>
+<h3 class="sectionedit15" id="기압계">3.3. 기압계</h3>
+<div class="level3">
+
+<p>
+기압센서는 광범위한 기압과 기온범위에서 사용가능한 디지털 기압계로 자체 기차보정, 온도보정이 된 값이 출력됩니다. 
+</p>
+
+<p>
+ 기압계는 연결부위에 물이 닿으면 기압측정에 오차가 발생할수 있으므로 주변 환경으로부터 보호받을 수 있도록 자료처리기(Data Logger)함 내부에 설치하거나 보호구 속에 설치하되, 밀폐되지 않도록 운영하고 있습니다
+</p>
+
+</div>
+
+<h4 id="기압센서_표준규격">기압센서 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_33">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit16"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측센서</th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">기압센서</td><td class="col1">정전 용량식 </td><td class="col2"> ◦ 측정범위: 500 hPa ～ 1080 hPa<br/>
+◦ 정 확 도: ±0.5 hPa(750 hPa ～ 1080 hPa)<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃<br/>
+◦ 분 해 능: 0.1 hPa<br/>
+◦ 반응시간 : 1초 이내 </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="기압계_좌_및_자료처리기_우">기압계(좌) 및 자료처리기(우)</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EA%B8%B0%EC%95%95%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_15"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.3. 기압계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="기압계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="9329-10254" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.3. 기압계">편집</button></div></form></div>
+<h3 class="sectionedit17" id="습도계">3.4. 습도계</h3>
+<div class="level3">
+
+<p>
+습도계는 노점계, 정전용량 습도계, 자외선 습도계 등이 있으며, 정전용량형 고분자막 습도계를 주로 사용합니다.
+</p>
+
+<p>
+ 정전용량형 고분자막 습도계는 고분자 물질의 전기적 특성이 물 분자의 흡ㆍ탈착에 의해서 변하도록 제작된 감지기로 고분자막을 유전체로 하는 일종의 콘덴서로, 정전용량을 전기신호로 끌어냄으로써 상대습도가 측정됩니다. 통풍이 원활하게 이루어지는 차광통 내부 중앙에 위치합니다.
+</p>
+
+</div>
+
+<h4 id="습도센서의_표준규격">습도센서의 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_34">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit18"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서 </th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">습도 센서</td><td class="col1">정전 용량식</td><td class="col2">◦ 측정범위: 0 % R.H ～ 100 % R.H<br/>
+◦ 정 확 도: ±3 % R.H 이내(0 % R.H ～ 90 % R.H)<br/>
+±5 % R.H 이내(91 % R.H ～ 100 % R.H)<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃<br/>
+◦ 방진필터 부착</td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="습도센서_좌_및_차광통_우">습도센서(좌) 및 차광통(우)</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%8A%B5%EB%8F%84%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_17"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.4. 습도계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="습도계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="10255-11282" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.4. 습도계">편집</button></div></form></div>
+<h3 class="sectionedit19" id="강수량계">3.5. 강수량계</h3>
+<div class="level3">
+
+<p>
+강수량계는 무게식강수량계, 전도형강수량계 등이 있으며, 주로 무게식강수량계를 사용합니다.
+</p>
+
+<p>
+ 무게식강수량계는 비, 눈 등 액상과 고체상의 강수를 관측하는 센서이며, 무게식강수량계 본체에는 저수통이 있어 비, 눈 등을 저수통에 모아 무게를 측정하는 원리를 사용하여 강수량을 산출합니다.
+</p>
+
+</div>
+
+<h4 id="강수량_센서의_표준규격">강수량 센서의 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_35">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit20"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서 </th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0" rowspan="2">강수량 센서 </td><td class="col1"> 무게식</td><td class="col2">◦ 측정범위: 1000 mm 이상<br/>
+◦ 정 확 도: ±0.1 mm(10 mm 미만), ±1 %(10 mm 이상)<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃<br/>
+◦ 분 해 능: 0.1 mm<br/>
+◦ 바람막이 부착, 수수구부 히팅 기능</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">전도형</td><td class="col1">◦ 수 수 구: 지름 200 mm <br/>
+◦ 측정범위: 1전도(Bucket)당 0.5 mm(또는 1.0 mm)<br/>
+◦ 정 확 도: 3 % 이내(20～50 mm/h 강우강도)<br/>
+◦ 재    질: 스테인리스<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃<br/>
+◦ 히    터: 강설 녹임을 위한 서모스탯(Thermostat) 부착(4 ℃ ± 2 ℃ 이내에서 ON, 15 ℃ ± 2 ℃ 이내에서 OFF) <br/>
+◦ 수수구 그물망: 봉 또는 수평형태의 그물망 <br/>
+◦ 분 해 능: 0.5 mm 또는 1.0 mm <br/>
+◦ 바람막이 부착 </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="무게식강수량계_좌_및_전도식강수량계_우">무게식강수량계(좌) 및 전도식강수량계(우)</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EA%B0%95%EC%88%98%EB%9F%89%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_19"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.5. 강수량계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="강수량계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="11283-12716" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.5. 강수량계">편집</button></div></form></div>
+<h3 class="sectionedit21" id="강수유무계">3.6. 강수유무계</h3>
+<div class="level3">
+
+<p>
+ 강수유무계에는 임피던스 검출형, 정전용량 검출형 등이 있습니다. 비, 눈 등 강수현상이 강수유무계 감지면에 낙하하여 감지되면 강수유무를 전기적 신호로 출력합니다.
+</p>
+
+</div>
+
+<h4 id="강수유무_센서의_표준규격">강수유무 센서의 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_36">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit22"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서 </th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">강수 유무 센서 </td><td class="col1"> 임피던스 검출형, <br/>
+정전용량 검출형 </td><td class="col2"> ◦ 측정범위: 비, 눈 등 강수현상<br/>
+◦ 반응시간: 1분 이내<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃<br/>
+◦ 감지면 규격: 5 mm 간격 이내 금박격자, 15° ～ 30° 경사지게 설치<br/>
+◦ 감지면 항온유지<br/>
+- 서리 및 이슬현상으로 인한 오류 방지<br/>
+- 강우 및 강설현상 종료 시 반응시간 2 분 이내에 감지면의 물기 제거</td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="임피던스_검출형_강수유무계">임피던스 검출형 강수유무계</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EA%B0%95%EC%88%98%EC%9C%A0%EB%AC%B4%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_21"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.6. 강수유무계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="강수유무계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="12717-13675" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.6. 강수유무계">편집</button></div></form></div>
+<h3 class="sectionedit23" id="시정_현천계">3.7. 시정·현천계</h3>
+<div class="level3">
+
+<p>
+ 시정계는 일반적으로 산란식 시정센서를 사용합니다. 시정ㆍ현천계는 송신부와 수신부에서 레이저 빔을 발사, 수신하여 공기 중에 있는 입자에 의해 빛이 산란, 흡수되는 빛의 산란 강도를 통해 시정값을 산출합니다. 시정 자료를 생산하기 위하여 1분 동안 10∼15초 간격으로 시정자료를 수집하여 매분자료를 생산하며, 10분 이동평균 한 시정자료를 현재 시정값으로 사용합니다. 
+</p>
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_37">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit24"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서 </th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">시정 센서</td><td class="col1">산란식</td><td class="col2">◦ 측정범위: 10 m ～ 25000 m 이상<br/>
+◦ 정 확 도: ±10 % 이내(10 m ～ 10000 m 미만),±20 % 이내(10000 m 이상)<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃<br/>
+◦ 샘 플 링: 매 10～15초<br/>
+◦ 분 해 능: 10 m </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="시정현천계">시정현천계</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%8B%9C%EC%A0%95%ED%98%84%EC%B2%9C%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_23"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.7. 시정·현천계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="시정_현천계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="13676-14637" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.7. 시정·현천계">편집</button></div></form></div>
+<h3 class="sectionedit25" id="일사계">3.8. 일사계</h3>
+<div class="level3">
+
+<p>
+ 일사계는 직달일사계와 은반일사계 및 전기 보상식 직달일사계 등이 있으며, 주로 전천일사계를 사용합니다. 수평면일사로도 불리는 전천 일사는 수평하게 놓인 수광면이 받는 직달일사와 대기 중의 산란일사를 측정하며, 측정한 값을 전기적 신호로 출력합니다.
+</p>
+
+</div>
+
+<h4 id="일사센서의_표준규격">일사센서의 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_38">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit26"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서 </th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">일사 센서</td><td class="col1">열전대식</td><td class="col2"> ◦ 민 감 도(Sensitivity): 7 ～ 17 ㎶/(W/㎡)<br/>
+◦ 온도특성: ±2 % / -20 ℃ ～ +50 ℃<br/>
+◦ 비선형성(Non-linearity): ±0.5 %<br/>
+◦ 안 정 도: ±0.8 %/년<br/>
+◦ 정 확 도: 2 %(일 변화), 3 %(시 변화)<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃<br/>
+◦ 시 야 각: 0° ～ 360°<br/>
+◦ 측정범위: 0 ～ 1500 W/㎡ <br/>
+◦ 분 해 능: 1 W/㎡</td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="전천_일사계">전천 일사계</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9D%BC%EC%82%AC%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_25"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.8. 일사계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="일사계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="14638-15607" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.8. 일사계">편집</button></div></form></div>
+<h3 class="sectionedit27" id="일조계">3.9. 일조계</h3>
+<div class="level3">
+
+<p>
+ 일조계는 캄벨․스토크스 일조계, 조르단 일조계, 태양전지식 일조계, 기타 일조계가 있으며, 주로 회전식 일조계를 사용합니다. 회전식 일조계는 일정한 속도로 회전하는 회전반사경에 의해 직달일사량이 120 W·m-2 이상의 에너지를 초과하게 될 경우, 일조가 있는 것으로 처리하며 누적값으로 일조값을 계산합니다.
+</p>
+
+</div>
+
+<h4 id="일조센서의_표준규격">일조센서의 표준규격</h4>
+<div class="level4">
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_39">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit28"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서 </th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">일조 센서 </td><td class="col1">회전 거울식, <br/>
+광다이오드식</td><td class="col2">◦ 측정범위: 0 ～ 24시<br/>
+◦ 입사각 특성: ±5 %<br/>
+◦ 시 초 값: 120 W/m2<br/>
+◦ 정 확 도: ±5 %(120 W/㎡), 10 분(일) 이내<br/>
+◦ 운용환경: -40 ℃ ～ +45 ℃<br/>
+◦ 분 해 능: 0.1시</td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="회전_거울식_일조계">회전 거울식 일조계</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9D%BC%EC%A1%B0%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_27"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.9. 일조계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="일조계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="15608-16530" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.9. 일조계">편집</button></div></form></div>
+<h3 class="sectionedit29" id="운고‧운량계">3.10. 운고‧운량계</h3>
+<div class="level3">
+
+<p>
+ 운고‧운량계는 일반적으로 레이저식 운고센서를 사용합니다. 운고·운량계는 연직으로 레이저 빔을 쏘아 3개 층의 운고와 운량을 관측하는 센서로 송신부에서 30초 간격으로 레이저 빔을 발사하며, 구름하부에 도달한 레이저 빔이 수신기로 돌아오는 데 걸리는 시간을 측정해 3개 층의 운고와 운량을 측정합니다.
+</p>
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_310">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit30"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서 </th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">운고센서</td><td class="col1">레이저식</td><td class="col2">◦ 측정범위: 10 m ～ 7500 m 이상<br/>
+◦ 정 확 도: ±10 m(1000 m 미만), ±30 m(1000 m 이상)<br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃<br/>
+◦ 샘 플 링: 매 15～60초<br/>
+◦ 분 해 능: 10 m</td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="레이저식_운고운량계">레이저식 운고운량계</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9A%B4%EA%B3%A0%EC%9A%B4%EB%9F%89%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_29"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.10. 운고‧운량계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="운고‧운량계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="16531-17396" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.10. 운고‧운량계">편집</button></div></form></div>
+<h3 class="sectionedit31" id="적설계">3.11. 적설계</h3>
+<div class="level3">
+
+<p>
+ 적설계는 영상식적설계, 초음파식적설계, 레이저식적설계 등이 있으며, 주로 레이저식 적설계를 사용합니다. 레이저식 적설계는 내부의 레이저 거리측정기가 일정한 각도를 두고 회전하여 지면 또는 눈 표면에 원형 궤적을 그리면서 궤적상의 지점들을 측정합니다. 각 측정 지점에서 반사되어 레이저 거리 측정 모듈까지의 귀환 시간으로 거리를 계산합니다. 이렇게 측정된 각 지점의 거리 자료로 각 지점에 대한 지면으로부터의 높이를 계산하고, 각 지점의 적설 값을 평균하여 측정면의 대표값을 계산합니다.
+</p>
+
+</div>
+
+<h5 id="자동기상관측장비의_표준규격_기상청_고시_19_6_311">자동기상관측장비의 표준규격 (기상청 고시, ‘19. 6. 3.)</h5>
+<div class="level5">
+<div class="table sectionedit32"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측 센서 </th><th class="col1">형식</th><th class="col2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">적설 센서</td><td class="col1">레이저식</td><td class="col2">◦ 측정범위: 0 ～ 300 ㎝<br/>
+◦ 측정방식: 3지점 이상의 관측 포인트 산술평균<br/>
+◦ 정 확 도: ±0.5 cm<br/>
+◦ 운용환경: -40 ℃ ～ +50 ℃<br/>
+◦ 샘 플 링: 매 15～60초<br/>
+◦ 분 해 능: 0.1㎝</td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="레이저식_적설계">레이저식 적설계</h5>
+<div class="level5">
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%A0%81%EC%84%A4%EA%B3%84.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_31"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[3.11. 적설계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="적설계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="17397-18531" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="3.11. 적설계">편집</button></div></form></div>
+<h2 class="sectionedit33" id="관측지점">4. 관측지점</h2>
+<div class="level2">
+
+</div>
+
+<h5 id="기준">2023.9.1기준</h5>
+<div class="level5">
+<div class="table sectionedit34"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">구분</th><th class="col1">수도권청</th><th class="col2">부산청</th><th class="col3">광주청</th><th class="col4">대전청</th><th class="col5">강원청</th><th class="col6">대구청</th><th class="col7">제주청</th><th class="col8">전주지청</th><th class="col9">청주지청</th><th class="col10">계</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">종관기상관측장비<br/>
+(ASOS 98개소)</td><td class="col1">9</td><td class="col2">17</td><td class="col3">14</td><td class="col4">8</td><td class="col5">14</td><td class="col6">16</td><td class="col7">4</td><td class="col8">10</td><td class="col9">6</td><td class="col10">98</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">방재기상관측장비<br/>
+(AWS 539개소)</td><td class="col1">101</td><td class="col2">66</td><td class="col3">87</td><td class="col4">42</td><td class="col5">78</td><td class="col6">64</td><td class="col7">39</td><td class="col8">35</td><td class="col9">27</td><td class="col10">539</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">계</td><td class="col1">110</td><td class="col2">83</td><td class="col3">101</td><td class="col4">50</td><td class="col5">92</td><td class="col6">80</td><td class="col7">43</td><td class="col8">45</td><td class="col9">33</td><td class="col10">637</td>
+	</tr>
+</table></div>
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1%EC%9E%A5%EB%B9%84%EB%B6%84%ED%8F%AC%EB%8F%84.png" class="media" loading="lazy" alt="" />
+</p>
+<div class="table sectionedit35"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">지점번호</th><th class="col1">지점명(한글)</th><th class="col2">지점명(영문)</th><th class="col3">경도(degree)</th><th class="col4">위도(degree)</th><th class="col5">관측장비 해발고도(m)</th><th class="col6">기압계 해발고도(m)</th><th class="col7">온도계 높이(m)</th><th class="col8">풍향/풍속계 높이(m)</th><th class="col9">강수량계 높이(m)</th><th class="col10">예보구역코드</th><th class="col11"> 법정동코드</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0"> 90 </td><td class="col1"> 속초 </td><td class="col2"> Sokcho </td><td class="col3"> 128.56473 </td><td class="col4"> 38.25085 </td><td class="col5"> 17.53 </td><td class="col6"> 18.73 </td><td class="col7"> 1.7 </td><td class="col8"> 10 </td><td class="col9"> 1.4 </td><td class="col10"> 11D20401 </td><td class="col11"> 5182033035 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 93 </td><td class="col1"> 북춘천 </td><td class="col2"> Bukchuncheon </td><td class="col3"> 127.75443 </td><td class="col4"> 37.94738 </td><td class="col5"> 95.78 </td><td class="col6"> 96.78 </td><td class="col7"> 1.5 </td><td class="col8"> 10 </td><td class="col9"> 1.4 </td><td class="col10"> 11D10301 </td><td class="col11"> 5111025024 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 95 </td><td class="col1"> 철원 </td><td class="col2"> Cheorwon </td><td class="col3"> 127.3042 </td><td class="col4"> 38.14787 </td><td class="col5"> 155.48 </td><td class="col6"> 156.98 </td><td class="col7"> 1.8 </td><td class="col8"> 13 </td><td class="col9"> 1.5 </td><td class="col10"> 11D10101 </td><td class="col11"> 5178025624 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> 98 </td><td class="col1"> 동두천 </td><td class="col2"> Dongducheon </td><td class="col3"> 127.0607 </td><td class="col4"> 37.90188 </td><td class="col5"> 115.62 </td><td class="col6"> 116.74 </td><td class="col7"> 1.7 </td><td class="col8"> 10 </td><td class="col9"> 1 </td><td class="col10"> 11B20401 </td><td class="col11"> 4125010300 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> 99 </td><td class="col1"> 파주 </td><td class="col2"> Paju </td><td class="col3"> 126.76648 </td><td class="col4"> 37.88589 </td><td class="col5"> 30.59 </td><td class="col6"> 31.99 </td><td class="col7"> 1.7 </td><td class="col8"> 10 </td><td class="col9"> 1 </td><td class="col10"> 11B20305 </td><td class="col11"> 4148025025 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> 100 </td><td class="col1"> 대관령 </td><td class="col2"> Daegwallyeong </td><td class="col3"> 128.71834 </td><td class="col4"> 37.67713 </td><td class="col5"> 772.43 </td><td class="col6"> 773.43 </td><td class="col7"> 1.7 </td><td class="col8"> 10 </td><td class="col9"> 1.4 </td><td class="col10"> 11D20201 </td><td class="col11"> 5176038024 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> 101 </td><td class="col1"> 춘천 </td><td class="col2"> Chuncheon </td><td class="col3"> 127.7357 </td><td class="col4"> 37.90262 </td><td class="col5"> 75.82 </td><td class="col6"> 77.05 </td><td class="col7"> 1.5 </td><td class="col8"> 10 </td><td class="col9"> 1.4 </td><td class="col10"> 11D10301 </td><td class="col11"> 5111011800 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> 102 </td><td class="col1"> 백령도 </td><td class="col2"> Baengnyeongdo </td><td class="col3"> 124.71237 </td><td class="col4"> 37.97396 </td><td class="col5"> 36 </td><td class="col6"> 37.2 </td><td class="col7"> 1.8 </td><td class="col8"> 9 </td><td class="col9"> 1.2 </td><td class="col10"> 11A00101 </td><td class="col11"> 2872033021 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> 104 </td><td class="col1"> 북강릉 </td><td class="col2"> Bukgangneung </td><td class="col3"> 128.85535 </td><td class="col4"> 37.80456 </td><td class="col5"> 75.24 </td><td class="col6"> 76.67 </td><td class="col7"> 1.7 </td><td class="col8"> 10 </td><td class="col9"> 1.4 </td><td class="col10"> 11D20501 </td><td class="col11"> 5115036027 </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> 105 </td><td class="col1"> 강릉 </td><td class="col2"> Gangneung </td><td class="col3"> 128.89099 </td><td class="col4"> 37.75147 </td><td class="col5"> 27.12 </td><td class="col6"> 28.22 </td><td class="col7"> 1.7 </td><td class="col8"> 10 </td><td class="col9"> 0.5 </td><td class="col10"> 11D20501 </td><td class="col11"> 5115010700 </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> 106 </td><td class="col1"> 동해 </td><td class="col2"> Donghae </td><td class="col3"> 129.12433 </td><td class="col4"> 37.50709 </td><td class="col5"> 40.46 </td><td class="col6"> 41.66 </td><td class="col7"> 1.7 </td><td class="col8"> 10 </td><td class="col9"> 1.4 </td><td class="col10"> 11D20601 </td><td class="col11"> 5117010400 </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> 108 </td><td class="col1"> 서울 </td><td class="col2"> Seoul </td><td class="col3"> 126.9658 </td><td class="col4"> 37.57142 </td><td class="col5"> 85.67 </td><td class="col6"> 86.67 </td><td class="col7"> 1.5 </td><td class="col8"> 10 </td><td class="col9"> 0.5 </td><td class="col10"> 11B10101 </td><td class="col11"> 1111017800 </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> 112 </td><td class="col1"> 인천 </td><td class="col2"> Incheon </td><td class="col3"> 126.6249 </td><td class="col4"> 37.47772 </td><td class="col5"> 68.99 </td><td class="col6"> 70.19 </td><td class="col7"> 1.6 </td><td class="col8"> 10 </td><td class="col9"> 1.2 </td><td class="col10"> 11B20201 </td><td class="col11"> 2811013700 </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> 114 </td><td class="col1"> 원주 </td><td class="col2"> Wonju </td><td class="col3"> 127.94659 </td><td class="col4"> 37.33749 </td><td class="col5"> 150.11 </td><td class="col6"> 151.11 </td><td class="col7"> 1.7 </td><td class="col8"> 14 </td><td class="col9"> 1.4 </td><td class="col10"> 11D10401 </td><td class="col11"> 5113010600 </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> 115 </td><td class="col1"> 울릉도 </td><td class="col2"> Ulleungdo </td><td class="col3"> 130.89863 </td><td class="col4"> 37.48129 </td><td class="col5"> 221.14 </td><td class="col6"> 223.7 </td><td class="col7"> 1.6 </td><td class="col8"> 10 </td><td class="col9"> 1.3 </td><td class="col10"> 11E00101 </td><td class="col11"> 4794025024 </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> 119 </td><td class="col1"> 수원 </td><td class="col2"> Suwon </td><td class="col3"> 126.983 </td><td class="col4"> 37.25746 </td><td class="col5"> 39.81 </td><td class="col6"> 40.81 </td><td class="col7"> 1.6 </td><td class="col8"> 18.7 </td><td class="col9"> 1.1 </td><td class="col10"> 11B20601 </td><td class="col11"> 4111312800 </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> 121 </td><td class="col1"> 영월 </td><td class="col2"> Yeongwol </td><td class="col3"> 128.45743 </td><td class="col4"> 37.18126 </td><td class="col5"> 240.54 </td><td class="col6"> 242.05 </td><td class="col7"> 1.7 </td><td class="col8"> 10 </td><td class="col9"> 1.4 </td><td class="col10"> 11D10501 </td><td class="col11"> 5175025022 </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> 127 </td><td class="col1"> 충주 </td><td class="col2"> Chungju </td><td class="col3"> 127.9525 </td><td class="col4"> 36.97045 </td><td class="col5"> 114.85 </td><td class="col6"> 116.25 </td><td class="col7"> 1.65 </td><td class="col8"> 10 </td><td class="col9"> 1 </td><td class="col10"> 11C10101 </td><td class="col11"> 4313012200 </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0">129</td><td class="col1">서산</td><td class="col2">Seosan</td><td class="col3">126.4939</td><td class="col4">36.77658</td><td class="col5">25.25</td><td class="col6">26.55</td><td class="col7">1.6</td><td class="col8">20.2</td><td class="col9">1.1</td><td class="col10">11C20101</td><td class="col11">4421010600</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0">130</td><td class="col1">울진</td><td class="col2">Uljin</td><td class="col3">129.41278</td><td class="col4">36.99176</td><td class="col5">48.98</td><td class="col6">50.18</td><td class="col7">1.75</td><td class="col8">10</td><td class="col9">1.3</td><td class="col10">11H10101</td><td class="col11">4793025023</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0">131</td><td class="col1">청주</td><td class="col2">Cheongju</td><td class="col3">127.44066</td><td class="col4">36.63924</td><td class="col5">58.7</td><td class="col6">60.1</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.8</td><td class="col10">11C10301</td><td class="col11">4311311400</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0">133</td><td class="col1">대전</td><td class="col2">Daejeon</td><td class="col3">127.3721</td><td class="col4">36.37199</td><td class="col5">67.79</td><td class="col6">68.49</td><td class="col7">1.4</td><td class="col8">23.7</td><td class="col9">1</td><td class="col10">11C20401</td><td class="col11">3020012400</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0">135</td><td class="col1">추풍령</td><td class="col2">Chupungnyeong</td><td class="col3">127.99458</td><td class="col4">36.22025</td><td class="col5">244.98</td><td class="col6">246.18</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">1.1</td><td class="col10">11C10401</td><td class="col11">4374033521</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0">136</td><td class="col1">안동</td><td class="col2">Andong</td><td class="col3">128.70733</td><td class="col4">36.57293</td><td class="col5">141.26</td><td class="col6">142.76</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">1.3</td><td class="col10">11H10501</td><td class="col11">4717012900</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0">137</td><td class="col1">상주</td><td class="col2">Sangju</td><td class="col3">128.15741</td><td class="col4">36.40837</td><td class="col5">96.58</td><td class="col6">97.98</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">1.4</td><td class="col10">11H10302</td><td class="col11">4725011000</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0">138</td><td class="col1">포항</td><td class="col2">Pohang</td><td class="col3">129.38002</td><td class="col4">36.03201</td><td class="col5">3.94</td><td class="col6">4.92</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">1.2</td><td class="col10">11H10201</td><td class="col11">4711110400</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0">140</td><td class="col1">군산</td><td class="col2">Gunsan</td><td class="col3">126.76135</td><td class="col4">36.0053</td><td class="col5">27.85</td><td class="col6">24.6</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">1</td><td class="col10">21F10501</td><td class="col11">4513010300</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0">143</td><td class="col1">대구</td><td class="col2">Daegu</td><td class="col3">128.65296</td><td class="col4">35.87797</td><td class="col5">54.27</td><td class="col6">55.52</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H10701</td><td class="col11">2714010300</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0">146</td><td class="col1">전주</td><td class="col2">Jeonju</td><td class="col3">127.11718</td><td class="col4">35.84092</td><td class="col5">60.44</td><td class="col6">62.9</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">1.4</td><td class="col10">11F10201</td><td class="col11">4511310600</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0">152</td><td class="col1">울산</td><td class="col2">Ulsan</td><td class="col3">129.33469</td><td class="col4">35.58237</td><td class="col5">81.14</td><td class="col6">83.2</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">1.3</td><td class="col10">11H20101</td><td class="col11">3111011400</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0">155</td><td class="col1">창원</td><td class="col2">Changwon</td><td class="col3">128.57282</td><td class="col4">35.17019</td><td class="col5">34.97</td><td class="col6">39.1</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">1.3</td><td class="col10">11H20301</td><td class="col11">4812510100</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0">156</td><td class="col1">광주</td><td class="col2">Gwangju</td><td class="col3">126.89156</td><td class="col4">35.17294</td><td class="col5">70.28</td><td class="col6">73.9</td><td class="col7">1.7</td><td class="col8">17.5</td><td class="col9">0.8</td><td class="col10">11F20501</td><td class="col11">2917010900</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0">159</td><td class="col1">부산</td><td class="col2">Busan</td><td class="col3">129.03203</td><td class="col4">35.10468</td><td class="col5">69.56</td><td class="col6">70.9</td><td class="col7">1.5</td><td class="col8">18</td><td class="col9">1.3</td><td class="col10">11H20201</td><td class="col11">2611011600</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0">162</td><td class="col1">통영</td><td class="col2">Tongyeong</td><td class="col3">128.43561</td><td class="col4">34.84541</td><td class="col5">31.24</td><td class="col6">33.2</td><td class="col7">1.5</td><td class="col8">18</td><td class="col9">1.3</td><td class="col10">11H20401</td><td class="col11">4822010900</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0">165</td><td class="col1">목포</td><td class="col2">Mokpo</td><td class="col3">126.38151</td><td class="col4">34.81732</td><td class="col5">44.7</td><td class="col6">39.2</td><td class="col7">1.5</td><td class="col8">14.5</td><td class="col9">1</td><td class="col10">21F20801</td><td class="col11">4611010300</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0">168</td><td class="col1">여수</td><td class="col2">Yeosu</td><td class="col3">127.74063</td><td class="col4">34.73929</td><td class="col5">65.93</td><td class="col6">66.1</td><td class="col7">1.5</td><td class="col8">13</td><td class="col9">0.6</td><td class="col10">11F20401</td><td class="col11">4613010700</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0">169</td><td class="col1">흑산도</td><td class="col2">Heuksando</td><td class="col3">125.45105</td><td class="col4">34.68719</td><td class="col5">75.12</td><td class="col6">78</td><td class="col7">1.5</td><td class="col8">15.5</td><td class="col9">0.6</td><td class="col10">11F20701</td><td class="col11">4691036022</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0">170</td><td class="col1">완도</td><td class="col2">Wando</td><td class="col3">126.70182</td><td class="col4">34.3959</td><td class="col5">35.37</td><td class="col6">36.7</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.8</td><td class="col10">11F20301</td><td class="col11">4689031022</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0">172</td><td class="col1">고창</td><td class="col2">Gochang</td><td class="col3">126.599</td><td class="col4">35.34824</td><td class="col5">52.42</td><td class="col6">53.5</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">1.7</td><td class="col10">21F10601</td><td class="col11">4579038025</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0">174</td><td class="col1">순천</td><td class="col2">Suncheon</td><td class="col3">127.3694</td><td class="col4">35.0204</td><td class="col5">165</td><td class="col6">166.5</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.8</td><td class="col10">11F20600</td><td class="col11">4615025025</td>
+	</tr>
+	<tr class="row41">
+		<td class="col0">177</td><td class="col1">홍성</td><td class="col2">Hongseong</td><td class="col3">126.68772</td><td class="col4">36.65759</td><td class="col5">27.74</td><td class="col6">28.7</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">1.5</td><td class="col10">11C20104</td><td class="col11">4480025625</td>
+	</tr>
+	<tr class="row42">
+		<td class="col0">181</td><td class="col1">서청주</td><td class="col2">Seocheongju</td><td class="col3">127.38466</td><td class="col4">36.64002</td><td class="col5">32</td><td class="col6">32</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11C10301</td><td class="col11">4311331035</td>
+	</tr>
+	<tr class="row43">
+		<td class="col0">184</td><td class="col1">제주</td><td class="col2">Jeju</td><td class="col3">126.52969</td><td class="col4">33.51411</td><td class="col5">20.79</td><td class="col6">21.99</td><td class="col7">1.7</td><td class="col8">15</td><td class="col9">1.5</td><td class="col10">11G00201</td><td class="col11">5011010700</td>
+	</tr>
+	<tr class="row44">
+		<td class="col0">185</td><td class="col1">고산</td><td class="col2">Gosan</td><td class="col3">126.16283</td><td class="col4">33.29382</td><td class="col5">71.39</td><td class="col6">72.49</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">1.5</td><td class="col10">11G00501</td><td class="col11">5011031023</td>
+	</tr>
+	<tr class="row45">
+		<td class="col0">188</td><td class="col1">성산</td><td class="col2">Seongsan</td><td class="col3">126.8802</td><td class="col4">33.38677</td><td class="col5">20.34</td><td class="col6">21.74</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">1.5</td><td class="col10">11G00101</td><td class="col11">5013025927</td>
+	</tr>
+	<tr class="row46">
+		<td class="col0">189</td><td class="col1">서귀포</td><td class="col2">Seogwipo</td><td class="col3">126.5653</td><td class="col4">33.24616</td><td class="col5">51.86</td><td class="col6">53.16</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">1.5</td><td class="col10">11G00401</td><td class="col11">5013010100</td>
+	</tr>
+	<tr class="row47">
+		<td class="col0">192</td><td class="col1">진주</td><td class="col2">Jinju</td><td class="col3">128.04004</td><td class="col4">35.16378</td><td class="col5">29.35</td><td class="col6">31.6</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">1.3</td><td class="col10">11H20701</td><td class="col11">4817012600</td>
+	</tr>
+	<tr class="row48">
+		<td class="col0">201</td><td class="col1">강화</td><td class="col2">Ganghwa</td><td class="col3">126.44634</td><td class="col4">37.70739</td><td class="col5">47.84</td><td class="col6">49.24</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11B20101</td><td class="col11">2871032027</td>
+	</tr>
+	<tr class="row49">
+		<td class="col0">202</td><td class="col1">양평</td><td class="col2">Yangpyeong</td><td class="col3">127.49446</td><td class="col4">37.48863</td><td class="col5">47.26</td><td class="col6">48.76</td><td class="col7">1.9</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11B20503</td><td class="col11">4183025021</td>
+	</tr>
+	<tr class="row50">
+		<td class="col0">203</td><td class="col1">이천</td><td class="col2">Icheon</td><td class="col3">127.48421</td><td class="col4">37.26399</td><td class="col5">80.09</td><td class="col6">81.59</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11B20701</td><td class="col11">4150025328</td>
+	</tr>
+	<tr class="row51">
+		<td class="col0">211</td><td class="col1">인제</td><td class="col2">Inje</td><td class="col3">128.16714</td><td class="col4">38.05986</td><td class="col5">201.78</td><td class="col6">202.78</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11D10201</td><td class="col11">5181025022</td>
+	</tr>
+	<tr class="row52">
+		<td class="col0">212</td><td class="col1">홍천</td><td class="col2">Hongcheon</td><td class="col3">127.88043</td><td class="col4">37.6836</td><td class="col5">140.2</td><td class="col6">141.2</td><td class="col7">1.6</td><td class="col8">13</td><td class="col9">0.5</td><td class="col10">11D10302</td><td class="col11">5172025029</td>
+	</tr>
+	<tr class="row53">
+		<td class="col0">216</td><td class="col1">태백</td><td class="col2">Taebaek</td><td class="col3">128.98929</td><td class="col4">37.17038</td><td class="col5">714.45</td><td class="col6">715.25</td><td class="col7">1.6</td><td class="col8">16</td><td class="col9">0.6</td><td class="col10">11D20301</td><td class="col11">5119010100</td>
+	</tr>
+	<tr class="row54">
+		<td class="col0">217</td><td class="col1">정선군</td><td class="col2">Jeongseongun</td><td class="col3">128.67348</td><td class="col4">37.37732</td><td class="col5">312</td><td class="col6">312</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11D10502</td><td class="col11">5177025024</td>
+	</tr>
+	<tr class="row55">
+		<td class="col0">221</td><td class="col1">제천</td><td class="col2">Jecheon</td><td class="col3">128.19433</td><td class="col4">37.15928</td><td class="col5">264.62</td><td class="col6">265.39</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11C10201</td><td class="col11">4315011200</td>
+	</tr>
+	<tr class="row56">
+		<td class="col0">226</td><td class="col1">보은</td><td class="col2">Boeun</td><td class="col3">127.73415</td><td class="col4">36.48761</td><td class="col5">171.31</td><td class="col6">172.71</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11C10302</td><td class="col11">4372025030</td>
+	</tr>
+	<tr class="row57">
+		<td class="col0">232</td><td class="col1">천안</td><td class="col2">Cheonan</td><td class="col3">127.29282</td><td class="col4">36.76217</td><td class="col5">84.78</td><td class="col6">83</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">1.2</td><td class="col10">11C20301</td><td class="col11">4413136022</td>
+	</tr>
+	<tr class="row58">
+		<td class="col0">235</td><td class="col1">보령</td><td class="col2">Boryeong</td><td class="col3">126.55744</td><td class="col4">36.32724</td><td class="col5">9.98</td><td class="col6">17</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">1.1</td><td class="col10">11C20201</td><td class="col11">4418010900</td>
+	</tr>
+	<tr class="row59">
+		<td class="col0">236</td><td class="col1">부여</td><td class="col2">Buyeo</td><td class="col3">126.92079</td><td class="col4">36.27242</td><td class="col5">13.42</td><td class="col6">14.88</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11C20501</td><td class="col11">4476025033</td>
+	</tr>
+	<tr class="row60">
+		<td class="col0">238</td><td class="col1">금산</td><td class="col2">Geumsan</td><td class="col3">127.48175</td><td class="col4">36.10563</td><td class="col5">172.69</td><td class="col6">173.99</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11C20601</td><td class="col11">4471025025</td>
+	</tr>
+	<tr class="row61">
+		<td class="col0">239</td><td class="col1">세종</td><td class="col2">sejong</td><td class="col3">127.24438</td><td class="col4">36.48522</td><td class="col5">89.5</td><td class="col6">95</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">1</td><td class="col10">11C20404</td><td class="col11">3611010800</td>
+	</tr>
+	<tr class="row62">
+		<td class="col0">243</td><td class="col1">부안</td><td class="col2">Buan</td><td class="col3">126.71657</td><td class="col4">35.72961</td><td class="col5">12.2</td><td class="col6">13.5</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">21F10602</td><td class="col11">4580033021</td>
+	</tr>
+	<tr class="row63">
+		<td class="col0">244</td><td class="col1">임실</td><td class="col2">Imsil</td><td class="col3">127.28556</td><td class="col4">35.61203</td><td class="col5">247.04</td><td class="col6">248.44</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11F10402</td><td class="col11">4575025022</td>
+	</tr>
+	<tr class="row64">
+		<td class="col0">245</td><td class="col1">정읍</td><td class="col2">Jeongeup</td><td class="col3">126.83904</td><td class="col4">35.56337</td><td class="col5">68.7</td><td class="col6">70.97</td><td class="col7">1.9</td><td class="col8">10</td><td class="col9">1</td><td class="col10">11F10203</td><td class="col11">4518010800</td>
+	</tr>
+	<tr class="row65">
+		<td class="col0">247</td><td class="col1">남원</td><td class="col2">Namwon</td><td class="col3">127.39652</td><td class="col4">35.4213</td><td class="col5">133.49</td><td class="col6">91.8</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.7</td><td class="col10">11F10401</td><td class="col11">4519011600</td>
+	</tr>
+	<tr class="row66">
+		<td class="col0">248</td><td class="col1">장수</td><td class="col2">Jangsu</td><td class="col3">127.52031</td><td class="col4">35.65696</td><td class="col5">406.87</td><td class="col6">408</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11F10301</td><td class="col11">4574025023</td>
+	</tr>
+	<tr class="row67">
+		<td class="col0">251</td><td class="col1">고창군</td><td class="col2">Gochanggun</td><td class="col3">126.697</td><td class="col4">35.42661</td><td class="col5">58.84</td><td class="col6">55.5</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">21F10601</td><td class="col11">4579025030</td>
+	</tr>
+	<tr class="row68">
+		<td class="col0">252</td><td class="col1">영광군</td><td class="col2">Yeonggwanggun</td><td class="col3">126.47784</td><td class="col4">35.28366</td><td class="col5">37.2</td><td class="col6">38.7</td><td class="col7">1.5</td><td class="col8">13</td><td class="col9">0.6</td><td class="col10">21F20102</td><td class="col11">4687034030</td>
+	</tr>
+	<tr class="row69">
+		<td class="col0">253</td><td class="col1">김해시</td><td class="col2">Gimhaesi</td><td class="col3">128.89075</td><td class="col4">35.22981</td><td class="col5">54.59</td><td class="col6">54.6</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11H20304</td><td class="col11">4825010300</td>
+	</tr>
+	<tr class="row70">
+		<td class="col0">254</td><td class="col1">순창군</td><td class="col2">Sunchanggun</td><td class="col3">127.1286</td><td class="col4">35.37131</td><td class="col5">129.38</td><td class="col6">128.4</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11F10403</td><td class="col11">4577025026</td>
+	</tr>
+	<tr class="row71">
+		<td class="col0">255</td><td class="col1">북창원</td><td class="col2">Bukchangwon</td><td class="col3">128.6726</td><td class="col4">35.22655</td><td class="col5">50.95</td><td class="col6">50.3</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.7</td><td class="col10">11H20301</td><td class="col11">4812311100</td>
+	</tr>
+	<tr class="row72">
+		<td class="col0">257</td><td class="col1">양산시</td><td class="col2">Yangsansi</td><td class="col3">129.02009</td><td class="col4">35.30737</td><td class="col5">6.29</td><td class="col6">16.1</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H20102</td><td class="col11">4833031027</td>
+	</tr>
+	<tr class="row73">
+		<td class="col0">258</td><td class="col1">보성군</td><td class="col2">Boseonggun</td><td class="col3">127.21226</td><td class="col4">34.76335</td><td class="col5">1.41</td><td class="col6">4.3</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11F20404</td><td class="col11">4678038023</td>
+	</tr>
+	<tr class="row74">
+		<td class="col0">259</td><td class="col1">강진군</td><td class="col2">Gangjingun</td><td class="col3">126.78408</td><td class="col4">34.64457</td><td class="col5">16</td><td class="col6">20</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11F20303</td><td class="col11">4681025027</td>
+	</tr>
+	<tr class="row75">
+		<td class="col0">260</td><td class="col1">장흥</td><td class="col2">Jangheung</td><td class="col3">126.91951</td><td class="col4">34.68886</td><td class="col5">43.99</td><td class="col6">46.3</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.8</td><td class="col10">11F20304</td><td class="col11">4680025043</td>
+	</tr>
+	<tr class="row76">
+		<td class="col0">261</td><td class="col1">해남</td><td class="col2">Haenam</td><td class="col3">126.56907</td><td class="col4">34.55375</td><td class="col5">16.36</td><td class="col6">17.91</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.8</td><td class="col10">11F20302</td><td class="col11">4682025034</td>
+	</tr>
+	<tr class="row77">
+		<td class="col0">262</td><td class="col1">고흥</td><td class="col2">Goheung</td><td class="col3">127.27572</td><td class="col4">34.61826</td><td class="col5">51.91</td><td class="col6">53.31</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.8</td><td class="col10">11F20403</td><td class="col11">4677025029</td>
+	</tr>
+	<tr class="row78">
+		<td class="col0">263</td><td class="col1">의령군</td><td class="col2">Uiryeonggun</td><td class="col3">128.28812</td><td class="col4">35.32258</td><td class="col5">14.1</td><td class="col6">14.9</td><td class="col7">2</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H20302</td><td class="col11">4872025024</td>
+	</tr>
+	<tr class="row79">
+		<td class="col0">264</td><td class="col1">함양군</td><td class="col2">Hamyanggun</td><td class="col3">127.74538</td><td class="col4">35.51138</td><td class="col5">152.07</td><td class="col6">152.5</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H20502</td><td class="col11">4887025022</td>
+	</tr>
+	<tr class="row80">
+		<td class="col0">266</td><td class="col1">광양시</td><td class="col2">Gwangyangsi</td><td class="col3">127.6914</td><td class="col4">34.9434</td><td class="col5">88.21</td><td class="col6">87.9</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11F20402</td><td class="col11">4623010600</td>
+	</tr>
+	<tr class="row81">
+		<td class="col0">268</td><td class="col1">진도군</td><td class="col2">Jindogun</td><td class="col3">126.25846</td><td class="col4">34.47296</td><td class="col5">9.82</td><td class="col6">6.9</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">21F20201</td><td class="col11">4690025025</td>
+	</tr>
+	<tr class="row82">
+		<td class="col0">271</td><td class="col1">봉화</td><td class="col2">Bonghwa</td><td class="col3">128.91449</td><td class="col4">36.94361</td><td class="col5">324.67</td><td class="col6">326.22</td><td class="col7">1.9</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H10402</td><td class="col11">4792034021</td>
+	</tr>
+	<tr class="row83">
+		<td class="col0">272</td><td class="col1">영주</td><td class="col2">Yeongju</td><td class="col3">128.51687</td><td class="col4">36.87183</td><td class="col5">211.32</td><td class="col6">212.78</td><td class="col7">1.91</td><td class="col8">10</td><td class="col9">0.58</td><td class="col10">11H10401</td><td class="col11">4721025021</td>
+	</tr>
+	<tr class="row84">
+		<td class="col0">273</td><td class="col1">문경</td><td class="col2">Mungyeong</td><td class="col3">128.14879</td><td class="col4">36.62727</td><td class="col5">173.01</td><td class="col6">174.51</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H10301</td><td class="col11">4728010800</td>
+	</tr>
+	<tr class="row85">
+		<td class="col0">276</td><td class="col1">청송군</td><td class="col2">Cheongsonggun</td><td class="col3">129.04005</td><td class="col4">36.4351</td><td class="col5">208.65</td><td class="col6">210.2</td><td class="col7">1.75</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11H10503</td><td class="col11">4775025000</td>
+	</tr>
+	<tr class="row86">
+		<td class="col0">277</td><td class="col1">영덕</td><td class="col2">Yeongdeok</td><td class="col3">129.40926</td><td class="col4">36.53337</td><td class="col5">40.71</td><td class="col6">42.01</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H10102</td><td class="col11">4777036030</td>
+	</tr>
+	<tr class="row87">
+		<td class="col0">278</td><td class="col1">의성</td><td class="col2">Uiseong</td><td class="col3">128.68864</td><td class="col4">36.3561</td><td class="col5">81.44</td><td class="col6">82.94</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H10502</td><td class="col11">4773025031</td>
+	</tr>
+	<tr class="row88">
+		<td class="col0">279</td><td class="col1">구미</td><td class="col2">Gumi</td><td class="col3">128.32055</td><td class="col4">36.13055</td><td class="col5">49.17</td><td class="col6">50.67</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">1.4</td><td class="col10">11H10602</td><td class="col11">4719010800</td>
+	</tr>
+	<tr class="row89">
+		<td class="col0">281</td><td class="col1">영천</td><td class="col2">Yeongcheon</td><td class="col3">128.9514</td><td class="col4">35.97742</td><td class="col5">96.12</td><td class="col6">97.62</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11H10702</td><td class="col11">4723010200</td>
+	</tr>
+	<tr class="row90">
+		<td class="col0">283</td><td class="col1">경주시</td><td class="col2">Gyeongjusi</td><td class="col3">129.2009</td><td class="col4">35.8174</td><td class="col5">40.13</td><td class="col6">41.63</td><td class="col7">1.67</td><td class="col8">10</td><td class="col9">0.59</td><td class="col10">11H10202</td><td class="col11">4713011300</td>
+	</tr>
+	<tr class="row91">
+		<td class="col0">284</td><td class="col1">거창</td><td class="col2">Geochang</td><td class="col3">127.9099</td><td class="col4">35.66739</td><td class="col5">228.45</td><td class="col6">227.3</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">1.3</td><td class="col10">11H20502</td><td class="col11">4888025028</td>
+	</tr>
+	<tr class="row92">
+		<td class="col0">285</td><td class="col1">합천</td><td class="col2">Hapcheon</td><td class="col3">128.16994</td><td class="col4">35.56505</td><td class="col5">26.72</td><td class="col6">33.2</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.5</td><td class="col10">11H20503</td><td class="col11">4889025021</td>
+	</tr>
+	<tr class="row93">
+		<td class="col0">288</td><td class="col1">밀양</td><td class="col2">Miryang</td><td class="col3">128.74412</td><td class="col4">35.49147</td><td class="col5">8.31</td><td class="col6">12.5</td><td class="col7">2</td><td class="col8">10</td><td class="col9">1.3</td><td class="col10">11H20601</td><td class="col11">4827010200</td>
+	</tr>
+	<tr class="row94">
+		<td class="col0">289</td><td class="col1">산청</td><td class="col2">Sancheong</td><td class="col3">127.8791</td><td class="col4">35.413</td><td class="col5">138.22</td><td class="col6">138.8</td><td class="col7">1.6</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H20703</td><td class="col11">4886025023</td>
+	</tr>
+	<tr class="row95">
+		<td class="col0">294</td><td class="col1">거제</td><td class="col2">Geoje</td><td class="col3">128.60459</td><td class="col4">34.88818</td><td class="col5">44.83</td><td class="col6">46.7</td><td class="col7">1.7</td><td class="col8">10</td><td class="col9">0.6</td><td class="col10">11H20403</td><td class="col11">4831010800</td>
+	</tr>
+	<tr class="row96">
+		<td class="col0">295</td><td class="col1">남해</td><td class="col2">Namhae</td><td class="col3">127.92641</td><td class="col4">34.81662</td><td class="col5">45.71</td><td class="col6">47.01</td><td class="col7">1.8</td><td class="col8">10</td><td class="col9">0.8</td><td class="col10">11H20405</td><td class="col11">4884031021</td>
+	</tr>
+	<tr class="row97">
+		<td class="col0">296</td><td class="col1">북부산</td><td class="col2">Bukbusan</td><td class="col3">128.96024</td><td class="col4">35.21778</td><td class="col5">3</td><td class="col6">4.5</td><td class="col7">1.5</td><td class="col8">10</td><td class="col9">0.7</td><td class="col10">11H20201</td><td class="col11">2644010100</td>
+	</tr>
+</table></div>
+
+</div>
+<div class="secedit editbutton_section editbutton_33"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[4. 관측지점] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="관측지점" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="18532-27709" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="4. 관측지점">편집</button></div></form></div>
+<h2 class="sectionedit36" id="생산">5. 생산</h2>
+<div class="level2">
+
+</div>
+<div class="secedit editbutton_section editbutton_36"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[5. 생산] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="생산" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="27710-27731" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="5. 생산">편집</button></div></form></div>
+<h3 class="sectionedit37" id="관측센서의_표준규격">5.1. 관측센서의 표준규격</h3>
+<div class="level3">
+
+<p>
+<a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EA%B4%80%EC%B8%A1%EC%84%BC%EC%84%9C%EC%9D%98_%ED%91%9C%EC%A4%80%EA%B7%9C%EA%B2%A9_%EC%A0%9C7%EC%A1%B0_%EA%B4%80%EB%A0%A8_.pdf" class="media mediafile mf_pdf" title="기상관측:지상:관측센서의_표준규격_제7조_관련_.pdf (55 KB)">관측센서의 표준규격</a>
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_37"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[5.1. 관측센서의 표준규격] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="관측센서의_표준규격" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="27732-27859" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="5.1. 관측센서의 표준규격">편집</button></div></form></div>
+<h3 class="sectionedit38" id="자료처리기의_표준규격">5.2. 자료처리기의 표준규격</h3>
+<div class="level3">
+
+<p>
+<a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%A3%8C%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%9D%98_%ED%91%9C%EC%A4%80%EA%B7%9C%EA%B2%A9_%EC%A0%9C8%EC%A1%B0_%EA%B4%80%EB%A0%A8_.pdf" class="media mediafile mf_pdf" title="기상관측:지상:자료처리기의_표준규격_제8조_관련_.pdf (46.7 KB)">자료처리기의 표준규격</a>
+</p>
+<div class="table sectionedit39"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">구분</th><th class="col1">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">기능</td><td class="col1">◦ 신호의 변환(아날로그에서 디지털)ㆍ처리 <br/>
+- 기상요소별 관측센서로부터 측정된 신호를 기상학적 물리량으로 변환하여 수치화한다. <br/>
+◦ 관측센서의 추가 또는 변경 시 하드웨어의 변경 없이 소프트웨어로 제어(센서 추가ㆍ변경, 센서별 보정값 수정)가 가능하도록 설계되어야 한다.<br/>
+◦ 시각동기화, 자료의 저장, 자료의 송ㆍ수신이 가능해야 한다.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">조건</td><td class="col1">◦ 일체형이고 범용성과 안정성이 있어야 한다.<br/>
+◦ 하드웨어, 소프트웨어 및 펌웨어의 확장성이 있어야 한다.<br/>
+◦ 전원중단, 통신장애 대비, 관측자료 산출 적합성 확인을 위해 충분한 자료 저장성이 있어야 한다.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">규격</td><td class="col1">◦ 프로세서: 마이크로프로세서 <br/>
+◦ 저장용량: 1분 자료와 관측요소별 샘플링 주기 자료 30일 이상 저장 <br/>
+※ 단, 샘플링 주기자료는 [별표 4]에 명시된 관측요소에 한함(시정, 운고, 적설 제외) <br/>
+◦ 통신인터페이스: <abbr title="Local Area Network">LAN</abbr>(TCP/IP), RS232, RS422, RS485 등 가능 <br/>
+◦ 키패드장치: 디스플레이가 부착된 키패드 또는 작동상태를 확인할 수 있는 출력장치 포함 <br/>
+◦ 운용환경: -40 ℃ ～ +60 ℃ <br/>
+◦ 채널(기상관측목적, 관측센서 종류 및 수량 등에 따라 선택 가능) <br/>
+ - 아날로그 채널: Single 15개 이상, Differential 7개 이상 <br/>
+ - 디지털 채널: 8개 이상(SDI-12, RS232, RS422, RS485 등) <br/>
+- 주파수 채널: 2개 이상 <br/>
+ - 여기 채널: 2개 이상 <br/>
+◦ A/D 비트(bit): 15 비트(bit) 이상 <br/>
+◦ 입력전원: 안정된 전원으로 동작하여야 한다. <br/>
+◦ 외 장 품: 자료처리기함 <br/>
+  - 내구성이 보장되어야 하며, 함체 재질에 의한 직접적인 내부온도 상승이 없도록 제작된 것으로 잠금장치와 환기구(이물질 방지망 설치)가 설치되어야 한다. <br/>
+◦ 자료처리기의 내부보드는 접지가 되어야 한다.</td>
+	</tr>
+</table></div>
+
+</div>
+<div class="secedit editbutton_section editbutton_38"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[5.2. 자료처리기의 표준규격] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="자료처리기의_표준규격" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="27860-30030" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="5.2. 자료처리기의 표준규격">편집</button></div></form></div>
+<h3 class="sectionedit40" id="신호_및_자료처리의_표준규격">5.3. 신호 및 자료처리의 표준규격</h3>
+<div class="level3">
+
+<p>
+<a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%8B%A0%ED%98%B8_%EB%B0%8F_%EC%9E%90%EB%A3%8C%EC%B2%98%EB%A6%AC%EC%9D%98_%ED%91%9C%EC%A4%80%EA%B7%9C%EA%B2%A9_%EC%A0%9C9%EC%A1%B0_%EA%B4%80%EB%A0%A8_.pdf" class="media mediafile mf_pdf" title="기상관측:지상:신호_및_자료처리의_표준규격_제9조_관련_.pdf (43.4 KB)">신호 및 자료처리의 표준규격</a>
+</p>
+<div class="table sectionedit41"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">관측요소</th><th class="col1" colspan="2">내용</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">온도<br/>
+습도<br/>
+기압 </td><td class="col1" colspan="2">◦ 자료 단위: 0.1 ℃(기온, 초상, 지면, 지중온도), 0.1 %(습도), 0.1 hPa(기압)<br/>
+◦ 샘플링 시간: 10초<br/>
+◦ 자료처리 시간간격: 1분<br/>
+- 10초마다 전기적 신호를 수신하여 디지털 값으로 변환한다.<br/>
+- 10초 간격의 6개 자료를 평균하여 1분 자료를 산출 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">풍향풍속</td><td class="col1" colspan="2">◦ 자료 단위: 0.1°(풍향), 0.1 m/s(풍속)<br/>
+◦ 샘플링 시간: 0.25초<br/>
+◦ 자료처리 시간간격: 1분<br/>
+◦ 풍향․풍속센서로부터 0.25초마다 전기적 신호를 수신하여 디지털 값으로 변환 후 벡터 환산한다.<br/>
+◦ 순간풍향ㆍ풍속(gust)<br/>
+- 매 0.25초 간격으로 3초 동안 12개의 샘플링 된 자료를 평균하고 0.25초 간격으로 이동 평균하여 순간풍향․풍속을 산출한다.<br/>
+- 1분 동안 이동평균하여 산출된 지난 240개의 자료 중 최댓값을 1분 최대순간풍향․풍속으로 산출한다.<br/>
+- 매 1분마다 지난 10개의 1분값 중에서 최댓값을 10분 최대순간풍향․풍속으로 산출한다.<br/>
+- 하루 동안 수집된 1분 최대순간풍향․풍속 1440개 중에서 최댓값을 일 최대순간풍향․풍속으로 산출한다.<br/>
+◦ 1분 평균 풍향․풍속<br/>
+- 0.25초 간격의 바람벡터 자료를 10초 동안 평균을 구한 후 1분 동안 6개의 자료를다시 평균하여 매분자료를 산출한다.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0" rowspan="2">강수량</td><td class="col1">전도형</td><td class="col2">◦ 자료 단위: 0.5 ㎜ 또는 1.0 ㎜<br/>
+◦ 1분 강수량: 센서에서 1초마다 보내온 펄스 신호의 횟수를 1분 동안 누적하여 산출한다</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> 무게식</td><td class="col1">◦ 자료 단위: 0.1 ㎜<br/>
+◦ 1분 강수량 : 센서에서 보내온 1분 값 또는 각 센서의 자체 알고리즘에 따른다</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">강수유무</td><td class="col1" colspan="2">◦ 자료 단위: ON 신호 시 10, OFF 신호 시 00<br/>
+◦ 샘플링 시간: 1분<br/>
+◦ 강수현상이 있을 때 10, 없을 때 00 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">시정</td><td class="col1" colspan="2">◦ 자료 단위 : 10 m<br/>
+◦ 1분 시정 : 센서에서 보내온 1분 자료 또는 각 센서의 자체 알고리즘에 따른다.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">운고</td><td class="col1" colspan="2">◦ 자료 단위 : 10 m<br/>
+◦ 1분 운고 : 센서에서 보내온 1분 자료 또는 각 센서의 자체 알고리즘에 따른다. </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">일사</td><td class="col1" colspan="2">◦ 자료 단위 : 0.01 MJ/m2<br/>
+◦ 샘플링 시간 : 1초<br/>
+◦ 자료처리 시간간격 : 1분<br/>
+- 1초 간격의 60개 자료를 누적하여 1분 자료를 산출한다.</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">적설</td><td class="col1" colspan="2">◦ 자료 단위 : 0.1 cm<br/>
+◦ 1분 적설 : 센서에서 보내온 1분 자료 또는 각 센서의 자체 알고리즘에 따른다.</td>
+	</tr>
+</table></div>
+
+</div>
+<div class="secedit editbutton_section editbutton_40"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[5.3. 신호 및 자료처리의 표준규격] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="신호_및_자료처리의_표준규격" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="30031-32747" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="5.3. 신호 및 자료처리의 표준규격">편집</button></div></form></div>
+<h3 class="sectionedit42" id="자료구조의_표준규격">5.4. 자료구조의 표준규격</h3>
+<div class="level3">
+
+<p>
+<a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%9D%98_%ED%91%9C%EC%A4%80%EA%B7%9C%EA%B2%A9_%EC%A0%9C10%EC%A1%B0_%EA%B4%80%EB%A0%A8_.pdf" class="media mediafile mf_pdf" title="기상관측:지상:자료구조의_표준규격_제10조_관련_.pdf (113.7 KB)">자료구조의 표준규격</a>
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_42"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[5.4. 자료구조의 표준규격] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="자료구조의_표준규격" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="32748-32875" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="5.4. 자료구조의 표준규격">편집</button></div></form></div>
+<h3 class="sectionedit43" id="부대장비의_표준규격">5.5. 부대장비의 표준규격</h3>
+<div class="level3">
+
+<p>
+<a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EB%B6%80%EB%8C%80%EC%9E%A5%EB%B9%84%EC%9D%98_%ED%91%9C%EC%A4%80%EA%B7%9C%EA%B2%A9_%EC%A0%9C12%EC%A1%B0_%EA%B4%80%EB%A0%A8_.pdf" class="media mediafile mf_pdf" title="기상관측:지상:부대장비의_표준규격_제12조_관련_.pdf (43.2 KB)">부대장비의 표준규격</a>
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_43"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[5.5. 부대장비의 표준규격] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="부대장비의_표준규격" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="32876-33004" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="5.5. 부대장비의 표준규격">편집</button></div></form></div>
+<h3 class="sectionedit44" id="부대설비의_설치위치_및_표준규격">5.6. 부대설비의 설치위치 및 표준규격</h3>
+<div class="level3">
+
+<p>
+<a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EB%B6%80%EB%8C%80%EC%84%A4%EB%B9%84%EC%9D%98_%EC%84%A4%EC%B9%98%EC%9C%84%EC%B9%98_%EB%B0%8F_%ED%91%9C%EC%A4%80%EA%B7%9C%EA%B2%A9_%EC%A0%9C13%EC%A1%B0_%EA%B4%80%EB%A0%A8_.pdf" class="media mediafile mf_pdf" title="기상관측:지상:부대설비의_설치위치_및_표준규격_제13조_관련_.pdf (54.7 KB)">부대설비의 설치위치 및 표준규격</a>
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_44"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[5.6. 부대설비의 설치위치 및 표준규격] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="부대설비의_설치위치_및_표준규격" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="33005-33185" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="5.6. 부대설비의 설치위치 및 표준규격">편집</button></div></form></div>
+<h2 class="sectionedit45" id="수집">6. 수집</h2>
+<div class="level2">
+
+</div>
+<div class="secedit editbutton_section editbutton_45"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[6. 수집] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="수집" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="33186-33208" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="6. 수집">편집</button></div></form></div>
+<h3 class="sectionedit46" id="자동기상관측장비_관측자료_수집체계">6.1. 자동기상관측장비 관측자료 수집체계</h3>
+<div class="level3">
+
+<p>
+센서로부터 수신한 아날로그 신호를 디지털 신호로 변환하고 정해진 처리방법에 따라 샘플링한 다음 자동기상관측장비 표준규격에 따른 자료구조로 편집한 후 기상실황판으로 전송하고, 매 1분 간격으로 국지수집장치를 통하여 종합기상정보시스템(기상청 내부 시스템)으로 전송합니다.
+</p>
+
+<p>
+<img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EB%AA%A8%EC%8B%9D%EB%8F%84.png" class="medialeft" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_46"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[6.1. 자동기상관측장비 관측자료 수집체계] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="자동기상관측장비_관측자료_수집체계" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="33209-33685" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="6.1. 자동기상관측장비 관측자료 수집체계">편집</button></div></form></div>
+<h2 class="sectionedit47" id="데이터_구조">7. 데이터 구조</h2>
+<div class="level2">
+
+</div>
+<div class="secedit editbutton_section editbutton_47"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[7. 데이터 구조] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="데이터_구조" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="33686-33718" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="7. 데이터 구조">편집</button></div></form></div>
+<h3 class="sectionedit48" id="변수명_기상자료개방포털">7.1. 변수명 (기상자료개방포털)</h3>
+<div class="level3">
+
+</div>
+
+<h5 id="시간자료">시간자료</h5>
+<div class="level5">
+<div class="table sectionedit49"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0">변수명</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0"> 일시 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 기온 (°C)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 기온 QC플래그</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> 강수량 (mm)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> 강수량 QC플래그</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> 풍속 (m/s)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> 풍속 QC플래그</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> 풍향 (16방위)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> 풍향 QC플래그</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> 습도 (%)</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> 습도 QC플래그</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> 증기압 (hPa)</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> 이슬점온도 (°C)</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> 현지기압 (hPa)</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> 현지기압 QC플래그</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> 해면기압 (hPa)</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> 해면기압 QC플래그</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> 일조 (hr)</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> 일조 QC플래그</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> 일사 (MJ/m2)</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> 일사 QC플래그</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> 적설 (cm)</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> 3시간신적설 (cm)</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> 전운량 (10분위)</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"> 중하층운량 (10분위)</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"> 운형 (운형약어)</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"> 최저운고 (100m)</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"> 시정 (10m)</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"> 지면상태 (지면상태코드)</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"> 현상번호 (국내식)</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"> 지면온도 (°C)</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"> 지면온도 QC플래그</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"> 5cm 지중온도 (°C)</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"> 10cm 지중온도 (°C)</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"> 20cm 지중온도 (°C)</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"> 30cm 지중온도 (°C)</td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="일_자료">일 자료</h5>
+<div class="level5">
+<div class="table sectionedit50"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0"> 변수명 </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0"> 일시 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 평균기온(°C) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 최저기온(°C) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> 최저기온 시각(hhmi) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> 최고기온(°C) </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> 최고기온 시각(hhmi) </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> 강수 계속시간(hr) </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> 10분 최다 강수량(mm) </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> 10분 최다강수량 시각(hhmi) </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> 1시간 최다강수량(mm) </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> 1시간 최다 강수량 시각(hhmi) </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> 일강수량(mm) </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> 최대 순간 풍속(m/s) </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> 최대 순간 풍속 풍향(16방위) </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> 최대 순간풍속 시각(hhmi) </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> 최대 풍속(m/s) </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> 최대 풍속 풍향(16방위) </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> 최대 풍속 시각(hhmi) </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> 평균 풍속(m/s) </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> 풍정합(100m) </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> 최다풍향(16방위) </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> 평균 이슬점온도(°C) </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> 최소 상대습도(%) </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> 최소 상대습도 시각(hhmi) </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"> 평균 상대습도(%) </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"> 평균 증기압(hPa) </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"> 평균 현지기압(hPa) </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"> 최고 해면기압(hPa) </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"> 최고 해면기압 시각(hhmi) </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"> 최저 해면기압(hPa) </td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"> 최저 해면기압 시각(hhmi) </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"> 평균 해면기압(hPa) </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"> 가조시간(hr) </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"> 합계 일조시간(hr) </td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"> 1시간 최다일사량(MJ/m²) </td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"> 합계 일사량(MJ/m²) </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"> 일 최심신적설(cm) </td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"> 일 최심신적설 시각(hhmi) </td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"> 일 최심적설(cm) </td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"> 일 최심적설 시각(hhmi) </td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"> 합계 3시간 신적설(cm) </td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"> 평균 전운량(1/10) </td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"> 평균 중하층운량(1/10) </td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"> 평균 지면온도(°C) </td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"> 최저 초상온도(°C) </td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"> 평균 5cm 지중온도(°C) </td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"> 평균 10cm 지중온도(°C) </td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"> 평균 20cm 지중온도(°C) </td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"> 평균 30cm 지중온도(°C) </td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"> 0.5m 지중온도(°C) </td>
+	</tr>
+	<tr class="row51">
+		<td class="col0"> 1.0m 지중온도(°C) </td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"> 1.5m 지중온도(°C) </td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"> 3.0m 지중온도(°C) </td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"> 5.0m 지중온도(°C) </td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"> 합계 대형증발량(mm) </td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"> 합계 소형증발량(mm) </td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"> 9-9강수(mm) </td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"> 기사 </td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"> 안개 계속시간(hr) </td>
+	</tr>
+</table></div>
+
+</div>
+<div class="secedit editbutton_section editbutton_48"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[7.1. 변수명 (기상자료개방포털)] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="변수명_기상자료개방포털" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="33719-36360" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="7.1. 변수명 (기상자료개방포털)">편집</button></div></form></div>
+<h3 class="sectionedit51" id="변수명_기상청_api허브">1.7.2. 변수명(기상청 api허브 )</h3>
+<div class="level3">
+
+</div>
+
+<h5 id="시간자료1">시간자료</h5>
+<div class="level5">
+<div class="table sectionedit52"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0"> 변수명 </th><th class="col1"> 의미(단위) </th><th class="col2"> 변수명 </th><th class="col3"> 의미(단위) </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0"> TM </td><td class="col1"> 관측시각 (KST) </td><td class="col2"> STN </td><td class="col3"> 국내 지점번호 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> WD </td><td class="col1"> 풍향 (16방위) </td><td class="col2"> WS </td><td class="col3"> 풍속 (m/s) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> GST_WD </td><td class="col1"> 돌풍향 (16방위) </td><td class="col2"> GST_WS </td><td class="col3"> 돌풍속 (m/s) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> GST_TM </td><td class="col1"> 돌풍속이 관측된 시각 (시분) </td><td class="col2"> PA </td><td class="col3"> 현지기압 (hPa) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> PS </td><td class="col1"> 해면기압 (hPa) </td><td class="col2"> PT </td><td class="col3"> 기압변화경향 (Code 0200) </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> PR </td><td class="col1"> 기압변화량 (hPa) </td><td class="col2"> TA </td><td class="col3"> 기온 (C) </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> TD </td><td class="col1"> 이슬점온도 (C) </td><td class="col2"> HM </td><td class="col3"> 상대습도 (%) </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> PV </td><td class="col1"> 수증기압 (hPa) </td><td class="col2"> RN </td><td class="col3"> 강수량 (mm) </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> RN_DAY </td><td class="col1"> 위 관측시간까지의 일강수량 (mm) </td><td class="col2"> RN_INT </td><td class="col3"> 강수강도 (mm/h) </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> SD_HR3 </td><td class="col1"> 3시간 신적설 (cm) </td><td class="col2"> SD_DAY </td><td class="col3"> 일 신적설 (cm) </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> SD_TOT </td><td class="col1"> 적설 (cm) </td><td class="col2"> WC </td><td class="col3"> GTS 현재일기 (Code 4677) </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> WP </td><td class="col1"> GTS 과거일기 (Code 4561) </td><td class="col2"> WW </td><td class="col3"> 국내식 일기코드 (문자열 22개) </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> CA_TOT </td><td class="col1"> 전운량 (1/10) </td><td class="col2"> CA_MID </td><td class="col3"> 중하층운량 (1/10) </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> CH_MIN </td><td class="col1"> 최저운고 (100m) </td><td class="col2"> CT </td><td class="col3"> 운형 (문자열 8개) </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> CT_TOP </td><td class="col1"> GTS 상층운형 (Code 0509) </td><td class="col2"> CT_MID </td><td class="col3"> GTS 중층운형 (Code 0515) </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> CT_LOW </td><td class="col1"> GTS 하층운형 (Code 0513) </td><td class="col2"> VS </td><td class="col3"> 시정 (10m) </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> SS </td><td class="col1"> 일조 (hr) </td><td class="col2"> SI </td><td class="col3"> 일사 (MJ/m2) </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> ST_GD </td><td class="col1"> 지면상태 코드 (코드는 기상자원과 문의) </td><td class="col2"> TS </td><td class="col3"> 지면온도 (C) </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> TE_005 </td><td class="col1"> 5cm 지중온도 (C) </td><td class="col2"> TE_01 </td><td class="col3"> 10cm 지중온도 (C) </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> TE_02 </td><td class="col1"> 20cm 지중온도 (C) </td><td class="col2"> TE_03 </td><td class="col3"> 30cm 지중온도 (C) </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> ST_SEA </td><td class="col1"> 해면상태 코드 (코드는 기상자원과 문의) </td><td class="col2"> WH </td><td class="col3"> 파고 (m) </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> BF </td><td class="col1"> Beaufart 최대풍력(GTS코드) </td><td class="col2"> IR </td><td class="col3"> 강수자료 </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> IX </td><td class="col1"> 유인관측/무인관측 </td><td class="col2"> RN_JUN </td><td class="col3"> 일강수량(mm) </td>
+	</tr>
+</table></div>
+
+</div>
+
+<h5 id="일_자료1">일 자료</h5>
+<div class="level5">
+<div class="table sectionedit53"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0"> 변수명 </th><th class="col1"> 의미(단위) </th><th class="col2"> 변수명 </th><th class="col3"> 의미(단위) </th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0"> TM </td><td class="col1"> 관측시각 (KST) </td><td class="col2"> STN </td><td class="col3"> 국내 지점번호 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> RN_DAY </td><td class="col1"> 위 관측시간까지의 일강수량 (mm) </td><td class="col2"> CA_TOT </td><td class="col3"> 전운량 (1/10) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> WS_AVG </td><td class="col1"> 일 평균 풍속 (m/s) </td><td class="col2"> WR_DAY </td><td class="col3"> 일 풍정 (m) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> WD_MAX </td><td class="col1"> 최대풍향 </td><td class="col2"> WS_MAX </td><td class="col3"> 최대풍속 (m/s) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> WS_MAX_TM </td><td class="col1"> 최대풍속 시각 (시분) </td><td class="col2"> WD_INS </td><td class="col3"> 최대순간풍향 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> WS_INS </td><td class="col1"> 최대순간풍속 (m/s) </td><td class="col2"> WS_INS_TM </td><td class="col3"> 최대순간풍속 시각 (시분) </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> TA_AVG </td><td class="col1"> 일 평균기온 (C) </td><td class="col2"> TA_MAX </td><td class="col3"> 최고기온 (C) </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> TA_MAX_TM </td><td class="col1"> 최고기온 시각 (시분) </td><td class="col2"> TA_MIN </td><td class="col3"> 최저기온 (C) </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> TA_MIN_TM </td><td class="col1"> 최저기온 시각 (시분) </td><td class="col2"> TD_AVG </td><td class="col3"> 일 평균 이슬점온도 (C) </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> TS_AVG </td><td class="col1"> 일 평균 지면온도 (C) </td><td class="col2"> TG_MIN </td><td class="col3"> 일 최저 초상온도 (C) </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> HM_AVG </td><td class="col1"> 일 평균 상대습도 (%) </td><td class="col2"> HM_MIN </td><td class="col3"> 최저습도 (%) </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> HM_MIN_TM </td><td class="col1"> 최저습도 시각 (시분) </td><td class="col2"> PV_AVG </td><td class="col3"> 일 평균 수증기압 (hPa) </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> EV_S </td><td class="col1"> 소형 증발량 (mm) </td><td class="col2"> EV_L </td><td class="col3"> 대형 증발량 (mm) </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> FG_DUR </td><td class="col1"> 안개계속시간 (hr) </td><td class="col2"> PA_AVG </td><td class="col3"> 일 평균 현지기압 (hPa) </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> PS_AVG </td><td class="col1"> 일 평균 해면기압 (hPa) </td><td class="col2"> PS_MAX </td><td class="col3"> 최고 해면기압 (hPa) </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> PS_MAX_TM </td><td class="col1"> 최고 해면기압 시각 (시분) </td><td class="col2"> PS_MIN </td><td class="col3"> 최저 해면기압 (hPa) </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> PS_MIN_TM </td><td class="col1"> 최저 해면기압 시각 (시분) </td><td class="col2"> SS_DAY </td><td class="col3"> 일조합 (hr) </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> SS_DUR </td><td class="col1"> 가조시간 (hr) </td><td class="col2"> SS_CMB </td><td class="col3"> 캄벨 일조 (hr) </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> SI_DAY </td><td class="col1"> 일사합 (MJ/m2) </td><td class="col2"> RN_D99 </td><td class="col3"> 9-9 강수량 (mm) </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> RN_DUR </td><td class="col1"> 강수계속시간 (hr) </td><td class="col2"> SD_NEW </td><td class="col3"> 최심 신적설 (cm) </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> SD_NEW_TM </td><td class="col1"> 최심 신적설 시각 (시분) </td><td class="col2"> SD_MAX </td><td class="col3"> 최심 적설 (cm) </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> SD_MAX_TM </td><td class="col1"> 최심 적설 시각 (시분) </td><td class="col2"> TE_05 </td><td class="col3"> 0.5m 지중온도 (C) </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> TE_10 </td><td class="col1"> 1.0m 지중온도 (C) </td><td class="col2"> TE_15 </td><td class="col3"> 1.5m 지중온도 (C) </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> TE_30 </td><td class="col1"> 3.0m 지중온도 (C) </td><td class="col2"> TE_50 </td><td class="col3"> 5.0m 지중온도 (C) </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"> SI_60M_MAX </td><td class="col1"> 최대 1시간일사 (MJ/m2) </td><td class="col2"> SI_60M_MAX_TM </td><td class="col3"> 최대 1시간일사 시각 </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"> RN_60M_MAX </td><td class="col1"> 1시간 최다강수량 (mm) </td><td class="col2"> RN_60M_MAX_TM </td><td class="col3"> 1시간 최다강수량 시각 </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"> RN_10M_MAX </td><td class="col1"> 10분간 최다강수량 (mm) </td><td class="col2"> RN_10M_MAX_TM </td><td class="col3"> 10분간 최다강수량 시각 (시분) </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"> RN_POW_MAX </td><td class="col1"> 최대 강우강도 (mm/h) </td><td class="col2"> RN_POW_MAX_TM </td><td class="col3"> 최대 강우강도 시각 (시분) </td>
+	</tr>
+</table></div>
+
+</div>
+<div class="secedit editbutton_section editbutton_51"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[1.7.2. 변수명(기상청 api허브 )] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="변수명_기상청_api허브" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="36361-40222" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="1.7.2. 변수명(기상청 api허브 )">편집</button></div></form></div>
+<h2 class="sectionedit54" id="검색_및_획득">8. 검색 및 획득</h2>
+<div class="level2">
+
+</div>
+<div class="secedit editbutton_section editbutton_54"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[8. 검색 및 획득] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="검색_및_획득" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="40223-40256" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="8. 검색 및 획득">편집</button></div></form></div>
+<h3 class="sectionedit55" id="검색_획득_기상자료개방포털​">8.1. 검색·획득 – 기상자료개방포털​</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="자료_접근">8.1.1. 자료 접근</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li">  사이트 : 기상자료개방포털 (data.kma.go.kr)​</div>
+</li>
+<li class="level1"><div class="li">  메뉴 : 데이터 → 기상관측 → 지상 → 종관기상관측(ASOS), 방재기상관측(AWS), 농업기상관측(ASOS), 공공기관 기상관측 </div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="자료_검색">8.1.2. 자료 검색</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> 조건 : 자료형태, 기간, 지점, 요소</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit editbutton_section editbutton_55"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[8.1. 검색·획득 – 기상자료개방포털​] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="검색_획득_기상자료개방포털​" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="40257-40651" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="8.1. 검색·획득 – 기상자료개방포털​">편집</button></div></form></div>
+<h3 class="sectionedit56" id="검색_획득_-_기상청_api허브​">8.2. 검색·획득 - 기상청 API허브​</h3>
+<div class="level3">
+
+</div>
+
+<h4 id="자료_접근1">8.2.1. 자료 접근</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li"> 사이트 : 기상청 API허브 (apihub.kma.go.kr)</div>
+</li>
+<li class="level1"><div class="li"> 메뉴 : 지상관측 → 종관기상관측(ASOS), 방재기상관측(AWS)</div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="자료_획득">8.2.2. 자료 획득</h4>
+<div class="level4">
+<ul>
+<li class="level1"><div class="li">  절차: 회원가입 및 로그인 → <abbr title="Application Programming Interface">API</abbr> 메뉴 이동 → <abbr title="Application Programming Interface">API</abbr> 활용신청 → API호출</div>
+</li>
+<li class="level1"><div class="li">  호출 방법: <a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EA%B8%B0%EC%83%81%EC%B2%AD_api%ED%97%88%EB%B8%8C_%EC%82%AC%EC%9A%A9_%EC%95%88%EB%82%B4%EC%84%9C.pdf" class="media mediafile mf_pdf" title="기상관측:지상:기상청_api허브_사용_안내서.pdf (2 MB)">기상청_api허브_사용_안내서.pdf</a></div>
+</li>
+</ul>
+
+<p>
+    <img src="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:api_%ED%98%B8%EC%B6%9C%EB%B0%A9%EB%B2%95.png" class="media" loading="lazy" alt="" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_56"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[8.2. 검색·획득 - 기상청 API허브​] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="검색_획득_-_기상청_api허브​" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="40652-41095" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="8.2. 검색·획득 - 기상청 API허브​">편집</button></div></form></div>
+<h2 class="sectionedit57" id="활용방안">9. 활용방안</h2>
+<div class="level2">
+
+<p>
+소스코드: <a href="/lib/exe/fetch.php?media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:aws_notebook.ipynb" class="media mediafile mf_ipynb" title="기상관측:지상:aws_notebook.ipynb (1.2 MB)">aws_notebook.ipynb</a>
+</p>
+
+</div>
+
+<h4 id="라이브러리_설치">9.1. 라이브러리 설치</h4>
+<div class="level4">
+<pre class="code py"># API 요청을 위한 requests 라이브러리와 
+# 그래프를 그리기 위한 seaborn 라이브러리,
+# 지도를 표출하기 위한 folium 라이브러리를 설치합니다.
+%pip install requests seaborn folium</pre>
+
+</div>
+
+<h4 id="aws_지점_목록_다운로드">9.2. AWS 지점 목록 다운로드</h4>
+<div class="level4">
+
+<p>
+기상청 API허브에 회원가입 후 자신의 인증키를 사용하여 <abbr title="Application Programming Interface">API</abbr> 요청을 할 수 있습니다.
+</p>
+
+<p>
+<abbr title="Application Programming Interface">API</abbr> 인증키를 코드상에 직접 남겨 사용하는 방식은 다른 사람에게 코드를 공유할때 인증키가 노출되는 문제가 생길 수 있습니다.
+</p>
+
+<p>
+따라서 인증키를 환경변수로 등록하여 코드상에 노출되지 않도록 사용하는 것이 바람직합니다.
+</p>
+<pre class="code py">import os # 환경변수를 불러오는 표준 라이브러리
+&nbsp;
+# 바람직하지 않은 방법
+# my_api_key = 'MY_PRIVATE_API_AUTHENTICATE_KEY'
+&nbsp;
+# 인증키를 'myapikey'라는 이름의 환경변수로 미리 등록해놓은 뒤 이를 불러와서 사용합니다.
+my_api_key = os.environ['myapikey']</pre>
+
+<p>
+먼저 AWS의 지점 정보를 조회해 파일로 다운로드합니다.
+</p>
+<pre class="code py">import requests # API 요청을 보내고 받는 라이브러리
+import json     # API 응답을 json형태로 가공하기 위한 라이브러리
+&nbsp;
+# 지상관측 지점정보 API url
+api_url = 'https://apihub.kma.go.kr/api/typ01/url/stn_inf.php'
+&nbsp;
+# 요청인자로 지점종류, 해당 시점, 지점번호, 도움말추가 여부 등이 있습니다.
+&nbsp;
+# 1. 지점종류를 입력합니다.
+# SFC(지상), AWS(AWS), NKO(북한), UV(자외선)를 입력할 수 있습니다.
+stn_type = 'AWS'
+&nbsp;
+# 2. 해당 시점 및 특정 지점번호를 입력합니다.
+# 여기선 현재 시각에 존재하는 모든 지점번호를 조회하기 위해 값을 입력하지 않습니다.
+&nbsp;
+# 3. 도움말추가 여부를 입력합니다.
+# 파일 내에 각 필드에 대한 도움말을 확인할 수 있습니다.
+help = 1
+&nbsp;
+# API 요청인자들을 묶어 dictionary로 정의합니다.
+api_parameters = {
+    'inf': stn_type,
+    'help': help,
+    'authKey': my_api_key
+}
+&nbsp;
+# API 응답을 저장할 파일 형식은 txt 파일로 저장합니다.
+file_name = f'{stn_type.lower()}_stn_inf.txt'
+&nbsp;
+# 저장된 파일이 없는 경우에만 API를 요청해 파일을 다운로드합니다.
+if not os.path.exists(file_name):
+    # API 요청인자와 함께 API 요청
+    response = requests.get(api_url, params=api_parameters)
+&nbsp;
+    # 잘못된 응답을 받을 경우 에러 메세지 출력
+    if response.status_code != 200:
+        raise requests.RequestException(
+            json.loads(response.content)['result']['message']
+        )
+    else:
+        # 그외의 올바른 응답에 대해서만 UTF-8 txt 파일 형태로 저장합니다.
+        with open(file_name, 'wb') as f:
+            f.write(response.content.decode('euc-kr').encode('utf-8'))
+        print(f'{file_name} 파일 다운로드 완료')</pre>
+
+<p>
+<code><em>aws_stn_inf.csv 파일 다운로드 완료</em></code>
+</p>
+
+<p>
+다운로드 받은 파일을 열면 AWS 각 지점 번호와 이름, 지점 정보를 확인할 수 있습니다.
+</p>
+
+<p>
+AWS 각 지점들의 위치를 지도로 표출합니다.
+</p>
+<pre class="code py">import pandas as pd     # dataframe을 다루는 패키지
+&nbsp;
+# 다운로드 받은 txt파일을 dataframe으로 변환합니다.
+# 도움말을 비롯한 파일의 첫 20줄과 마지막 1줄을 제외하여 변환합니다.
+# 각 필드를 구분하도록 너비를 정의하고
+# 지점번호(STN), 경도(LON), 위도(LAT), 노장 해발고도(HT), 한글 지점명(STN_KO)만을 사용합니다.
+stn_info = pd.read_fwf(
+    file_name,
+    skiprows=20,
+    skipfooter=1,
+    names=['STN_ID', 'LON', 'LAT', 'STN_SP', 'HT', 'HT_WD', 'LAU_ID', 'STN_AD', 'STN_KO', 'STN_EN', 'FCT_ID', 'LAW_ID', 'BASIN'],
+    usecols=['STN_ID', 'LON', 'LAT', 'HT', 'STN_KO'],
+    index_col=['STN_ID'],
+    widths=(5, 14, 14, 9, 10, 10, 5, 4, 10),
+)
+&nbsp;
+# dataframe의 첫 5개의 데이터를 표출합니다.
+stn_info.head(5)</pre>
+<div class="table sectionedit58"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0 rightalign">  STN_ID</th><th class="col1 rightalign">  LON</th><th class="col2 rightalign">  LAT</th><th class="col3 rightalign">  HT</th><th class="col4 rightalign">  STN_KO</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 rightalign">  90</td><td class="col1 rightalign">  128.56473</td><td class="col2 rightalign">  38.25085</td><td class="col3 rightalign">   17.53</td><td class="col4 rightalign">      속초</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 rightalign">  92</td><td class="col1 rightalign">  128.66298</td><td class="col2 rightalign">  38.05903</td><td class="col3 rightalign">   75.40</td><td class="col4 rightalign">  양양(공)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 rightalign">  93</td><td class="col1 rightalign">  127.75443</td><td class="col2 rightalign">  37.94738</td><td class="col3 rightalign">   95.78</td><td class="col4 rightalign">    북춘천</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 rightalign">  95</td><td class="col1 rightalign">  127.30420</td><td class="col2 rightalign">  38.14787</td><td class="col3 rightalign">  155.48</td><td class="col4 rightalign">      철원</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 rightalign">  96</td><td class="col1 rightalign">  131.86983</td><td class="col2 rightalign">  37.23952</td><td class="col3 rightalign">   99.08</td><td class="col4 rightalign">      독도</td>
+	</tr>
+</table></div>
+<pre class="code py">import folium   # 지도로 표출하기 위한 라이브러리
+&nbsp;
+# 너비, 높이 크기가 800인 지도 생성
+fig = folium.Figure(width=800, height=800)
+&nbsp;
+# 지도의 위·경도 중심과 범위를 정해 맵을 생성합니다.
+map = folium.Map(
+    location=[37.5, 127],
+    zoom_start=12,
+    min_zoom=6,
+    min_lat=30,
+    max_lat=44,
+    min_lon=123,
+    max_lon=132,
+    max_bounds=True,
+).add_to(fig)
+&nbsp;
+# dataframe의 데이터를 읽어 지도위에 마커를 추가합니다.
+# marker를 클릭하면 팝업으로 지점명, 위경도와 해발고도를 표출하도록 html을 추가합니다.
+for idx, row in stn_info.iterrows():
+    html=f&quot;&quot;&quot;
+    &lt;h3&gt;{row['STN_KO']}({idx})&lt;/h3&gt;
+    &lt;p&gt;위도: {row['LAT']}&lt;/p&gt;
+    &lt;p&gt;경도: {row['LON']}&lt;/p&gt;
+    &lt;p&gt;해발고도: {row['HT']}m&lt;/p&gt;
+    &quot;&quot;&quot;
+    iframe = folium.IFrame(html=html, width=170, height=170)
+    popup = folium.Popup(iframe, max_width=1000)
+    folium.Marker(
+        location=row[['LAT', 'LON']].tolist(),
+        popup=popup,
+    ).add_to(map)
+&nbsp;
+# 지도를 표출합니다.
+fig</pre>
+
+<p>
+<img src="/lib/exe/fetch.php?w=400&amp;tok=3a16a2&amp;media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:aws_map.png" class="media" loading="lazy" alt="" width="400" />
+</p>
+
+<p>
+AWS 지점들 중 하나를 골라 시계열 그래프를 그려봅니다.
+</p>
+
+</div>
+
+<h4 id="시계열_그래프_표출">9.3. 시계열 그래프 표출</h4>
+<div class="level4">
+
+<p>
+시계열 그래프를 표출하기 전, 그래프에 한글을 표출하려면 한글 폰트의 설정이 필요합니다.
+</p>
+
+<p>
+만약, 한글 표출을 하지 않는다면 이 부분을 실행하지 않아도 좋습니다.
+</p>
+<pre class="code py"># Linux Ubuntu에서의 나눔폰트 설치와 캐시를 제거합니다.
+!sudo apt-get install -y fonts-nanum
+!sudo fc-cache -fv
+!rm -rf ~/.cache/matplotlib
+&nbsp;
+import seaborn as sns           # 그래프를 그리는 라이브러리
+import matplotlib.pyplot as plt # 그래프를 그리는 라이브러리
+&nbsp;
+# 한글을 출력하기 위해 사용하는 기본 폰트를 나눔고딕으로 설정합니다.
+plt.rc(&quot;font&quot;, family = &quot;NanumGothic&quot;)
+sns.set_theme(font=&quot;NanumGothic&quot;, rc={&quot;axes.unicode_minus&quot;: False}, style='darkgrid')</pre>
+
+<p>
+AWS자료는 크게 AWS2 포맷의 매 분자료 조회와 AWS 일 통계 자료 조회 2가지가 존재합니다.
+</p>
+
+<p>
+먼저, AWS2 포맷의 매 분자료 시계열 그래프를 그립니다.
+</p>
+<pre class="code py">import requests # API 요청을 보내고 받는 라이브러리
+import json     # API 응답을 json형태로 가공하기 위한 라이브러리
+&nbsp;
+# AWS2 매분자료 조회 API url
+api_url = 'https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min'
+&nbsp;
+# 요청인자로 시작시간, 종료시간, 지점번호, 표출형태, 도움말추가 여부가 있습니다.
+&nbsp;
+# 1. 한 지점에 대해 최대 12시간을 조회할 수 있습니다.
+# 시작시간과 종료시간을 년월일시분 형태로 입력합니다.
+start_time = '202403011200'
+end_time = '202403020000'
+&nbsp;
+# 2. 앞에서 확인한 지점번호를 입력합니다.
+stn_id = 108
+&nbsp;
+# 3. 표출형태로 포트란과 엑셀에 적합한 형태를 입력할 수 있습니다.
+# 여기선 변수별로 일정한 길이를 유지하는 기본값을 사용합니다. 
+&nbsp;
+# 4. 도움말추가 여부를 입력합니다.
+# 파일 내에 각 필드에 대한 도움말을 확인할 수 있습니다.
+help = 1
+&nbsp;
+# API 요청인자들을 묶어 dictionary로 정의합니다.
+api_parameters = {
+    'tm1': start_time,
+    'tm2': end_time,
+    'stn': stn_id,
+    'help': help,
+    'authKey': my_api_key
+}
+&nbsp;
+# API 응답을 저장할 파일 형식은 txt 파일로 저장합니다.
+file_name = f&quot;aws_min_data_{stn_id}_{start_time}_{end_time}.txt&quot;
+&nbsp;
+# 저장된 파일이 없는 경우에만 API를 요청해 파일을 다운로드합니다.
+if not os.path.exists(file_name):
+    # API 요청인자와 함께 API 요청
+    response = requests.get(api_url, params=api_parameters)
+&nbsp;
+    # 잘못된 응답을 받을 경우 에러 메세지 출력
+    if response.status_code != 200:
+        raise requests.RequestException(
+            json.loads(response.content)['result']['message']
+        )
+    # 짧은 에러메세지를 응답으로 받은 경우 에러 메세지 출력
+    elif len(response.content) &lt; 100:
+        raise ValueError(response.content.decode('euc-kr').split('#')[2])
+    else:
+        # 그외의 올바른 응답에 대해서만 UTF-8 txt 파일 형태로 저장합니다.
+        with open(file_name, 'wb') as f:
+            f.write(response.content.decode('euc-kr').encode('utf-8'))
+        print(f&quot;{file_name} 파일 다운로드 완료&quot;)</pre>
+
+<p>
+<em><code>aws_min_data_108_202403011200_202403020000.txt 파일 다운로드 완료</code></em>
+</p>
+
+<p>
+다운로드 받은 AWS 매 분자료 파일을 열어 자료를 확인할 수 있습니다.
+</p>
+
+<p>
+자료를 읽어 시계열 그래프를 그립니다.
+</p>
+<pre class="code py">import pandas as pd     # dataframe을 다루는 패키지
+import numpy as np      # 배열을 다루는 패키지
+&nbsp;
+# 다운로드 받은 txt파일을 dataframe으로 변환합니다.
+# 도움말을 비롯한 파일의 첫 22줄과 마지막 1줄을 제외하여 변환합니다.
+# 각 필드는 공백으로 구분되어있으며 존재하는 모든 필드를 사용합니다.
+aws_min_data = pd.read_csv(
+    file_name,
+    skiprows=22,
+    skipfooter=1,
+    sep=r'\s+',
+    names=['TIME', 'STN_ID', 'WD1', 'WS1', 'WDS', 'WSS', 'WD10', 'WS10', 'TA',
+           'RE', 'RN-15m', 'RN-60m', 'RN-12H', 'RN-DAY', 'HM', 'PA', 'PS', 'TD'],
+    parse_dates=['TIME'],
+    index_col=['TIME', 'STN_ID'],
+    engine='python'
+)
+&nbsp;
+# 도움말에 따르면 값이 -50 이하라면 관측이 없거나, 에러처리된 것을 표시합니다.
+# 따라서 그 값을 NaN으로 변환합니다.
+aws_min_data[aws_min_data &lt;= -50] = np.nan
+&nbsp;
+# dataframe의 첫 5개의 데이터를 표출합니다.
+aws_min_data.head(5)</pre>
+<div class="table sectionedit59"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0 rightalign">  TIME</th><th class="col1 rightalign">  STN_ID</th><th class="col2 rightalign">  WD1</th><th class="col3 rightalign">  WS1</th><th class="col4 rightalign">  WDS</th><th class="col5 rightalign">  WSS</th><th class="col6 rightalign">  WD10</th><th class="col7 rightalign">  WS10</th><th class="col8 rightalign">  TA</th><th class="col9 rightalign">  RE</th><th class="col10 rightalign">  RN-15m</th><th class="col11 rightalign">  RN-60m</th><th class="col12 rightalign">  RN-12H</th><th class="col13 rightalign">  RN-DAY</th><th class="col14 rightalign">  HM</th><th class="col15 rightalign">  PA</th><th class="col16 rightalign">  PS</th><th class="col17 rightalign">  TD</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0">2024-03-01 12:00:00</td><td class="col1">108</td><td class="col2">292.2</td><td class="col3">3.4</td><td class="col4">297.4</td><td class="col5">9.0</td><td class="col6">293.7</td><td class="col7">4.6</td><td class="col8">-3.0</td><td class="col9">0.0</td><td class="col10">0.0</td><td class="col11">0.0</td><td class="col12">0.0</td><td class="col13">0.0</td><td class="col14">33.3</td><td class="col15">1013.6</td><td class="col16">1024.6</td><td class="col17">-16.9</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">2024-03-01 12:01:00</td><td class="col1">108</td><td class="col2">274.8</td><td class="col3">7.0</td><td class="col4">286.6</td><td class="col5">9.6</td><td class="col6">290.9</td><td class="col7">4.7</td><td class="col8">-3.0</td><td class="col9">0.0</td><td class="col10">0.0</td><td class="col11">0.0</td><td class="col12">0.0</td><td class="col13">0.0</td><td class="col14">31.2</td><td class="col15">1013.6</td><td class="col16">1024.6</td><td class="col17">-17.7</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">2024-03-01 12:02:00</td><td class="col1">108</td><td class="col2">278.1</td><td class="col3">5.3</td><td class="col4">292.6</td><td class="col5">7.3</td><td class="col6">288.9</td><td class="col7">4.5</td><td class="col8">-2.8</td><td class="col9">0.0</td><td class="col10">0.0</td><td class="col11">0.0</td><td class="col12">0.0</td><td class="col13">0.0</td><td class="col14">32.8</td><td class="col15">1013.6</td><td class="col16">1024.6</td><td class="col17">-16.9</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">2024-03-01 12:03:00</td><td class="col1">108</td><td class="col2">277.5</td><td class="col3">4.3</td><td class="col4">278.0</td><td class="col5">5.9</td><td class="col6">289.9</td><td class="col7">4.5</td><td class="col8">-2.9</td><td class="col9">0.0</td><td class="col10">0.0</td><td class="col11">0.0</td><td class="col12">0.0</td><td class="col13">0.0</td><td class="col14">32.4</td><td class="col15">1013.6</td><td class="col16">1024.6</td><td class="col17">-17.2</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">2024-03-01 12:04:00</td><td class="col1">108</td><td class="col2">274.1</td><td class="col3">6.6</td><td class="col4">275.4</td><td class="col5">11.0</td><td class="col6">287.6</td><td class="col7">4.6</td><td class="col8">-3.1</td><td class="col9">0.0</td><td class="col10">0.0</td><td class="col11">0.0</td><td class="col12">0.0</td><td class="col13">0.0</td><td class="col14">30.9</td><td class="col15">1013.5</td><td class="col16">1024.5</td><td class="col17">-17.9</td>
+	</tr>
+</table></div>
+<pre class="code py"># 필드 중 기온(TA), 이슬점온도(TD)를 표출합니다.
+vars = ['TA', 'TD']
+&nbsp;
+# 그래프를 그릴 크기를 지정합니다.
+fig, ax = plt.subplots(1, 1, figsize=(10, 5))
+&nbsp;
+# 그래프의 제목을 지정합니다.
+# 제목에 한글 지점명이 사용됩니다.
+ax.set_title(
+    f&quot;{stn_info[stn_info.index == stn_id]['STN_KO'].iloc[0]}({stn_id}) &quot;
+    f&quot;{aws_min_data.index.get_level_values('TIME')[0]} - {aws_min_data.index.get_level_values('TIME')[-1]}&quot;)
+&nbsp;
+# 각 요소별로 시계열 그래프를 그립니다.
+for var in vars:
+    sns.lineplot(aws_min_data, x=aws_min_data.index.get_level_values('TIME'), y=var, label=var, ax=ax)
+&nbsp;
+# 그래프를 표출합니다.
+plt.show()</pre>
+
+<p>
+<img src="/lib/exe/fetch.php?w=600&amp;tok=74f76e&amp;media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:aws_min_data_ta_td.png" class="media" loading="lazy" alt="" width="600" />
+</p>
+<pre class="code py"># 필드 중 현지기압(PA), 해면기압(PS)을 표출합니다.
+vars = ['PA', 'PS']
+&nbsp;
+# 그래프를 그릴 크기를 지정합니다.
+fig, ax = plt.subplots(1, 1, figsize=(10, 5))
+&nbsp;
+# 그래프의 제목을 지정합니다.
+# 제목에 한글 지점명이 사용됩니다.
+ax.set_title(
+    f&quot;{stn_info[stn_info.index == stn_id]['STN_KO'].iloc[0]}({stn_id}) &quot;
+    f&quot;{aws_min_data.index.get_level_values('TIME')[0]} - {aws_min_data.index.get_level_values('TIME')[-1]}&quot;)
+&nbsp;
+# 각 요소별로 시계열 그래프를 그립니다.
+for var in vars:
+    sns.lineplot(aws_min_data, x=aws_min_data.index.get_level_values('TIME'), y=var, label=var, ax=ax)
+&nbsp;
+# 그래프를 표출합니다.
+plt.show()</pre>
+
+<p>
+<img src="/lib/exe/fetch.php?w=600&amp;tok=0db059&amp;media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:aws_min_data_pa_ps.png" class="media" loading="lazy" alt="" width="600" />
+</p>
+<pre class="code py"># 필드 중 1분 평균 풍속(WS1)를 표출합니다.
+&nbsp;
+# 그래프를 그릴 크기를 지정합니다.
+fig, ax = plt.subplots(1, 1, figsize=(10, 5))
+&nbsp;
+# 그래프의 제목을 지정합니다.
+# 제목에 한글 지점명이 사용됩니다.
+ax.set_title(
+    f&quot;{stn_info[stn_info.index == stn_id]['STN_KO'].iloc[0]}({stn_id}) &quot;
+    f&quot;{aws_min_data.index.get_level_values('TIME')[0]} - {aws_min_data.index.get_level_values('TIME')[-1]}&quot;)
+&nbsp;
+# 풍속 시계열 그래프를 그립니다.
+sns.lineplot(aws_min_data, x=aws_min_data.index.get_level_values('TIME'), y='WS1', label='WS1', ax=ax)
+&nbsp;
+# 그래프를 표출합니다.
+plt.show()</pre>
+
+<p>
+<img src="/lib/exe/fetch.php?w=600&amp;tok=3c1428&amp;media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:aws_min_data_ws.png" class="media" loading="lazy" alt="" width="600" />
+</p>
+
+<p>
+AWS 일 통계 자료를 조회하여 시계열 그래프로 표출합니다.
+</p>
+<pre class="code py">import requests # API 요청을 보내고 받는 라이브러리
+import json     # API 응답을 json형태로 가공하기 위한 라이브러리
+&nbsp;
+# AWS 일 통계 자료 조회 API url
+api_url = 'https://apihub.kma.go.kr/api/typ01/url/sfc_aws_day.php'
+&nbsp;
+# 요청인자로 시작시간, 종료시간, 기상요소, 지점번호, 도움말추가 여부가 있습니다.
+&nbsp;
+# 1. 시작시간과 종료시간을 년월일 형태로 입력합니다.
+start_time = '20220201'
+end_time = '20240301'
+&nbsp;
+# 2. 기상요소를 입력합니다.
+# rn_day(일강수량), ta_max(일 최고기온), ta_max_dif(최고기온차(오늘-어제)), ta_max_min(일교차),
+# ta_min(일 최저기온), ta_min_dif(최저기온차(오늘-어제)), ws_max(일 최대풍속), ws_ins_max(일 최대 순간풍속),
+# sd_tot_max(최심적설), sd_day_max(최심 신적설)를 입력할 수 있습니다.
+obs = 'ta_min'
+&nbsp;
+# 3. 앞에서 확인한 지점번호를 입력합니다.
+stn_id = 108
+&nbsp;
+# 4. 도움말추가 여부를 입력합니다.
+# 파일 내에 각 필드에 대한 도움말을 확인할 수 있습니다.
+help = 1
+&nbsp;
+# API 요청인자들을 묶어 dictionary로 정의합니다.
+api_parameters = {
+    'tm1': start_time,
+    'tm2': end_time,
+    'obs': obs,
+    'stn': stn_id,
+    'help': help,
+    'authKey': my_api_key
+}
+&nbsp;
+# API 응답을 저장할 파일 형식은 txt 파일로 저장합니다.
+file_name = f&quot;aws_day_data_{obs}_{stn_id}_{start_time}_{end_time}.txt&quot;
+&nbsp;
+# 저장된 파일이 없는 경우에만 API를 요청해 파일을 다운로드합니다.
+if not os.path.exists(file_name):
+    # API 요청인자와 함께 API 요청
+    response = requests.get(api_url, params=api_parameters)
+&nbsp;
+    # 잘못된 응답을 받을 경우 에러 메세지 출력
+    if response.status_code != 200:
+        raise requests.RequestException(
+            json.loads(response.content)['result']['message']
+        )
+    # 짧은 에러메세지를 응답으로 받은 경우 에러 메세지 출력
+    elif len(response.content) &lt; 100:
+        raise ValueError(response.content.decode('euc-kr').split('#')[2])
+    else:
+        # 그외의 올바른 응답에 대해서만 UTF-8 txt 파일 형태로 저장합니다.
+        with open(file_name, 'wb') as f:
+            f.write(response.content.decode('euc-kr').encode('utf-8'))
+        print(f&quot;{file_name} 파일 다운로드 완료&quot;)</pre>
+
+<p>
+<code><em>aws_day_data_ta_min_108_20220201_20240301.txt 파일 다운로드 완료</em></code>
+</p>
+
+<p>
+다운로드 받은 AWS 일 통계 파일을 열어 자료를 확인할 수 있습니다.
+</p>
+
+<p>
+자료를 읽어 시계열 그래프를 그립니다.
+</p>
+<pre class="code py">import pandas as pd     # dataframe을 다루는 패키지
+&nbsp;
+# 다운로드 받은 txt파일을 dataframe으로 변환합니다.
+# 도움말을 비롯한 파일의 첫 13줄과 마지막 1줄을 제외하여 변환합니다.
+# 모든 필드를 사용하지 않고 시간, 값 필드만 사용합니다.
+aws_day_data = pd.read_csv(
+    file_name,
+    skiprows=13,
+    skipfooter=1,
+    names=['TIME', 'STN_ID', 'LON', 'LAT', 'HT', 'VAL', 'STN_KO'],
+    usecols=['TIME', 'VAL'],
+    parse_dates=['TIME'],
+    index_col=['TIME'],
+    engine='python'
+)
+&nbsp;
+# dataframe의 첫 5개의 데이터를 표출합니다.
+aws_day_data.head(5)</pre>
+<div class="table sectionedit60"><table class="inline">
+	<thead>
+	<tr class="row0">
+		<th class="col0 rightalign">  TIME</th><th class="col1 rightalign">  VAL</th>
+	</tr>
+	</thead>
+	<tr class="row1">
+		<td class="col0 rightalign">  2022-02-01</td><td class="col1 rightalign">  -2.7</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 rightalign">  2022-02-02</td><td class="col1 rightalign">  -6.0</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 rightalign">  2022-02-03</td><td class="col1 rightalign">  -6.9</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 rightalign">  2022-02-04</td><td class="col1 rightalign">  -8.2</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 rightalign">  2022-02-05</td><td class="col1 rightalign">  -9.7</td>
+	</tr>
+</table></div>
+<pre class="code py"># AWS 일 통계 자료 시계열 그래프를 표출합니다.
+&nbsp;
+# 그래프를 그릴 크기를 지정합니다.
+fig, ax = plt.subplots(1, 1, figsize=(10, 5))
+&nbsp;
+# 그래프의 제목을 지정합니다.
+# 제목에 한글 지점명이 사용됩니다.
+ax.set_title(
+    f&quot;{stn_info[stn_info.index == stn_id]['STN_KO'].iloc[0]}({stn_id}) {obs} &quot;
+    f&quot;{aws_day_data.index[0]} - {aws_day_data.index[-1]}&quot;)
+&nbsp;
+# 일 통계 자료 시계열 그래프를 그립니다.
+sns.lineplot(aws_day_data)
+&nbsp;
+# 그래프를 표출합니다.
+plt.show()</pre>
+
+<p>
+<img src="/lib/exe/fetch.php?w=600&amp;tok=c7713d&amp;media=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:aws_day_data_ta_min.png" class="media" loading="lazy" alt="" width="600" />
+</p>
+
+</div>
+<div class="secedit editbutton_section editbutton_57"><form class="button btn_secedit" method="post" action="/doku.php"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="1792481824" /><input type="hidden" name="summary" value="[9. 활용방안] " /><input type="hidden" name="target" value="section" /><input type="hidden" name="hid" value="활용방안" /><input type="hidden" name="codeblockOffset" value="0" /><input type="hidden" name="range" value="41096-" /><input type="hidden" name="id" value="기상관측:지상:자동기상관측_aws" /><button type="submit" title="9. 활용방안">편집</button></div></form></div>
+                    <!-- wikipage stop -->
+                                    </div>
+
+                <div class="docInfo"><!--<bdi>기상관측/지상/자동기상관측_aws.txt</bdi> · 마지막으로 수정됨: 2026/10/20 07:37 저자 <bdi>120.208.44.95</bdi>--></div>
+
+                
+                <hr class="a11y" />
+            </div></main><!-- /content -->
+
+            <!-- PAGE ACTIONS -->
+            <nav id="dokuwiki__pagetools" aria-labelledby="dokuwiki__pagetools__heading">
+                <h3 class="a11y" id="dokuwiki__pagetools__heading">문서 도구</h3>
+                <div class="tools">
+                    <ul>
+                        <li class="edit"><a href="/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws&amp;do=edit" title="문서 편집 [e]" rel="nofollow" accesskey="e"><span>문서 편집</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg></a></li><li class="revs"><a href="/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws&amp;do=revisions" title="이전 판 [o]" rel="nofollow" accesskey="o"><span>이전 판</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 7v5.11l4.71 2.79.79-1.28-4-2.37V7m0-5C8.97 2 5.91 3.92 4.27 6.77L2 4.5V11h6.5L5.75 8.25C6.96 5.73 9.5 4 12.5 4a7.5 7.5 0 0 1 7.5 7.5 7.5 7.5 0 0 1-7.5 7.5c-3.27 0-6.03-2.09-7.06-5h-2.1c1.1 4.03 4.77 7 9.16 7 5.24 0 9.5-4.25 9.5-9.5A9.5 9.5 0 0 0 12.5 2z"/></svg></a></li><li class="backlink"><a href="/doku.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1:%EC%A7%80%EC%83%81:%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws&amp;do=backlink" title="역링크" rel="nofollow"><span>역링크</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.982 2.982 0 0 0 0-4.24 2.982 2.982 0 0 0-4.24 0l-3.53 3.53a2.982 2.982 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.982 2.982 0 0 0 0 4.24 2.982 2.982 0 0 0 4.24 0l3.53-3.53a2.982 2.982 0 0 0 0-4.24.973.973 0 0 1 0-1.42z"/></svg></a></li><li class="top"><a href="#dokuwiki__top" title="맨 위로 [t]" rel="nofollow" accesskey="t"><span>맨 위로</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg></a></li>                    </ul>
+                </div>
+            </nav>
+        </div><!-- /wrapper -->
+
+        
+<!-- ********** FOOTER ********** -->
+<footer id="dokuwiki__footer"><div class="pad">
+    
+    <div class="buttons">
+                <!--
+        <a href="https://www.dokuwiki.org/donate" title="Donate" ><img
+            src="/lib/tpl/dokuwiki/images/button-donate.gif" width="80" height="15" alt="Donate" /></a>
+        <a href="https://php.net" title="Powered by PHP" ><img
+            src="/lib/tpl/dokuwiki/images/button-php.gif" width="80" height="15" alt="Powered by PHP" /></a>
+        <a href="//validator.w3.org/check/referer" title="Valid HTML5" ><img
+            src="/lib/tpl/dokuwiki/images/button-html5.png" width="80" height="15" alt="Valid HTML5" /></a>
+        <a href="//jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS" ><img
+            src="/lib/tpl/dokuwiki/images/button-css.png" width="80" height="15" alt="Valid CSS" /></a>
+        <a href="https://dokuwiki.org/" title="Driven by DokuWiki" ><img
+            src="/lib/tpl/dokuwiki/images/button-dw.png" width="80" height="15"
+            alt="Driven by DokuWiki" /></a>
+        -->
+    </div>
+
+    </div></footer><!-- /footer -->
+    </div></div><!-- /site -->
+
+    <div class="no"><img src="/lib/exe/taskrunner.php?id=%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1%3A%EC%A7%80%EC%83%81%3A%EC%9E%90%EB%8F%99%EA%B8%B0%EC%83%81%EA%B4%80%EC%B8%A1_aws&amp;1792689364" width="2" height="1" alt="" /></div>
+    <div id="screen__mode" class="no"></div></body>
+</html>

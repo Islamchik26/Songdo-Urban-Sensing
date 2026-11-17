@@ -1,0 +1,6 @@
+source_id,title,location,purpose,status
+handbook,Songdo Urban Sensing Handbook,Supplied PDF: S3 pages 15-16; architecture pages 18-21,Scenario equations and platform requirements,Inspected source text; not redistributed
+readme,README.md,Supplied Markdown,Intended starter layout and exact registry identifiers,Inspected source text; no starter source supplied
+requirements,requirements.md,Supplied Markdown,Baseline MATLAB and coursework constraints,Inspected source text
+synthetic,Seed 42 synthetic fixtures,matlab/+songdo/+io/generateScenario.m,Reproducible simulation and acceptance evidence,Not real weather measurements
+kma_pending,KMA ASOS observations,Not yet supplied or independently station-verified,Real pressure/weather benchmark,PENDING; no real benchmark claim

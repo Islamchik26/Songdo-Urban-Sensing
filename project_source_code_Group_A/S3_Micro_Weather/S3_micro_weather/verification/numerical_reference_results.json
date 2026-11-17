@@ -1,0 +1,73 @@
+{
+  "verification_kind": "Independent Python reference only; MATLAB not executed",
+  "model_assumptions": {
+    "sample_rate_hz": 10.0,
+    "sensor_tau_seconds": 12.0,
+    "sensor_gain": 1,
+    "step_celsius": -5.0,
+    "step_time_seconds": 30.0,
+    "per_pole_matched_cutoff_hz": 0.2,
+    "pole_count": 3,
+    "initialization": "All states at pre-step equilibrium",
+    "delay_metric": "First threshold crossing after known step, linearly interpolated"
+  },
+  "delays": {
+    "t50": {
+      "raw_seconds": 8.317827095340128,
+      "compensated_seconds": 2.024601846848107,
+      "reduction_percent": 75.65948626195484
+    },
+    "t63.2": {
+      "raw_seconds": 12.000000000000469,
+      "compensated_seconds": 2.48610001563447,
+      "reduction_percent": 79.28249986971356
+    },
+    "t90": {
+      "raw_seconds": 27.631110321239177,
+      "compensated_seconds": 4.101732571019376,
+      "reduction_percent": 85.15538274310134
+    }
+  },
+  "cascade_3db_cutoff_hz": 0.10204948986471085,
+  "inverse_plus_lowpass_peak_gain": 5.857640396901225,
+  "inverse_plus_lowpass_peak_frequency_hz": 0.1406,
+  "iid_white_sensor_noise_rms_gain": 1.3559267509815294,
+  "pressure_example": {
+    "station_hpa": 1010,
+    "height_m": 6.2,
+    "sea_level_hpa": 1010.742737963901
+  },
+  "cutoff_sensitivity": {
+    "0.1": {
+      "t50_seconds": 4.1456427796611095,
+      "t50_reduction_percent": 50.159546091266904
+    },
+    "0.15": {
+      "t50_seconds": 2.731310729836025,
+      "t50_reduction_percent": 67.16317015815129
+    },
+    "0.2": {
+      "t50_seconds": 2.024601846848107,
+      "t50_reduction_percent": 75.65948626195484
+    },
+    "0.3": {
+      "t50_seconds": 1.3186630862425872,
+      "t50_reduction_percent": 84.14654366906306
+    },
+    "0.5": {
+      "t50_seconds": 0.7560771582732322,
+      "t50_reduction_percent": 90.91016019439972
+    }
+  },
+  "limitations": [
+    "A noiseless synthetic step is not a real-weather or KMA benchmark",
+    "Derivative compensation amplifies some sensor-noise frequencies",
+    "Frozen filter states during missing data are a hold policy, not integration across missing time",
+    "Printed compensator is backward-difference compensation, not exact inversion of the delayed ZOH model"
+  ],
+  "python_reference_checks": {
+    "run": 13,
+    "failures": 0,
+    "errors": 0
+  }
+}

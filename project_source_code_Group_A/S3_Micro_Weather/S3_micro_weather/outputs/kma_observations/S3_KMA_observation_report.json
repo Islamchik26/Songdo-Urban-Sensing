@@ -1,0 +1,55 @@
+{
+  "scope": "S3 native-cadence observation replay",
+  "source_type": "OFFICIAL_KMA_OBSERVATIONS_NORMALIZED",
+  "station_id": "512",
+  "station_name": "Incheonyeonsu (인천연수)",
+  "source_url": "https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510011800&0&MINDB_01M&512&m&1",
+  "row_count": 361,
+  "first_timestamp_utc": "2025-10-01T08:00:00Z",
+  "last_timestamp_utc": "2025-10-01T14:00:00Z",
+  "interpolated_rows": 0,
+  "applied_10Hz_DSP": false,
+  "controlled_plunge_test": "NOT_APPLICABLE: run_S3 retains the separate synthetic test",
+  "three_second_gust": "NOT_COMPUTED: sparse observations cannot resolve 3 seconds",
+  "one_minute_telemetry": "NOT_EXPORTED: no invented within-minute samples",
+  "intervals_seconds": 60,
+  "regular_cadence": true,
+  "median_interval_seconds": 60,
+  "min_interval_seconds": 60,
+  "max_interval_seconds": 60,
+  "valid_counts": {
+    "AIR_TEMP_C": 361,
+    "REL_HUMIDITY_PCT": 361,
+    "WIND_SPEED_MPS": 361,
+    "WIND_FROM_DEG": 254,
+    "STATION_PRESSURE_HPA": 0,
+    "SEA_LEVEL_PRESSURE_HPA": 361
+  },
+  "missing_counts": {
+    "AIR_TEMP_C": 0,
+    "REL_HUMIDITY_PCT": 0,
+    "WIND_SPEED_MPS": 0,
+    "WIND_FROM_DEG": 107,
+    "STATION_PRESSURE_HPA": 361,
+    "SEA_LEVEL_PRESSURE_HPA": 0
+  },
+  "pressure_benchmark": {
+    "status": "NOT_AVAILABLE",
+    "reason": "Requires paired station pressure, published sea-level pressure, and verified pressure sensor elevation.",
+    "paired_count": 0
+  },
+  "limitations": [
+    "Station identity is the source station, not automatically the S3 virtual station or assignment station 512.",
+    "CSV/sidecar labels do not themselves authenticate the source; retain raw downloads and provenance.",
+    "Cadence describes downloaded rows, not the instrument sampling frequency.",
+    "No PT100 lag-reduction or sensor noise-removal claim follows from these observations.",
+    "Wind direction is meteorological FROM degrees, retained separately from the synthetic u/v convention."
+  ],
+  "output_files": {
+    "observations": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\kma_observations\\S3_KMA_observation_replay.csv",
+    "report": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\kma_observations\\S3_KMA_observation_report.json",
+    "provenance": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\kma_observations\\S3_KMA_source_provenance.json",
+    "plot": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\kma_observations\\S3_KMA_observations.png"
+  },
+  "plot_export_status": "EXPORTED"
+}

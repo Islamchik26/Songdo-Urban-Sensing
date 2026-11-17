@@ -1,0 +1,137 @@
+S3 MATLAB validation started: 23-Oct-2026 19:14:26
+Release: 2026b
+Version: 26.2.0.3386108 (R2026b)
+Platform: PCWIN64
+Scope: S3 only. No GUI or real KMA benchmark is validated by this command.
+
+Code Analyzer: run_KMA_monthly_pressure_benchmark.m
+  Line 16: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: run_KMA_observations.m
+  Line 32: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 66: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: run_S3.m
+  Line 33: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 71: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: run_online_check.m
+  Line 9: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: validateState.m
+  Line 50: This keyword might not be aligned with its matching END on line 53.
+
+Code Analyzer: exportTelemetry.m
+  Line 20: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: export_sensor_grid_json.m
+  Line 11: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: generateScenario.m
+  Line 14: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: SongdoSensorApp.m
+  Line 98: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 177: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 212: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 604: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: test_adversarial.m
+  Line 7: Value assigned to variable might be unused.
+  Line 95: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 104: To improve performance, use 'isscalar' instead of length comparison.
+
+Code Analyzer: test_dsp.m
+  Line 8: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: test_io.m
+  Line 19: This keyword might not be aligned with its matching END on line 22.
+  Line 49: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: test_observations.m
+  Line 3: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Running MATLAB tests, including cross-language golden comparisons...
+FAIL test_dsp
+Error using songdo.dsp.validateConfig (line 15)
+Missing configuration field: windMeanSeconds.
+
+Error in songdo.core.initState (line 4)
+cfg = songdo.dsp.validateConfig(cfg);
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in test_dsp (line 29)
+[whole,state] = songdo.core.processBlock(in,songdo.core.initState(cfg),cfg);
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_tests (line 9)
+        tests{k}(); results(k).passed=true; results(k).message='PASS';
+        ^^^^^^^^^^
+Error in run_online_check (line 35)
+    results=run_all_tests();
+            ^^^^^^^^^^^^^^^
+FAIL test_io
+Error using songdo.dsp.validateConfig (line 15)
+Missing configuration field: windMeanSeconds.
+
+Error in songdo.core.initState (line 4)
+cfg = songdo.dsp.validateConfig(cfg);
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in test_io (line 9)
+[out,~]=songdo.core.processBlock(input,songdo.core.initState(cfg),cfg);
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_tests (line 9)
+        tests{k}(); results(k).passed=true; results(k).message='PASS';
+        ^^^^^^^^^^
+Error in run_online_check (line 35)
+    results=run_all_tests();
+            ^^^^^^^^^^^^^^^
+FAIL test_adversarial
+Error using songdo.dsp.validateConfig (line 15)
+Missing configuration field: windMeanSeconds.
+
+Error in songdo.core.initState (line 4)
+cfg = songdo.dsp.validateConfig(cfg);
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in test_adversarial (line 7)
+base=songdo.core.processBlock(input,songdo.core.initState(cfg),cfg);
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_tests (line 9)
+        tests{k}(); results(k).passed=true; results(k).message='PASS';
+        ^^^^^^^^^^
+Error in run_online_check (line 35)
+    results=run_all_tests();
+            ^^^^^^^^^^^^^^^
+FAIL test_golden
+Error using songdo.dsp.validateConfig (line 15)
+Missing configuration field: windMeanSeconds.
+
+Error in songdo.core.initState (line 4)
+cfg = songdo.dsp.validateConfig(cfg);
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in test_golden>stream (line 49)
+state=songdo.core.initState(cfg); parts={}; cursor=1; p=0;
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in test_golden (line 16)
+    actual=stream(input,cfg,strcmp(name,'retuned'));
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_tests (line 9)
+        tests{k}(); results(k).passed=true; results(k).message='PASS';
+        ^^^^^^^^^^
+Error in run_online_check (line 35)
+    results=run_all_tests();
+            ^^^^^^^^^^^^^^^
+PASS test_observations: native timestamps, gaps, missing values, station identity and pressure gates.
+
+FAILED: songdo:TestsFailed
+Error using assert
+One or more S3 test groups failed.
+
+Error in run_all_tests (line 15)
+assert(all([results.passed]),'songdo:TestsFailed','One or more S3 test groups failed.');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_online_check (line 35)
+    results=run_all_tests();
+            ^^^^^^^^^^^^^^^
+Send the full S3_validation_log.txt back for debugging.
+
+Validation log: D:\Downloads\Songdo_Urban_Sensing\outputs\validation_20261023_191426_835\S3_validation_log.txt
+After this function returns, download the log and summary from the Files panel.

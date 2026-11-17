@@ -1,0 +1,11 @@
+{
+  "original_filename": "SYNM202510_001.pdf",
+  "original_bytes": 35956961,
+  "original_sha256": "a612626ee6294397ec41adc5df2b20a40a6fdf35c203665f5fd4b4ca7b839a5f",
+  "extracted_physical_pages_1based": [
+    8,
+    9,
+    29
+  ],
+  "note": "Pages extracted unchanged from official full PDF using pypdf; original full download retained outside curated package."
+}

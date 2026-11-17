@@ -1,0 +1,14 @@
+{
+  "evidence_type": "Python data/provenance verification only; MATLAB not executed",
+  "status": "PASS",
+  "station_id": "512",
+  "rows": 361,
+  "interval_seconds": 60,
+  "raw_files_hash_verified": 6,
+  "identical_overlap_rows_removed": 5,
+  "calm_direction_rows_missing_by_design": 107,
+  "source_station_pressure_count": 0,
+  "raw_to_normalized_values_verified": true,
+  "matlab_runtime_validated": false,
+  "pressure_benchmark_completed": false
+}

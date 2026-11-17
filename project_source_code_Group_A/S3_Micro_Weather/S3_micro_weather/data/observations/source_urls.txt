@@ -1,0 +1,6 @@
+https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510011800&0&MINDB_01M&512&m&1
+https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510011900&0&MINDB_01M&512&m&1
+https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510012000&0&MINDB_01M&512&m&1
+https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510012100&0&MINDB_01M&512&m&1
+https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510012200&0&MINDB_01M&512&m&1
+https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510012300&0&MINDB_01M&512&m&1

@@ -1,0 +1,2 @@
+month,station_id,aggregation,station_pressure_hpa,sea_level_pressure_hpa,air_temperature_c,relative_humidity_pct,pressure_elevation_m
+2025-10,112,monthly_mean,1011.8,1020.0,16.4,77.0,70.2

@@ -1,0 +1,64 @@
+{
+  "station_id": "512",
+  "station_name": "Incheonyeonsu (인천연수)",
+  "network": "KMA AWS (not ASOS)",
+  "data_kind": "official_observations",
+  "source_url": "https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510011800&0&MINDB_01M&512&m&1",
+  "source_urls": [
+    "https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510011800&0&MINDB_01M&512&m&1",
+    "https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510011900&0&MINDB_01M&512&m&1",
+    "https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510012000&0&MINDB_01M&512&m&1",
+    "https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510012100&0&MINDB_01M&512&m&1",
+    "https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510012200&0&MINDB_01M&512&m&1",
+    "https://www.weather.go.kr/cgi-bin/aws/nph-aws_txt_min_cal_test?202510012300&0&MINDB_01M&512&m&1"
+  ],
+  "station_metadata_url": "https://data.kma.go.kr/tmeta/stn/selectStnDetail.do?isSelectStn=Y&pgmNo=82&stdStnNo=512",
+  "timezone": "UTC",
+  "original_timezone": "Asia/Seoul (KST, UTC+09:00)",
+  "cadence_seconds": 60,
+  "sample_count": 361,
+  "start_utc": "2025-10-01T08:00:00Z",
+  "end_utc": "2025-10-01T14:00:00Z",
+  "retrieval_date_utc": "2026-10-22",
+  "retrieval_timestamp_note": "Original downloads occurred on this UTC date; exact per-response receipt timestamps were not logged.",
+  "latitude": 37.39684,
+  "longitude": 126.66209,
+  "station_ground_elevation_m": 8.13,
+  "pressure_elevation_m": [],
+  "units": {
+    "AIR_TEMP_C": "degrees Celsius",
+    "REL_HUMIDITY_PCT": "percent",
+    "WIND_SPEED_MPS": "m/s, original 1-minute mean wind",
+    "WIND_FROM_DEG": "degrees clockwise from north, original numeric 1-minute wind direction",
+    "STATION_PRESSURE_HPA": "hPa, NOT AVAILABLE",
+    "SEA_LEVEL_PRESSURE_HPA": "hPa"
+  },
+  "processing": [
+    "Parsed official public table, preserved original HTML byte-for-byte.",
+    "Sorted actual minute samples by timestamp and removed 5 identical overlapping hour-boundary records.",
+    "Converted KST timestamps to UTC without changing sampling interval.",
+    "Retained raw numeric wind direction and 10-minute wind fields in extra columns.",
+    "Set WIND_FROM_DEG blank when wind speed is zero; raw published direction remains WIND_FROM_DEG_RAW.",
+    "No interpolation, random input, upsampling, pressure reconstruction, or invented observations."
+  ],
+  "limitations": [
+    "Public display table has no station pressure or QC flags; absence of flags does not assert full quality control.",
+    "Sea-level pressure cannot be used as station pressure, and no independent pressure-reduction validation is possible.",
+    "8.13m is station ground elevation, not verified barometer elevation.",
+    "Minute wind averages do not provide 10Hz turbulence measurements.",
+    "Historical station coordinates are not date-specific verified relocation history."
+  ],
+  "raw_sha256": {
+    "raw_incheonyeonsu_512_20251001_1800_html": "41f4d6976430c1526016d18d4844cce1e3b91c9405e071ac24be0dd3735c65da",
+    "raw_incheonyeonsu_512_20251001_1900_html": "eec26bd8905857104e35392deb29a94ae4a80df05fd08599f9a4b0cef1e14794",
+    "raw_incheonyeonsu_512_20251001_2000_html": "2a8febdbeca8eee2c16b737402ba9c7f558f2fe65a4961b386fa3f2ff5e0e59f",
+    "raw_incheonyeonsu_512_20251001_2100_html": "8f4ef3dbb668ce353ef050bad6ef93d565006ec5287d9096e322e9e3c305ce99",
+    "raw_incheonyeonsu_512_20251001_2200_html": "eb356cac7bc316cb1b1cb2a343677464f90ef6a41bbd8cfc811477dcbe0b63ec",
+    "raw_incheonyeonsu_512_20251001_2300_html": "3e86f2a914138776954d7ac35acfc06a1d1f1f6945555869fa7f1d7cc2409c69"
+  },
+  "wind_definition_source_url": "https://bd.kma.go.kr/contest/faq_view.do",
+  "wind_definition_reference": "KMA FAQ Q15: wind direction is where wind comes from; Q16: north0/360 degrees and clockwise east90, west270; minute observations can have0.1degree resolution.",
+  "attribution": "Source: Korea Meteorological Administration (KMA), Incheonyeonsu AWS512 minute observations,2025-10-01. Downloaded2026-10-22; UTC conversion and calm-direction normalization documented here.",
+  "copyright_policy_url": "https://data.kma.go.kr/cmmn/static/staticPage.do?page=pageCr",
+  "licensing_note": "No explicit dataset-specific license badge appears in the downloaded legacy observation tables. The KMA portal copyright policy describes KOGL Type1 for marked KMA-owned works; no specific KOGL designation is asserted for these unmarked tables."
+}

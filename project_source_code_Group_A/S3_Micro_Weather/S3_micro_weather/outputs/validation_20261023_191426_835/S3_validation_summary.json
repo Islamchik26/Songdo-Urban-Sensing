@@ -1,0 +1,14 @@
+{
+  "matlab_release": "2026b",
+  "matlab_version": "26.2.0.3386108 (R2026b)",
+  "tests_passed": false,
+  "scenario_completed": false,
+  "gui_tested": false,
+  "real_KMA_benchmark_completed": false,
+  "log_file": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\validation_20261023_191426_835\\S3_validation_log.txt",
+  "output_folder": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\validation_20261023_191426_835",
+  "code_analyzer_files": 37,
+  "code_analyzer_diagnostics": 21,
+  "error_identifier": "songdo:TestsFailed",
+  "error_report": "Error using assert\nOne or more S3 test groups failed.\n\nError in run_all_tests (line 15)\nassert(all([results.passed]),'songdo:TestsFailed','One or more S3 test groups failed.');\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in run_online_check (line 35)\n    results=run_all_tests();\n            ^^^^^^^^^^^^^^^"
+}

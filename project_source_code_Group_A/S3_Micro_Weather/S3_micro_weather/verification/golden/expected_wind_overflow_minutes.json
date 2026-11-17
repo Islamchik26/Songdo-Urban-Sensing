@@ -1,0 +1,21 @@
+[
+  {
+    "timestamp": "2026-01-01T00:00:00.000Z",
+    "ta_c": 20.0,
+    "rh_pct": 50.0,
+    "ws_mps": null,
+    "wd_deg": null,
+    "gust3s_mps": null,
+    "station_pressure_hpa": 1010.0,
+    "sea_level_pressure_hpa": 1010.742737963901,
+    "sample_count": 600,
+    "temperature_good_count": 600,
+    "humidity_good_count": 600,
+    "wind_valid_count": 0,
+    "pressure_good_count": 600,
+    "temperature_quality": "GOOD",
+    "humidity_quality": "GOOD",
+    "wind_quality": "DROPOUT",
+    "pressure_quality": "GOOD"
+  }
+]

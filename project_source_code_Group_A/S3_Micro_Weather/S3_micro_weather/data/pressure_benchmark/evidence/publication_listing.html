@@ -1,0 +1,2487 @@
+<!DOCTYPE html>
+<html lang="ko-KR" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>기상자료개방포털[간행물:지상:지상:자료]</title>
+<meta name="keywords" content="기상청, 기상자료개방포털" />
+<meta name="description" content="기상청, 기상자료개방포털" />
+<meta name="viewport" content="width=device-width" /><!-- , initial-scale=0.5, minimum-scale=0.5, maximum-scale=1.0 -->
+
+<link rel="shortcut icon" href="/resources/images/favicon.png"/>
+<link rel="stylesheet" type="text/css" href="/resources/css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/resources/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/resources/css/common-ui.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/resources/css/board.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/resources/css/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/resources/css/sub.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/resources/css/sub-etc.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/resources/css/messagebox1.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/resources/css/srvEvl.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/contents.css" />
+
+<script src="/resources/js/jquery-2.1.0.min.js"></script>
+<script src="/resources/js/ddlist.jquery.min.js"></script>
+<script src="/resources/js/common.js"></script>
+<script src="/resources/js/jquery-ui.min.js"></script>
+<script src="/resources/js/slick.min.js"></script>
+<script src="/resources/js/jquery.scrollTo.js"></script>
+<script src="/resources/js/TweenMax.min.js"></script>
+<script src="/resources/js/menu.js"></script>
+<script src="/resources/js/jquery.messagebox.min.js"></script>
+
+<script src="/resources/js/browser.js"></script>
+<script src="/resources/js/custom.js"></script>
+<!-- 공통 조회조건 필수 스크립트 시작 -->
+<script src="/resources/js/userGroup.js"></script>
+<!-- 공통 조회조건 필수 스크립트 종료 -->
+<script src="/resources/js/dts.js"></script>
+
+<script src="/resources/js/messages.js"></script>
+<script src="/resources/js/gdsUtil.js"></script>
+<script src="/resources/js/sub.js"></script>
+
+<!-- Datepicker-->
+<link rel="stylesheet" type="text/css" href="/resources/svc/js/datepicker/jquery-ui.css" media="all"/>
+<script src="/resources/svc/js/datepicker/jquery-ui.js;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5" ></script>
+<script src="/resources/svc/js/datepicker/jquery.ui.datepicker-ko.js;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5" ></script>
+<style>
+#loading-mask {
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#ffffff;
+    opacity:0.80;
+    filter:alpha(opacity=80);
+    z-index:30000;
+    display:none;
+}
+</style>
+
+<script>
+$(function(){  
+	 
+}); 
+
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+	  var u="https://monitoring.kma.go.kr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<!-- page script -->
+</head>
+<body>
+	
+		<!-- wrap -->
+		<div id="wrap" class="data">
+			<header id="header">
+			<div class="skip">
+	            <strong class="blind">바로가기 목록</strong>
+	            <ul class="skip_nav">
+	               <li><a href="#gnb">주메뉴 바로가기</a></li>
+	               <li><a href="#contents">본문 바로가기</a></li>
+	            </ul>
+	         </div>
+			<!-- Start:Top Area -->
+			<script>
+var moveURLFlag = false;
+var moveURL = '';
+$(document).ready(function () {
+	/* 폰트 변경 및 form submit 시 fontSize 파라미터 추가. custom.js 에..... */
+	changeFontSize();
+	$("form").each(function(){
+		addFontSizeToFormOnsubmit($(this).attr("id"));
+	});
+	
+	// 로그인
+	$("#loginBtn").on('click', function(e){
+		e.preventDefault();
+// 		loginPopup("Y");
+		popLayer(this);
+	});
+	
+	// 로그아웃
+	$("#logoutBtn").on('click', function(e){
+		e.preventDefault();
+		$("#loginYn").val("N");
+		$("#topForm").attr("method", "post");
+		$("#topForm").attr("action", $(this).attr('href')).submit();
+	});
+	
+	// 회원가입
+	$("#memberJoinBtn, #mypageBtn, #siteMapBtn").on('click', function(e){
+		e.preventDefault();
+		$("#topForm").attr("method", "post");
+		$("#topForm").attr("action", $(this).attr('href')).submit();
+	});
+	
+	//즐겨찾기
+	$("#favBtn").on('click', function(e){
+		e.preventDefault();
+		favoritePopup();
+	});
+	
+	loginSessionChk();
+	
+	$("input[name=dataSearch]").on("keypress", function(e){
+		
+		var kcode= (e.keyCode ? e.keyCode : e.which);
+		if (kcode == 13){
+			var dataSch = $("#dataSearch").val();
+			
+			if (dataSch.length < 2){
+				Message.alert('검색어는 최소 2자 이상 입력해주세요');
+				return false;
+			}	
+			
+			goSearchResult(e);			
+		}
+		
+		//return false;
+	});
+
+});
+
+var GDSsessionExpireTime;
+var isLogin = false;
+
+function loginSessionChk(){
+	if(isLogin){
+		if(GDSsessionExpireTime == undefined ){
+			GDSsessionExpireTime = new Date().getTime() + 10*60*1000;
+		}
+		if(GDSsessionExpireTime != undefined && GDSsessionExpireTime != ''){
+			var currentTimeMillis = new Date().getTime();
+			if(GDSsessionExpireTime < currentTimeMillis){
+				Message.alert('로그아웃 되었습니다.');
+				GDSsessionExpireTime = undefined;
+				window.location.href='/login/logout.do';
+			}
+		}
+		setTimeout('loginSessionChk()', 10000);
+	}
+}
+
+function loginPopup(reloadYn){
+	$("#loginPop").show();
+	$(".layer").focus();
+}
+
+function changeLayOut(loginYN){
+	$("#loginYn").val(loginYN);
+	if(loginYN == "Y"){
+		$("#myPage").show();
+		$("#join").hide();
+		$("#login").hide();
+		$("#logout").show();
+		$(".LOGIN_AREA").hide();
+	}else{
+		$("#myPage").hide();
+		$("#join").show();
+		$("#login").show();
+		$("#logout").hide();
+		$(".LOGIN_AREA").show();
+	}
+	
+	checkLoginStatus();
+	
+	if(moveURLFlag){
+		location.href = moveURL;
+	}
+}
+
+//로그인 상태 체크
+function checkLoginStatus(){
+	//nothing to do
+	//삭제 금지..
+}
+
+function goSearchResult(e){
+	layer_beforeFocus = e;
+	var dataSch = $("#dataSearch").val();
+	
+	if (dataSch.length < 2){
+		Message.alert('검색어는 최소 2자 이상 입력해주세요');
+		return false;
+	}	
+	
+	$("#searchForm").attr("method", "post");
+	$("#searchForm").attr("action", $(this).attr('href')).submit();
+}
+function fontSizeUp() {
+   $('*').each(function(){
+      if($(this).find('div, h1, h2, h3, h4, h5, ul, ol, li, p, strong, span, th, td, dl, dt, dd, a, label').length<1){
+         $('body').addClass('changeFontSize');
+         var currentSize = $(this).css("font-size");
+         var num = parseFloat(currentSize, 10);
+         var unit = currentSize.slice(-2);
+         num += 2;
+      	$(this).css("fontSize", num + unit);
+      }
+   })
+}
+
+function fontSizeDown() {
+   $('div, li, dt, dd, p, strong, span, em, a, th, td, input, button, textarea, label, select, h1, h2, h3, h4, h5, h6').each(function(){
+      if($(this).find('div, h1, h2, h3, h4, h5, ul, ol, li, p, strong, span, th, td, dl, dt, dd, a, label').length<1){
+         $('body').addClass('changeFontSize');
+         var currentSize = $(this).css("font-size");
+         var num = parseFloat(currentSize, 10);
+         var unit = currentSize.slice(-2);
+         num -= 2;
+      	$(this).css("fontSize", num + unit);
+      }
+   })
+}
+
+</script>	
+	<form id="topForm" name="topForm" method="post" action="/;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5" >
+		<input type="hidden" name="loginYn" id="loginYn" value="N" /> 
+	</form>
+	<div id="top">
+		<div class="wfix">
+			<h1>
+				<a href="/cmmn/main.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5">
+					<img src="/resources/images/common/logo_top1.png" alt="기상청">
+					<img src="/resources/images/common/logo_top2.png" alt="기상자료개방포털">
+					<!-- <img src="/resources/images/common/logo_top3.png" alt="보다 나은 정부"> -->
+				</a>
+			</h1>
+			
+			<div class="menu_top">
+				<a id="orgIntro" href="/cmmn/static/staticPage.do?page=orgIntro&pgmNo=700" class="link_org">국가기후데이터센터 소개</a>
+				<ul>
+					<a href="/cmmn/static/staticPage.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5?page=intro" class="link_org">기상자료개방포털이란?</a>
+				</ul>
+				<ul class="ctr_font">
+					<li><button type="button" class="btn_font_plus" onclick="javascript:fontSizeUp();" ><i class="ico_comm" >글자 크게 보기</i></button></li>
+					<li><button type="button" class="btn_font_minus" onclick="javascript:fontSizeDown();" ><i class="ico_comm" >글자 작게 보기</i></button></li>
+				</ul>
+				
+				<ul class="lst_link">
+					<li id="myPage" class="no-bg"  style="display:none;"  ><a href="/mypage/member/updateMyInfo.do?pgmNo=76" id="mypageBtn">마이페이지</a></li>
+					<li id="login"  ><a href="/login/login.do" id="loginBtn" data-layer="login">로그인</a></li>
+					<li id="logout"  style="display:none;"  ><a href="/login/logout.do" id="logoutBtn">로그아웃</a></li>
+					<li id="siteMap"><a id="siteMapBtn" href="/cmmn/siteMap.do">사이트맵</a></li>
+					<li><a id="favBtn" href="javascript:;" class="ico_bfr" data-layer="favorite">즐겨찾기</a></li>
+					<li><a href="/resources/html/en/aowdp.html">ENG(info)</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<script>
+function favoritePopup(){
+	$("#favoritePop").remove();
+	
+	$.ajax({
+		type: 'post',
+		url: "/cmmn/myFavoriteLayerPopup.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5",
+		dataType : "html",
+		success: function(data) {
+
+			var pop = $('<div id="favoritePop" class="wrap_layer on" style="display: block;">'+data+'</div>');
+			$('body').append($(pop).clone());
+						
+			$(".favorite-pop").show();
+			$(".favorite-pop").focus();
+			
+			var loginYN = $("#loginYn").val();
+			if(loginYN === 'Y' || 'N' === 'Y'){
+				$("#myMenu").show();
+			} else {
+				$("#info").show();
+			}
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+			Message.alert(textStatus);
+			return false;			
+		}
+	});
+		
+}
+</script>
+<!-- End:Top Area -->
+			<!-- Start:Header Area -->
+			<!-- 2025-12-18 이명진 주무관 요청 : logger 스크립트 추가 -->
+<!-- LOGGER(TM) TRACKING SCRIPT V.40 FOR logger.co.kr / 100040 : COMBINE TYPE / DO NOT ALTER THIS SCRIPT. -->
+<script type="text/javascript">var _TRK_LID = "100040";var _L_TD = "webstats.kma.go.kr";var _TRK_CDMN = ".kma.go.kr";</script>
+<script type="text/javascript">var _CDN_DOMAIN = location.protocol == "https:" ? "https://webstats.kma.go.kr" : "http://webstats.kma.go.kr"; 
+(function (b, s) { var f = b.getElementsByTagName(s)[0], j = b.createElement(s); j.async = true; j.src = "//webstats.kma.go.kr/fs4/bstrk.sol.js"; f.parentNode.insertBefore(j, f); })(document, "script");
+</script>
+<noscript><img alt="Logger Script" width="1" height="1" src="http://webstats.kma.go.kr/tracker.sol.tsp?u=100040&amp;js=N"/></noscript>
+<!-- END OF LOGGER TRACKING SCRIPT -->
+
+<script src="/resources/js/UserScriptConf.js"></script>
+
+<script>
+	$(document).on("keydown", "form #txtStnNm", function(event) {
+	    return event.key != "Enter";
+	});
+
+	function goMenuPage(url, pgmNo, popupYn){
+		
+		if(popupYn == undefined || popupYn == null){
+			popupYn = "N";
+		}
+		
+		if(popupYn == "Y"){
+			//window.open(url,"menuPopup","width=1200,height=800, toolbar=yes,menubar=yes,location=no,scrollbars=yes,status=no,resizable=yes");
+			window.open(url, "_blank");
+			return false;
+		}
+
+        if(FormUtil.inStr(url, "?")){
+        	url = url + "?";
+        }else{
+        	url = url + "&";
+        }
+        url += "pgmNo="+pgmNo;
+
+        $("#headerForm").attr("method", "post");
+        $("#headerForm").attr("action", url).submit();
+	}
+
+	$(document).ready(function () {
+		
+		$(".sitemap-d2 li").mouseover(function(){
+			$(this).find(".sitemap-d3").show();
+			$(this).addClass("on");
+		});
+		
+		$(".sitemap-d2 li").mouseout(function(){
+			$(this).find(".sitemap-d3").hide();
+			$(this).removeClass("on");
+		});
+		
+	});
+	
+	function goPopular(){
+		var page = $('#popularList').val()
+		if(page!="none"){
+			location.href = page;
+		}
+	}
+</script>
+
+	<!-- header -->
+	<div class="hd_sch">
+		<div class="wfix">
+			<form id="headerForm" name="headerForm"  action="/;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5">
+				<input type="hidden" name="gFontSize" id="gFontSize" value="" /> <!-- 폰트 크기 유지 위함. -->
+			</form>
+			
+			<form id="downloadForm" name="downloadForm"  action="/;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5">
+				<!-- 설명서 다운로드를 위한 linkMenuCd -->
+			</form>
+		   <h3 class="title_main">
+			  <span>기상청 날씨데이터 서비스</span>
+			  <strong class="tit"><em>기상</em>자료개방포털</strong>
+		   </h3>
+		   <a href="#search" class="tgl_sch mo"><i class="ico_comm">검색 열기</i></a>
+		   <div id="search">
+			  <label for="dataSearch" class="blind">통합 검색</label>
+			  <button type="button" class="close_sch mo">검색 닫기</button>
+			  <div class="wrap_inp">
+				<form id="searchForm" name="searchForm" action="/sub/cmmn/searchResultMain.do">
+					<input type="text" 		name="dataSearch" 			id="dataSearch" 		value=""	maxlength="30"	title="'관측'을 검색하세요" placeholder="'관측'을 검색하세요" />
+					<input type="hidden" 		name="similarRegionStr" 	id="similarRegionStr" 	value="" />
+					<input type="hidden" 		name="similarWordStr" 		id="similarWordStr" 	value="" />	<!-- operation$2020 FUN-07 -->
+					<input type="hidden" 		name="mistakeWordStr" 		id="mistakeWordStr" 	value="" />
+					 
+				 </form>
+				 <button type="button" class="btn_sch" onclick="goSearchResult(this);"><i class="ico_comm">검색</i></button>
+			  </div>
+			  
+			  <div class="wrap_slt">
+				 <label for="popularList" class="blind">인기 검색어</label>
+				 <select name="popularList" id="popularList"  title="인기 검색어">
+					<option value="none">&nbsp;&nbsp;인기검색어</option>
+				<option value="/data/grnd/selectAwosRltmList.do?pgmNo=638">&nbsp;&nbsp;1. 공공기관 기상관측</option>
+				<option value="/data/grnd/selectAsosRltmList.do?pgmNo=36">&nbsp;&nbsp;2. 종관기상관측(ASOS)</option>
+				<option value="/data/grnd/selectAwsRltmList.do?pgmNo=56">&nbsp;&nbsp;3. 방재기상관측(AWS)</option>
+				<option value="/data/typhoonData/typInfoTYList.do?pgmNo=689">&nbsp;&nbsp;4. 태풍정보</option>
+				<option value="/data/sea/selectBuoyRltmList.do?pgmNo=52">&nbsp;&nbsp;5. 해양기상부이</option>
+				<option value="/data/weatherReport/wsrList.do?pgmNo=647">&nbsp;&nbsp;6. 기상특보</option>
+				<option value="/data/hr/selectRdsdRltmList.do?pgmNo=49">&nbsp;&nbsp;7. 레윈존데</option>
+				<option value="/data/weatherReport/mrfList.do?pgmNo=646">&nbsp;&nbsp;8. 중기예보</option>
+				<option value="/data/gaw/selectSpiRltmList.do?pgmNo=734">&nbsp;&nbsp;9. 표준강수지수</option>
+				<option value="/data/weatherReport/eqkList.do?pgmNo=654">&nbsp;&nbsp;10. 지진정보</option>
+				<option value="/data/weatherReport/microquake.do?pgmNo=710">&nbsp;&nbsp;10. 미소지진</option>
+				</select>
+				 <button type="button" class="btn_sch" onclick="goPopular();"><i class="ico_comm">검색</i></button>
+			  </div>
+		   </div>
+		</div>
+	</div>
+	<!-- //header -->
+	
+	<button type="button" class="tgl_menu mo"><i>메뉴 열기/닫기</i></button>
+	<nav id="gnb" tabindex="-1">
+	    <ul class="links_member">
+	        <li><a href="javascript:;" onclick="popLayer(this)" data-layer="login">로그인</a></li>
+	        <li><a href="/cmmn/selectMemberAgree.do">회원가입</a></li>
+	    </ul>
+	    <h2 class="blind">사이트 메뉴</h2>
+	
+	    <div class="wfix">
+	        <ul class="lst_menu">
+	            <li class="m2">
+	                <a href="/data/grnd/selectAsosRltmList.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5?pgmNo=36" class="d1">데이터</a>
+	                <a href="javascript:;" class="tit_d1 mo">데이터</a>
+	                <div class="wrap_sub">
+	                    <ul class="depth2">
+	                        
+							<li>
+	                            <a href="/data/grnd/selectAsosRltmList.do" onclick="goMenuPage('/data/grnd/selectAsosRltmList.do','36','N');return false;"  class="d2 ico_bfr">기상관측</a>
+	                            <a href="javascript:;" class="tit_d2 mo">기상관측</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/grnd/selectAsosRltmList.do" onclick="goMenuPage('/data/grnd/selectAsosRltmList.do','36','N');return false;" class="d3">지상</a></li>
+									<li ><a href="/data/sea/selectBuoyRltmList.do" onclick="goMenuPage('/data/sea/selectBuoyRltmList.do','52','N');return false;" class="d3">해양</a></li>
+									<li ><a href="/data/hr/selectRdsdRltmList.do" onclick="goMenuPage('/data/hr/selectRdsdRltmList.do','49','N');return false;" class="d3">고층</a></li>
+									<li ><a href="/data/air/selectAmosRltmList.do" onclick="goMenuPage('/data/air/selectAmosRltmList.do','575','N');return false;" class="d3">항공</a></li>
+									<li ><a href="/data/ogd/selectGtsRltmList.do" onclick="goMenuPage('/data/ogd/selectGtsRltmList.do','658','N');return false;" class="d3">세계기상전문(GTS)</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/rmt/rmtList.do?code=21" onclick="goMenuPage('/data/rmt/rmtList.do?code=21','683','N');return false;"  class="d2 ico_bfr">기상위성</a>
+	                            <a href="javascript:;" class="tit_d2 mo">기상위성</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/rmt/rmtList.do?code=20" onclick="goMenuPage('/data/rmt/rmtList.do?code=20','63','N');return false;" class="d3">천리안 위성 1호</a></li>
+									<li ><a href="/data/rmt/rmtList.do?code=21" onclick="goMenuPage('/data/rmt/rmtList.do?code=21','683','N');return false;" class="d3">천리안 위성 2A호</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/rmt/rmtList.do?code=10" onclick="goMenuPage('/data/rmt/rmtList.do?code=10','61','N');return false;"  class="d2 ico_bfr">레이더</a>
+	                            <a href="javascript:;" class="tit_d2 mo">레이더</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/rmt/rmtList.do?code=10" onclick="goMenuPage('/data/rmt/rmtList.do?code=10','61','N');return false;" class="d3">사이트</a></li>
+									<li ><a href="/data/rmt/rmtList.do?code=11" onclick="goMenuPage('/data/rmt/rmtList.do?code=11','62','N');return false;" class="d3">합성</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/rmt/rmtList.do?code=400" onclick="goMenuPage('/data/rmt/rmtList.do?code=400','570','N');return false;"  class="d2 ico_bfr">기상예보</a>
+	                            <a href="javascript:;" class="tit_d2 mo">기상예보</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/rmt/rmtList.do?code=400" onclick="goMenuPage('/data/rmt/rmtList.do?code=400','570','N');return false;" class="d3">동네예보</a></li>
+									<li ><a href="/data/weatherReport/wsrList.do" onclick="goMenuPage('/data/weatherReport/wsrList.do','647','N');return false;" class="d3">기상특보</a></li>
+									<li ><a href="/data/typhoonData/typList.do" onclick="goMenuPage('/data/typhoonData/typList.do','688','N');return false;" class="d3">태풍예보</a></li>
+									<li ><a href="/data/weatherReport/hwImpactList.do" onclick="goMenuPage('/data/weatherReport/hwImpactList.do','696','N');return false;" class="d3">영향예보</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/rmt/rmtList.do?code=312" onclick="goMenuPage('/data/rmt/rmtList.do?code=312','64','N');return false;"  class="d2 ico_bfr">수치모델</a>
+	                            <a href="javascript:;" class="tit_d2 mo">수치모델</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/rmt/rmtList.do?code=372" onclick="goMenuPage('/data/rmt/rmtList.do?code=372','568','N');return false;" class="d3">수치분석일기도</a></li>
+									<li ><a href="/data/rmt/rmtList.do?code=312" onclick="goMenuPage('/data/rmt/rmtList.do?code=312','64','N');return false;" class="d3">단·중기예측</a></li>
+									<li ><a href="/data/rmt/rmtList.do?code=320" onclick="goMenuPage('/data/rmt/rmtList.do?code=320','66','N');return false;" class="d3">초단기예측</a></li>
+									<li ><a href="/data/rmt/rmtList.do?code=330" onclick="goMenuPage('/data/rmt/rmtList.do?code=330','87','N');return false;" class="d3">파랑모델</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/gaw/selectGHGsRltmList.do" onclick="goMenuPage('/data/gaw/selectGHGsRltmList.do','587','N');return false;"  class="d2 ico_bfr">기후</a>
+	                            <a href="javascript:;" class="tit_d2 mo">기후</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/gaw/selectGHGsRltmList.do" onclick="goMenuPage('/data/gaw/selectGHGsRltmList.do','587','N');return false;" class="d3">기후변화감시</a></li>
+									<li ><a href="/data/gaw/selectSpiRltmList.do" onclick="goMenuPage('/data/gaw/selectSpiRltmList.do','734','N');return false;" class="d3">가뭄</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/lwi/lwiRltmList.do" onclick="goMenuPage('/data/lwi/lwiRltmList.do','635','N');return false;"  class="d2 ico_bfr">응용기상</a>
+	                            <a href="javascript:;" class="tit_d2 mo">응용기상</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/lwi/lwiRltmList.do" onclick="goMenuPage('/data/lwi/lwiRltmList.do','635','N');return false;" class="d3">기상지수</a></li>
+									<li ><a href="/data/weatherResourceMap/selectWeatherResourceMapSlaNew.do?srt=ANN&amp;sNreYr=2020&amp;eNreYr=2024" onclick="goMenuPage('/data/weatherResourceMap/selectWeatherResourceMapSlaNew.do?srt=ANN&amp;sNreYr=2020&amp;eNreYr=2024','756','N');return false;" class="d3">기상자원지도</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/weatherReport/eqkList.do" onclick="goMenuPage('/data/weatherReport/eqkList.do','654','N');return false;"  class="d2 ico_bfr">지진화산</a>
+	                            <a href="javascript:;" class="tit_d2 mo">지진화산</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/weatherReport/eqkList.do" onclick="goMenuPage('/data/weatherReport/eqkList.do','654','N');return false;" class="d3">지진화산 특·정보</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/focusobs/focusobsList.do?gubun=KEOP" onclick="goMenuPage('/data/focusobs/focusobsList.do?gubun=KEOP','750','N');return false;"  class="d2 ico_bfr">집중관측</a>
+	                            <a href="javascript:;" class="tit_d2 mo">집중관측</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/focusobs/focusobsList.do?gubun=KEOP" onclick="goMenuPage('/data/focusobs/focusobsList.do?gubun=KEOP','750','N');return false;" class="d3">연구용집중관측</a></li>
+									<li ><a href="/data/focusobs/focusobsList.do?gubun=FRSTFIRE" onclick="goMenuPage('/data/focusobs/focusobsList.do?gubun=FRSTFIRE','751','N');return false;" class="d3">산불지원</a></li>
+									<li ><a href="/data/focusobs/focusobsList.do?gubun=KWYD" onclick="goMenuPage('/data/focusobs/focusobsList.do?gubun=KWYD','752','N');return false;" class="d3">강원영동</a></li>
+									<li ><a href="/data/focusobs/focusobsList.do?gubun=MTRAREA" onclick="goMenuPage('/data/focusobs/focusobsList.do?gubun=MTRAREA','753','N');return false;" class="d3">수도권 위험기상</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/weatherIssue/slthtList.do" onclick="goMenuPage('/data/weatherIssue/slthtList.do','690','N');return false;"  class="d2 ico_bfr">날씨 이슈별 데이터</a>
+	                            <a href="javascript:;" class="tit_d2 mo">날씨 이슈별 데이터</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/weatherIssue/slthtList.do" onclick="goMenuPage('/data/weatherIssue/slthtList.do','690','N');return false;" class="d3">폭염</a></li>
+									<li ><a href="/data/weatherIssue/ydstList.do" onclick="goMenuPage('/data/weatherIssue/ydstList.do','695','N');return false;" class="d3">황사</a></li>
+									<li ><a href="/data/weatherIssue/cdwvList.do" onclick="goMenuPage('/data/weatherIssue/cdwvList.do','723','N');return false;" class="d3">한파</a></li>
+									<li ><a href="/data/weatherIssue/typList.do" onclick="goMenuPage('/data/weatherIssue/typList.do','724','N');return false;" class="d3">태풍</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/history/selectJoseonDynastyHistoryList.do" onclick="goMenuPage('/data/history/selectJoseonDynastyHistoryList.do','81','N');return false;"  class="d2 ico_bfr">역사기후</a>
+	                            <a href="javascript:;" class="tit_d2 mo">역사기후</a>
+	                            <ul class="depth3">
+									<li ><a href="/cdps/record/selectRecordList.do" onclick="goMenuPage('/cdps/record/selectRecordList.do','45','N');return false;" class="d3">자기기록지</a></li>
+									<li ><a href="/cdps/weather/selectWeatherList.do" onclick="goMenuPage('/cdps/weather/selectWeatherList.do','44','N');return false;" class="d3">종이일기도</a></li>
+									<li ><a href="/cdps/original/selectOriginalList.do" onclick="goMenuPage('/cdps/original/selectOriginalList.do','46','N');return false;" class="d3">통계원부류</a></li>
+									<li ><a href="/cdps/original/selectOriginalMaritimeList.do" onclick="goMenuPage('/cdps/original/selectOriginalMaritimeList.do','202','N');return false;" class="d3">역사자료</a></li>
+									<li ><a href="/data/publication/publicationHsList.do" onclick="goMenuPage('/data/publication/publicationHsList.do','153','N');return false;" class="d3">기상기록집</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/tmeta/stn/selectStnList.do" onclick="goMenuPage('/tmeta/stn/selectStnList.do','123','N');return false;"  class="d2 ico_bfr">메타데이터</a>
+	                            <a href="javascript:;" class="tit_d2 mo">메타데이터</a>
+	                            <ul class="depth3">
+									<li ><a href="/tmeta/stn/selectStnList.do" onclick="goMenuPage('/tmeta/stn/selectStnList.do','123','N');return false;" class="d3">지점정보</a></li>
+									<li ><a href="/tmeta/stcs/selectMetaList.do" onclick="goMenuPage('/tmeta/stcs/selectMetaList.do','714','N');return false;" class="d3">통계정보</a></li>
+									<li ><a href="/tmeta/selectNumericalModelList.do?grupCd=06" onclick="goMenuPage('/tmeta/selectNumericalModelList.do?grupCd=06','745','N');return false;" class="d3">수치예보모델</a></li>
+									</ul>
+	                        </li>
+							<li>
+	                            <a href="/data/qualityInfo/qcPresentList.do" onclick="goMenuPage('/data/qualityInfo/qcPresentList.do','676','N');return false;"  class="d2 ico_bfr">품질정보</a>
+	                            <a href="javascript:;" class="tit_d2 mo">품질정보</a>
+	                            <ul class="depth3">
+									<li ><a href="/data/qualityInfo/qcPresentList.do" onclick="goMenuPage('/data/qualityInfo/qcPresentList.do','676','N');return false;" class="d3">품질현황</a></li>
+									<li ><a href="/data/qualityInfo/qcReportList.do" onclick="goMenuPage('/data/qualityInfo/qcReportList.do','677','N');return false;" class="d3">데이터품질리포트</a></li>
+									</ul>
+	                        </li>
+							</ul>
+	                </div>
+	            </li>
+	            
+	            <li class="m5"><a href="https://apihub.kma.go.kr" class="d1" target="_brank">API</a></li>
+	            
+	            <li class="m3">
+					<a href="/stcs/grnd/grndTaList.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5?pgmNo=70" class="d1">기후통계분석</a>
+					<a href="javascript:;" class="tit_d1 mo">기후통계분석</a>
+	                <div class="wrap_sub">
+	                    <ul class="depth2">
+							<li><a href="/climate/average30Years/selectAverage30YearsKoreaList.do" onclick="goMenuPage('/climate/average30Years/selectAverage30YearsKoreaList.do','188','N');return false;" class="d2 ico_bfr">평년값</a><a href="javascript:;" class="tit_d2 mo">평년값</a>
+	                            <ul class="depth3">
+									<li><a href="/climate/average30Years/selectAverage30YearsKoreaList.do" onclick="goMenuPage('/climate/average30Years/selectAverage30YearsKoreaList.do','188','N');return false;" class="d3">우리나라 기후평년값</a></li>
+									<li><a href="/climate/average30Years/selectAverage30YearsNorthKoreaList.do" onclick="goMenuPage('/climate/average30Years/selectAverage30YearsNorthKoreaList.do','731','N');return false;" class="d3">북한 기후평년값</a></li>
+									<li><a href="/climate/average30Years/selectAverage30YearsWorldList.do" onclick="goMenuPage('/climate/average30Years/selectAverage30YearsWorldList.do','560','N');return false;" class="d3">세계기후평년값</a></li>
+									</ul>
+	                        </li>
+							
+	                        <li><a href="/climate/RankState/selectRankStatisticsDivisionList.do" onclick="goMenuPage('/climate/RankState/selectRankStatisticsDivisionList.do','179','N');return false;" class="d2 ico_bfr">통계분석</a><a href="javascript:;" class="tit_d2 mo">통계분석</a>
+	                            <ul class="depth3">
+									<li><a href="/climate/RankState/selectRankStatisticsDivisionList.do" onclick="goMenuPage('/climate/RankState/selectRankStatisticsDivisionList.do','179','N');return false;" class="d3">조건별통계</a></li>
+									<li><a href="/stcs/grnd/grndTaList.do" onclick="goMenuPage('/stcs/grnd/grndTaList.do','70','N');return false;" class="d3">기온분석</a></li>
+									<li><a href="/stcs/grnd/grndRnList.do" onclick="goMenuPage('/stcs/grnd/grndRnList.do','69','N');return false;" class="d3">강수량분석</a></li>
+									<li><a href="/climate/StatisticsDivision/selectStatisticsDivision.do" onclick="goMenuPage('/climate/StatisticsDivision/selectStatisticsDivision.do','158','N');return false;" class="d3">다중지점통계</a></li>
+									<li><a href="/climate/solarTerms/solarTerms.do" onclick="goMenuPage('/climate/solarTerms/solarTerms.do','104','N');return false;" class="d3">24절기</a></li>
+									<li><a href="/climate/extremum/selectExtremumList.do" onclick="goMenuPage('/climate/extremum/selectExtremumList.do','103','N');return false;" class="d3">순위값</a></li>
+									<li><a href="/climate/rainySeason/selectRainySeasonList.do" onclick="goMenuPage('/climate/rainySeason/selectRainySeasonList.do','120','N');return false;" class="d3">장마</a></li>
+									</ul>
+	                        </li>
+							
+	                        <li><a href="/climate/heatWave/selectHeatWaveChart.do" onclick="goMenuPage('/climate/heatWave/selectHeatWaveChart.do','106','N');return false;" class="d2 ico_bfr">기상현상일수</a><a href="javascript:;" class="tit_d2 mo">기상현상일수</a>
+	                            <ul class="depth3">
+									<li><a href="/stcs/grnd/grndRnDayList.do" onclick="goMenuPage('/stcs/grnd/grndRnDayList.do','156','N');return false;" class="d3">강수일수</a></li>
+									<li><a href="/climate/snw/selectSnwChart.do" onclick="goMenuPage('/climate/snw/selectSnwChart.do','697','N');return false;" class="d3">눈일수</a></li>
+									<li><a href="/climate/yellowDust/selectYellowDustChart.do" onclick="goMenuPage('/climate/yellowDust/selectYellowDustChart.do','112','N');return false;" class="d3">황사일수</a></li>
+									<li><a href="/climate/heatWave/selectHeatWaveChart.do" onclick="goMenuPage('/climate/heatWave/selectHeatWaveChart.do','106','N');return false;" class="d3">폭염일수</a></li>
+									<li><a href="/climate/tropicalNight/selectTropicalNightChart.do" onclick="goMenuPage('/climate/tropicalNight/selectTropicalNightChart.do','105','N');return false;" class="d3">열대야일수</a></li>
+									<li><a href="/climate/fog/selectFogChart.do" onclick="goMenuPage('/climate/fog/selectFogChart.do','706','N');return false;" class="d3">안개일수</a></li>
+									<li><a href="/climate/frst/selectFrstChart.do" onclick="goMenuPage('/climate/frst/selectFrstChart.do','705','N');return false;" class="d3">서리일수</a></li>
+									<li><a href="/climate/frz/selectFrzChart.do" onclick="goMenuPage('/climate/frz/selectFrzChart.do','707','N');return false;" class="d3">결빙일수</a></li>
+									<li><a href="/climate/hail/selectHailChart.do" onclick="goMenuPage('/climate/hail/selectHailChart.do','698','N');return false;" class="d3">우박일수</a></li>
+									<li><a href="/climate/storm/selectStormChart.do" onclick="goMenuPage('/climate/storm/selectStormChart.do','708','N');return false;" class="d3">폭풍일수</a></li>
+									<li><a href="/climate/thdblt/selectThdbltChart.do" onclick="goMenuPage('/climate/thdblt/selectThdbltChart.do','699','N');return false;" class="d3">뇌전일수</a></li>
+									<li><a href="/climate/cdwv/selectCdwvChart.do" onclick="goMenuPage('/climate/cdwv/selectCdwvChart.do','733','N');return false;" class="d3">한파일수</a></li>
+									</ul>
+	                        </li>
+							
+	                        <li><a href="/stcs/grnd/selectCloudSpecifyDay.do" onclick="goMenuPage('/stcs/grnd/selectCloudSpecifyDay.do','671','N');return false;" class="d2 ico_bfr">계급별일수</a><a href="javascript:;" class="tit_d2 mo">계급별일수</a>
+	                            <ul class="depth3">
+									<li><a href="/stcs/grnd/selectCloudSpecifyDay.do" onclick="goMenuPage('/stcs/grnd/selectCloudSpecifyDay.do','671','N');return false;" class="d3">전운량 계급별일수</a></li>
+									<li><a href="/stcs/grnd/selectRnSpecifyDay.do" onclick="goMenuPage('/stcs/grnd/selectRnSpecifyDay.do','672','N');return false;" class="d3">강수 계급별일수</a></li>
+									<li><a href="/climate/ObsValSearch/selectObsValSearchWindRose.do" onclick="goMenuPage('/climate/ObsValSearch/selectObsValSearchWindRose.do','161','N');return false;" class="d3">바람 계급별일수(바람장미)</a></li>
+									</ul>
+	                        </li>
+							
+	                        <li><a href="/climate/windChill/selectWindChillChart.do" onclick="goMenuPage('/climate/windChill/selectWindChillChart.do','111','N');return false;" class="d2 ico_bfr">응용기상분석</a><a href="javascript:;" class="tit_d2 mo">응용기상분석</a>
+	                            <ul class="depth3">
+									<li><a href="/climate/windChill/selectWindChillChart.do" onclick="goMenuPage('/climate/windChill/selectWindChillChart.do','111','N');return false;" class="d3">체감온도</a></li>
+									<li><a href="/climate/sot/selectSotChart.do" onclick="goMenuPage('/climate/sot/selectSotChart.do','100','N');return false;" class="d3">적산온도</a></li>
+									</ul>
+	                        </li>
+							
+	                        </ul>
+	                </div>
+	            </li>
+	            <li class="m4"><a href="/data/publication/publicationAsosList.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5?pgmNo=143" class="d1">간행물</a><a href="javascript:;" class="tit_d1 mo">간행물</a>
+	                <div class="wrap_sub">
+	                    <ul class="depth2">
+							<li>
+								<a href="/data/publication/publicationAsosList.do" onclick="goMenuPage('/data/publication/publicationAsosList.do','143','N');return false;" class="d2 ico_bfr">지상</a>
+								<a href="javascript:;" class="tit_d2 mo">지상</a>
+		                            <ul class="depth3">
+										<li><a href="/data/publication/publicationAsosList.do" onclick="goMenuPage('/data/publication/publicationAsosList.do','143','N');return false;" class="d3">지상</a></li>
+		                                <li><a href="/data/publication/publicationAwsList.do" onclick="goMenuPage('/data/publication/publicationAwsList.do','145','N');return false;" class="d3">방재</a></li>
+		                                <li><a href="/data/publication/publicationAgList.do" onclick="goMenuPage('/data/publication/publicationAgList.do','146','N');return false;" class="d3">농업</a></li>
+		                                <li><a href="/data/publication/publicationNkList.do" onclick="goMenuPage('/data/publication/publicationNkList.do','566','N');return false;" class="d3">북한</a></li>
+		                                </ul>
+		                        </li>
+							<li>
+								<a href="/data/publication/publicationSeList.do" onclick="goMenuPage('/data/publication/publicationSeList.do','148','N');return false;" class="d2 ico_bfr">해양</a>
+								<a href="javascript:;" class="tit_d2 mo">해양</a>
+		                            <ul class="depth3">
+										<li><a href="/data/publication/publicationSeList.do" onclick="goMenuPage('/data/publication/publicationSeList.do','148','N');return false;" class="d3">해양</a></li>
+		                                </ul>
+		                        </li>
+							<li>
+								<a href="/data/publication/publicationTmList.do" onclick="goMenuPage('/data/publication/publicationTmList.do','147','N');return false;" class="d2 ico_bfr">고층</a>
+								<a href="javascript:;" class="tit_d2 mo">고층</a>
+		                            <ul class="depth3">
+										<li><a href="/data/publication/publicationTmList.do" onclick="goMenuPage('/data/publication/publicationTmList.do','147','N');return false;" class="d3">고층</a></li>
+		                                </ul>
+		                        </li>
+							<li>
+								<a href="https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=lgt_yearly" onclick="goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=lgt_yearly','149','Y');return false;" class="d2 ico_bfr">레이더</a>
+								<a href="javascript:;" class="tit_d2 mo">레이더</a>
+		                            <ul class="depth3">
+										<li><a href="https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=lgt_yearly" onclick="goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=lgt_yearly','149','Y');return false;" class="d3">낙뢰연보</a></li>
+		                                </ul>
+		                        </li>
+							<li>
+								<a href="https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=earthquakeye" onclick="goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=earthquakeye','150','Y');return false;" class="d2 ico_bfr">지진</a>
+								<a href="javascript:;" class="tit_d2 mo">지진</a>
+		                            <ul class="depth3">
+										<li><a href="https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=earthquakeye" onclick="goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=earthquakeye','150','Y');return false;" class="d3">지진연보</a></li>
+		                                </ul>
+		                        </li>
+							<li>
+								<a href="https://amo.kma.go.kr/weather/stat/airport-climate.do" onclick="goMenuPage('https://amo.kma.go.kr/weather/stat/airport-climate.do','152','Y');return false;" class="d2 ico_bfr">항공</a>
+								<a href="javascript:;" class="tit_d2 mo">항공</a>
+		                            <ul class="depth3">
+										<li><a href="/data/publication/publicationMetList.do" onclick="goMenuPage('/data/publication/publicationMetList.do','682','N');return false;" class="d3">항공기상연월보</a></li>
+		                                <li><a href="https://amo.kma.go.kr/weather/stat/airport-climate.do" onclick="goMenuPage('https://amo.kma.go.kr/weather/stat/airport-climate.do','152','Y');return false;" class="d3">항공기후정보</a></li>
+		                                </ul>
+		                        </li>
+							<li>
+								<a href="http://www.climate.go.kr/home/bbs/list.php?code=25&bname=report" onclick="goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=25&bname=report','151','Y');return false;" class="d2 ico_bfr">기후변화</a>
+								<a href="javascript:;" class="tit_d2 mo">기후변화</a>
+		                            <ul class="depth3">
+										<li><a href="http://www.climate.go.kr/home/bbs/list.php?code=25&bname=report" onclick="goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=25&bname=report','151','Y');return false;" class="d3">지구대기감시보고서</a></li>
+		                                <li><a href="http://www.climate.go.kr/home/bbs/list.php?code=93&amp;bname=abnormal" onclick="goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=93&amp;bname=abnormal','154','Y');return false;" class="d3">이상기후보고서</a></li>
+		                                </ul>
+		                        </li>
+							<li>
+								<a href="/data/publication/publicationWbList.do" onclick="goMenuPage('/data/publication/publicationWbList.do','155','N');return false;" class="d2 ico_bfr">백서</a>
+								</li>
+							<li>
+								<a href="/data/publication/publicationGlList.do" onclick="goMenuPage('/data/publication/publicationGlList.do','681','N');return false;" class="d2 ico_bfr">규정&middot;지침</a>
+								</li>
+							</ul>
+	                </div>
+	            </li>
+	            <li class="m5"><a href="/community/board/selectBoardList.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5?bbrdTypeNo=2&amp;pgmNo=40" class="d1">소통과 참여</a><a href="javascript:;" class="tit_d1 mo">소통과 참여</a>
+	                <div class="wrap_sub">
+	                    <div class="quick">
+							<a href="/community/board/selectBoardList.do?bbrdTypeNo=3&pgmNo=95" class="link_faq">FAQ</a>
+							<a href="/community/board/selectBoardList.do?bbrdTypeNo=1&pgmNo=96" class="link_qna">QnA</a>
+						</div>
+	                    <ul class="depth2">
+							<li><a href="/community/board/selectBoardList.do?bbrdTypeNo=2" class="d2 ico_bfr" onclick="goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=2','40','N');return false;">공지사항</a></li>
+							<li><a href="/community/board/selectBoardList.do?bbrdTypeNo=4" class="d2 ico_bfr" onclick="goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=4','92','N');return false;">자료실</a></li>
+							<li><a href="/community/board/selectBoardList.do?bbrdTypeNo=3" class="d2 ico_bfr" onclick="goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=3','95','N');return false;">FAQ</a></li>
+							<li><a href="/community/board/selectBoardList.do?bbrdTypeNo=1" class="d2 ico_bfr" onclick="goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=1','96','N');return false;">QnA</a></li>
+							<li><a href="/community/selectErrorDataList.do" class="d2 ico_bfr" onclick="goMenuPage('/community/selectErrorDataList.do','141','N');return false;">데이터품질대화방</a></li>
+							<li><a href="/community/board/selectBoardList.do?bbrdTypeNo=7" class="d2 ico_bfr" onclick="goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=7','59','N');return false;">자유게시판</a></li>
+							<li><a href="/community/selectVisualizationList.do" class="d2 ico_bfr" onclick="goMenuPage('/community/selectVisualizationList.do','722','N');return false;">시각화 정보</a></li>
+							<li><a href="/community/selectNuriLove.do" class="d2 ico_bfr" onclick="goMenuPage('/community/selectNuriLove.do','747','N');return false;">누리사랑방</a></li>
+							</ul>
+	                </div>
+	            </li>
+	            
+	            <li class="m5"><a href="http://minwon.kma.go.kr" class="d1" target="_brank">기상현상증명</a></li>
+	            
+	        </ul>
+	        <a href="javascript:;" class="btn_allmenu "><i class="ico_comm">전체메뉴 열기/닫기</i></a>
+	        <div class="wrap_allMenu">
+	            <ul class="allMenu">
+	                <li class="m2"><a href="#" onclick="javascript:goMenuPage('/data/grnd/selectAsosRltmList.do','36');return false;" class="d1">데이터</a><a href="javascript:;" class="tit_d1 mo">데이터</a>
+						<div class="wrap_sub">
+	                        <ul class="depth2">
+								<li><a href="#" onclick="javascript:goMenuPage('/data/grnd/selectAsosRltmList.do','36');return false;" class="d2 ico_bfr">기상관측</a><a href="javascript:;" class="tit_d2 mo">기상관측</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/grnd/selectAsosRltmList.do','36');return false;" class="d3">지상</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/sea/selectBuoyRltmList.do','52');return false;" class="d3">해양</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/hr/selectRdsdRltmList.do','49');return false;" class="d3">고층</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/air/selectAmosRltmList.do','575');return false;" class="d3">항공</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/ogd/selectGtsRltmList.do','658');return false;" class="d3">세계기상전문(GTS)</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=21','683');return false;" class="d2 ico_bfr">기상위성</a><a href="javascript:;" class="tit_d2 mo">기상위성</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=20','63');return false;" class="d3">천리안 위성 1호</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=21','683');return false;" class="d3">천리안 위성 2A호</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=10','61');return false;" class="d2 ico_bfr">레이더</a><a href="javascript:;" class="tit_d2 mo">레이더</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=10','61');return false;" class="d3">사이트</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=11','62');return false;" class="d3">합성</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=400','570');return false;" class="d2 ico_bfr">기상예보</a><a href="javascript:;" class="tit_d2 mo">기상예보</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=400','570');return false;" class="d3">동네예보</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/weatherReport/wsrList.do','647');return false;" class="d3">기상특보</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/typhoonData/typList.do','688');return false;" class="d3">태풍예보</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/weatherReport/hwImpactList.do','696');return false;" class="d3">영향예보</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=312','64');return false;" class="d2 ico_bfr">수치모델</a><a href="javascript:;" class="tit_d2 mo">수치모델</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=372','568');return false;" class="d3">수치분석일기도</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=312','64');return false;" class="d3">단·중기예측</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=320','66');return false;" class="d3">초단기예측</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/rmt/rmtList.do?code=330','87');return false;" class="d3">파랑모델</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/gaw/selectGHGsRltmList.do','587');return false;" class="d2 ico_bfr">기후</a><a href="javascript:;" class="tit_d2 mo">기후</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/gaw/selectGHGsRltmList.do','587');return false;" class="d3">기후변화감시</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/gaw/selectSpiRltmList.do','734');return false;" class="d3">가뭄</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/lwi/lwiRltmList.do','635');return false;" class="d2 ico_bfr">응용기상</a><a href="javascript:;" class="tit_d2 mo">응용기상</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/lwi/lwiRltmList.do','635');return false;" class="d3">기상지수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/weatherResourceMap/selectWeatherResourceMapSlaNew.do?srt=ANN&amp;sNreYr=2020&amp;eNreYr=2024','756');return false;" class="d3">기상자원지도</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/weatherReport/eqkList.do','654');return false;" class="d2 ico_bfr">지진화산</a><a href="javascript:;" class="tit_d2 mo">지진화산</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/weatherReport/eqkList.do','654');return false;" class="d3">지진화산 특·정보</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/focusobs/focusobsList.do?gubun=KEOP','750');return false;" class="d2 ico_bfr">집중관측</a><a href="javascript:;" class="tit_d2 mo">집중관측</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/focusobs/focusobsList.do?gubun=KEOP','750');return false;" class="d3">연구용집중관측</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/focusobs/focusobsList.do?gubun=FRSTFIRE','751');return false;" class="d3">산불지원</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/focusobs/focusobsList.do?gubun=KWYD','752');return false;" class="d3">강원영동</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/focusobs/focusobsList.do?gubun=MTRAREA','753');return false;" class="d3">수도권 위험기상</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/weatherIssue/slthtList.do','690');return false;" class="d2 ico_bfr">날씨 이슈별 데이터</a><a href="javascript:;" class="tit_d2 mo">날씨 이슈별 데이터</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/weatherIssue/slthtList.do','690');return false;" class="d3">폭염</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/weatherIssue/ydstList.do','695');return false;" class="d3">황사</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/weatherIssue/cdwvList.do','723');return false;" class="d3">한파</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/weatherIssue/typList.do','724');return false;" class="d3">태풍</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/history/selectJoseonDynastyHistoryList.do','81');return false;" class="d2 ico_bfr">역사기후</a><a href="javascript:;" class="tit_d2 mo">역사기후</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/cdps/record/selectRecordList.do','45');return false;" class="d3">자기기록지</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/cdps/weather/selectWeatherList.do','44');return false;" class="d3">종이일기도</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/cdps/original/selectOriginalList.do','46');return false;" class="d3">통계원부류</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/cdps/original/selectOriginalMaritimeList.do','202');return false;" class="d3">역사자료</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationHsList.do','153');return false;" class="d3">기상기록집</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/tmeta/stn/selectStnList.do','123');return false;" class="d2 ico_bfr">메타데이터</a><a href="javascript:;" class="tit_d2 mo">메타데이터</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/tmeta/stn/selectStnList.do','123');return false;" class="d3">지점정보</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/tmeta/stcs/selectMetaList.do','714');return false;" class="d3">통계정보</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/tmeta/selectNumericalModelList.do?grupCd=06','745');return false;" class="d3">수치예보모델</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/qualityInfo/qcPresentList.do','676');return false;" class="d2 ico_bfr">품질정보</a><a href="javascript:;" class="tit_d2 mo">품질정보</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/qualityInfo/qcPresentList.do','676');return false;" class="d3">품질현황</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/qualityInfo/qcReportList.do','677');return false;" class="d3">데이터품질리포트</a></li>
+	                                    </ul>
+	                                </li>
+	                            </ul>
+	                    </div>
+	                </li>
+	                <li class="m2"><a href="#" onclick="javascript:goMenuPage('/climate/RankState/selectRankStatisticsDivisionList.do','179');return false;" class="d1">기후통계분석</a><a href="javascript:;" class="tit_d1 mo">기후통계분석</a>
+						<div class="wrap_sub">
+	                        <ul class="depth2">
+								<li><a href="#" onclick="javascript:goMenuPage('/climate/average30Years/selectAverage30YearsKoreaList.do','188');return false;" class="d2 ico_bfr">평년값</a><a href="javascript:;" class="tit_d2 mo">평년값</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/climate/average30Years/selectAverage30YearsKoreaList.do','188');return false;" class="d3">우리나라 기후평년값</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/average30Years/selectAverage30YearsNorthKoreaList.do','731');return false;" class="d3">북한 기후평년값</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/average30Years/selectAverage30YearsWorldList.do','560');return false;" class="d3">세계기후평년값</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/climate/RankState/selectRankStatisticsDivisionList.do','179');return false;" class="d2 ico_bfr">통계분석</a><a href="javascript:;" class="tit_d2 mo">통계분석</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/climate/RankState/selectRankStatisticsDivisionList.do','179');return false;" class="d3">조건별통계</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/stcs/grnd/grndTaList.do','70');return false;" class="d3">기온분석</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/stcs/grnd/grndRnList.do','69');return false;" class="d3">강수량분석</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/StatisticsDivision/selectStatisticsDivision.do','158');return false;" class="d3">다중지점통계</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/solarTerms/solarTerms.do','104');return false;" class="d3">24절기</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/extremum/selectExtremumList.do','103');return false;" class="d3">순위값</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/rainySeason/selectRainySeasonList.do','120');return false;" class="d3">장마</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/climate/heatWave/selectHeatWaveChart.do','106');return false;" class="d2 ico_bfr">기상현상일수</a><a href="javascript:;" class="tit_d2 mo">기상현상일수</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/stcs/grnd/grndRnDayList.do','156');return false;" class="d3">강수일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/snw/selectSnwChart.do','697');return false;" class="d3">눈일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/yellowDust/selectYellowDustChart.do','112');return false;" class="d3">황사일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/heatWave/selectHeatWaveChart.do','106');return false;" class="d3">폭염일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/tropicalNight/selectTropicalNightChart.do','105');return false;" class="d3">열대야일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/fog/selectFogChart.do','706');return false;" class="d3">안개일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/frst/selectFrstChart.do','705');return false;" class="d3">서리일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/frz/selectFrzChart.do','707');return false;" class="d3">결빙일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/hail/selectHailChart.do','698');return false;" class="d3">우박일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/storm/selectStormChart.do','708');return false;" class="d3">폭풍일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/thdblt/selectThdbltChart.do','699');return false;" class="d3">뇌전일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/cdwv/selectCdwvChart.do','733');return false;" class="d3">한파일수</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/stcs/grnd/selectCloudSpecifyDay.do','671');return false;" class="d2 ico_bfr">계급별일수</a><a href="javascript:;" class="tit_d2 mo">계급별일수</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/stcs/grnd/selectCloudSpecifyDay.do','671');return false;" class="d3">전운량 계급별일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/stcs/grnd/selectRnSpecifyDay.do','672');return false;" class="d3">강수 계급별일수</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/ObsValSearch/selectObsValSearchWindRose.do','161');return false;" class="d3">바람 계급별일수(바람장미)</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/climate/windChill/selectWindChillChart.do','111');return false;" class="d2 ico_bfr">응용기상분석</a><a href="javascript:;" class="tit_d2 mo">응용기상분석</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/climate/windChill/selectWindChillChart.do','111');return false;" class="d3">체감온도</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/climate/sot/selectSotChart.do','100');return false;" class="d3">적산온도</a></li>
+	                                    </ul>
+	                                </li>
+	                            </ul>
+	                    </div>
+	                </li>
+	                <li class="m2"><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationAsosList.do','143');return false;" class="d1">간행물</a><a href="javascript:;" class="tit_d1 mo">간행물</a>
+						<div class="wrap_sub">
+	                        <ul class="depth2">
+								<li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationAsosList.do','143');return false;" class="d2 ico_bfr">지상</a><a href="javascript:;" class="tit_d2 mo">지상</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationAsosList.do','143');return false;" class="d3">지상</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationAwsList.do','145');return false;" class="d3">방재</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationAgList.do','146');return false;" class="d3">농업</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationNkList.do','566');return false;" class="d3">북한</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationSeList.do','148');return false;" class="d2 ico_bfr">해양</a><a href="javascript:;" class="tit_d2 mo">해양</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationSeList.do','148');return false;" class="d3">해양</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationTmList.do','147');return false;" class="d2 ico_bfr">고층</a><a href="javascript:;" class="tit_d2 mo">고층</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationTmList.do','147');return false;" class="d3">고층</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=lgt_yearly','149');return false;" class="d2 ico_bfr">레이더</a><a href="javascript:;" class="tit_d2 mo">레이더</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=lgt_yearly','149');return false;" class="d3">낙뢰연보</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=earthquakeye','150');return false;" class="d2 ico_bfr">지진</a><a href="javascript:;" class="tit_d2 mo">지진</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=earthquakeye','150');return false;" class="d3">지진연보</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('https://amo.kma.go.kr/weather/stat/airport-climate.do','152');return false;" class="d2 ico_bfr">항공</a><a href="javascript:;" class="tit_d2 mo">항공</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationMetList.do','682');return false;" class="d3">항공기상연월보</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('https://amo.kma.go.kr/weather/stat/airport-climate.do','152');return false;" class="d3">항공기후정보</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=25&bname=report','151');return false;" class="d2 ico_bfr">기후변화</a><a href="javascript:;" class="tit_d2 mo">기후변화</a><ul class="depth3">
+										<li><a href="#" onclick="javascript:goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=25&bname=report','151');return false;" class="d3">지구대기감시보고서</a></li>
+	                                    <li><a href="#" onclick="javascript:goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=93&amp;bname=abnormal','154');return false;" class="d3">이상기후보고서</a></li>
+	                                    </ul>
+	                                </li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationWbList.do','155');return false;" class="d2 ico_bfr">백서</a></li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/data/publication/publicationGlList.do','681');return false;" class="d2 ico_bfr">규정&middot;지침</a></li>
+	                            </ul>
+	                    </div>
+	                </li>
+	                <li class="m2"><a href="#" onclick="javascript:goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=2','40');return false;" class="d1">소통과참여</a><a href="javascript:;" class="tit_d1 mo">소통과참여</a>
+						<div class="wrap_sub">
+	                        <ul class="depth2">
+								<li><a href="#" onclick="javascript:goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=2','40');return false;" class="d2 ico_bfr">공지사항</a></li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=4','92');return false;" class="d2 ico_bfr">자료실</a></li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=3','95');return false;" class="d2 ico_bfr">FAQ</a></li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=1','96');return false;" class="d2 ico_bfr">QnA</a></li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/community/selectErrorDataList.do','141');return false;" class="d2 ico_bfr">데이터품질대화방</a></li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/community/board/selectBoardList.do?bbrdTypeNo=7','59');return false;" class="d2 ico_bfr">자유게시판</a></li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/community/selectVisualizationList.do','722');return false;" class="d2 ico_bfr">시각화 정보</a></li>
+	                            <li><a href="#" onclick="javascript:goMenuPage('/community/selectNuriLove.do','747');return false;" class="d2 ico_bfr">누리사랑방</a></li>
+	                            </ul>
+	                    </div>
+	                </li>
+	                </ul>
+	        </div>
+	    </div>
+	</nav>
+<!-- End:Header Area -->
+			</header>
+			
+			<div id="container">
+				<div class="wfix">
+				
+				<!-- Start:Left Area -->
+				<script>
+	$(document).ready(function () {
+		/*
+		$("#leftMenuUi li").mouseover(function(){
+			$(this).find("ul").show();
+			$(this).addClass("on");
+			//$(this).find("ul > li:first").addClass("on");
+		});
+		
+		$("#leftMenuUi li").mouseout(function(){
+			$(this).find("ul").hide();
+			$(this).removeClass("on");
+		});
+		*/
+		
+	});
+	/* 2016.1.4 스크립트 수정 */
+	$(document).ready(function () {
+		/*
+		$("#leftMenuUi>li").on('mouseover', function(e){
+			e.stopPropagation();
+			var selectIndex = $("#leftMenuUi > li").index(this);
+			
+			$(this).addClass("on");
+			$(this).children('ul').stop().animate({'max-height': '1000px'}, 800);
+			
+			$("#leftMenuUi > li").each(function(idx){
+				if(idx != selectIndex){
+					//$(this).removeClass("on");
+					//$(this).children('ul').stop().animate({'max-height': '0'}, 800);
+				}
+			});
+		});
+		*/
+	});
+
+	//서브메뉴를 오픈한다.
+	function openSubMenu(menu){
+		//alert($(menu).hasClass('on'));
+		if(	$(menu).parent().hasClass('on') ){
+			$(menu).parent().children('ul').stop().animate({'max-width': '0px'}, 600, function() {
+			    // Animation complete.
+				$(menu).parent().removeClass('on');
+			});
+		}else{
+			$(menu).parent().addClass('on');
+			$(menu).parent().children('ul').stop().animate({'max-height': '200px'}, 600);
+		}
+	}
+	
+	//서브메뉴 btn
+	$(document).ready(function(){
+	  $('').click(function(){
+	       $('.has-child').parent().toggleClass('togbtn');
+	  });
+	  $(".tgl").on("click",function(){
+		 
+		  if($(this).parents().attr('class') == 'it_d2 on hv'){
+			  $(this).text("열기");
+		  }else if($(this).parents().attr('class') == 'it_d2 on'){
+			  $(this).text("닫기");
+		  }else if($(this).parents().attr('class') == 'it_d2 hv'){
+			  $(this).text("닫기");
+		  }else if($(this).parents().attr('class') == 'it_d2'){
+			  $(this).text("열기");
+		  }else if($(this).parents().attr('class') == 'it_d2  hv'){
+			  $(this).text("닫기");
+		  }
+		  
+		  if($(this).parents().attr('class') == 'it_d1 on hv'){
+			  $(this).html('<i class="ico_comm">열기</i>');
+		  }else if($(this).parents().attr('class') == 'it_d1 on'){
+			  $(this).html('<i class="ico_comm">닫기</i>');
+		  }else if($(this).parents().attr('class') == 'it_d1  hv'){
+			  $(this).html('<i class="ico_comm">닫기</i>');
+		  }else if($(this).parents().attr('class') == 'it_d1 hv'){
+			  $(this).html('<i class="ico_comm">닫기</i>');
+		  }else if($(this).parents().attr('class') == 'it_d1'){
+			  $(this).html('<i class="ico_comm">열기</i>');
+		  }
+	  });
+	  
+	  
+	});
+	
+</script>
+<div id="snb">
+    <h3 class="tit_snb">
+        
+                간행물
+                <!-- img 변경 필요 20190905 추가 -->
+            </h3>
+    <nav class="wrap_snb">
+        <ul class="lst">
+            <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('/data/publication/publicationAsosList.do','143','N');return false;" class="d1 ico_aft">지상</a>
+                                <a href="javascript:;" class="tgl">
+                                	<i class="ico_comm">
+                                	열기</i>
+	                            </a>
+                                <ul class="depth2">
+                                    <li class="it_d2 on">
+                                                <a href="#" onclick="javascript:goMenuPage('/data/publication/publicationAsosList.do','143','N');return false;" class="d2">지상</a>
+                                                    </li>
+        <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('/data/publication/publicationAwsList.do','145','N');return false;" class="d2">방재</a>
+                                                    </li>
+        <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('/data/publication/publicationAgList.do','146','N');return false;" class="d2">농업</a>
+                                                    </li>
+        <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('/data/publication/publicationNkList.do','566','N');return false;" class="d2">북한</a>
+                                                    </li>
+        </ul>
+        </li>
+        <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('/data/publication/publicationSeList.do','148','N');return false;" class="d1 ico_aft">해양</a>
+                                <a href="javascript:;" class="tgl">
+                                	<i class="ico_comm">
+                                	열기</i>
+	                            </a>
+                                <ul class="depth2">
+                                    <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('/data/publication/publicationSeList.do','148','N');return false;" class="d2">해양</a>
+                                                    </li>
+        </ul>
+        </li>
+        <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('/data/publication/publicationTmList.do','147','N');return false;" class="d1 ico_aft">고층</a>
+                                <a href="javascript:;" class="tgl">
+                                	<i class="ico_comm">
+                                	열기</i>
+	                            </a>
+                                <ul class="depth2">
+                                    <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('/data/publication/publicationTmList.do','147','N');return false;" class="d2">고층</a>
+                                                    </li>
+        </ul>
+        </li>
+        <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=lgt_yearly','149','Y');return false;" title="새창열림" class="d1 ico_aft">레이더</a>
+                                <a href="javascript:;" class="tgl">
+                                	<i class="ico_comm">
+                                	열기</i>
+	                            </a>
+                                <ul class="depth2">
+                                    <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=lgt_yearly','149','Y');return false;" title="새창열림" class="d2">낙뢰연보</a>
+                                                    </li>
+        </ul>
+        </li>
+        <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=earthquakeye','150','Y');return false;" title="새창열림" class="d1 ico_aft">지진</a>
+                                <a href="javascript:;" class="tgl">
+                                	<i class="ico_comm">
+                                	열기</i>
+	                            </a>
+                                <ul class="depth2">
+                                    <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('https://www.kma.go.kr/kma/archive/pub.jsp?field1=grp&text1=earthquakeye','150','Y');return false;" title="새창열림" class="d2">지진연보</a>
+                                                    </li>
+        </ul>
+        </li>
+        <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('https://amo.kma.go.kr/weather/stat/airport-climate.do','152','Y');return false;" title="새창열림" class="d1 ico_aft">항공</a>
+                                <a href="javascript:;" class="tgl">
+                                	<i class="ico_comm">
+                                	열기</i>
+	                            </a>
+                                <ul class="depth2">
+                                    <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('/data/publication/publicationMetList.do','682','N');return false;" class="d2">항공기상연월보</a>
+                                                    </li>
+        <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('https://amo.kma.go.kr/weather/stat/airport-climate.do','152','Y');return false;" title="새창열림" class="d2">항공기후정보</a>
+                                                    </li>
+        </ul>
+        </li>
+        <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=25&bname=report','151','Y');return false;" title="새창열림" class="d1 ico_aft">기후변화</a>
+                                <a href="javascript:;" class="tgl">
+                                	<i class="ico_comm">
+                                	열기</i>
+	                            </a>
+                                <ul class="depth2">
+                                    <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=25&bname=report','151','Y');return false;" title="새창열림" class="d2">지구대기감시보고서</a>
+                                                    </li>
+        <li class="it_d2 ">
+                                                <a href="#" onclick="javascript:goMenuPage('http://www.climate.go.kr/home/bbs/list.php?code=93&amp;bname=abnormal','154','Y');return false;" title="새창열림" class="d2">이상기후보고서</a>
+                                                    </li>
+        </ul>
+        </li>
+        <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('/data/publication/publicationWbList.do','155','N');return false;" class="d1 ico_aft">백서</a>
+                                </li>
+        <li class="it_d1 ">
+                            <a href="#" onclick="goMenuPage('/data/publication/publicationGlList.do','681','N');return false;" class="d1 ico_aft">규정&middot;지침</a>
+                                </li>
+        </ul>
+    </nav>
+    <div class="wrap_bnrs">
+        <ul class="lst_bnr">
+            <li><a href="/api/selectApiList.do?pgmNo=42"><img src="/resources/images/content/left_banner1.png" alt="데이터 개방 오픈API"></a></li>
+        </ul>
+    </div>
+</div><!-- End:Left Area -->
+					<!-- Start:Body Area -->
+					<div id="contents" tabindex="-1">
+						<script >
+	
+var SELECT_GRND_PUB_ASOS_LIST = "/data/publication/publicationAsosList.do?pgmNo=143";
+
+$(document).ready(function () {
+	//$("#upperCmmnCode").val("PUB");
+	$("#cmmnCdList").val("PUB01,PUB02,PUB13,PUB03");
+	$("#schListCnt_list").on("change",function(){
+		$("#schListCnt").val($("#schListCnt_list option:selected").val())	;
+	});
+});
+
+function goSearch(){
+	if(!fnValidate()) return false;
+	$("#schForm").attr("action", SELECT_GRND_PUB_ASOS_LIST).submit();
+}
+
+function goListType(type){
+
+	$("#txtStnNm").val("");
+	$("#txtElementNm").val("");
+			
+	if(type == "1"){ // DB 조회
+	    $("#schForm").attr("action", SELECT_GRND_PUB_ASOS_LIST).submit();
+	}
+}
+
+function goPage(pageIndex) {
+    $("#pageIndex").val(pageIndex);
+    $("#schForm").attr("method", "post");
+    $("#schForm").attr("action", SELECT_GRND_PUB_ASOS_LIST).submit();		
+}
+
+</script>
+
+<!-- 타이틀 및 네비게이터 시작 -->
+<script>
+	/*
+	$(function () {
+
+		$("#srvEvlForm").ready(function(){
+			$.ajax({
+				type : 'post',
+				url : "/srvEvl/evlAvgResult.do",
+				data: $("#srvEvlForm").serialize(),
+				dataType : "json",
+				success : function(data) {
+					var code = data.code;
+					if(code == '00'){
+
+						var tmp = '';
+						var data = data.data;
+						for(i=0; i<data; i++){
+							tmp += '<i class="fa fa-star" aria-hidden="true"></i>';
+						}
+						for(i=0; i<(5 - data); i++){
+							tmp += '<i class="fa fa-star-o" aria-hidden="true"></i>';
+						}
+
+						$("div[id=srvEvlAvg]").html(tmp);
+					}
+				}
+			});
+		});
+	});
+	*/
+	$(function () {
+		var subTitle = $("div.wrap_tab ul.lst li.on a").text();
+		if(subTitle != null && subTitle != ''){
+			$(".title").append("<span class='crt_tab'> - "+subTitle+"</span>");
+		}
+	});
+</script>
+<div class="location">
+		<ul class="lst">
+		    <li><a href="/cmmn/main.do" class="ico_bfr">Home</a></li>
+		    <li class="ico_bfr">간행물</li><li class="ico_bfr">지상</li><li class="ico_bfr">지상간행물</li>
+		</ul>
+	</div>
+	<div class="title_content">
+	    <h2 class="title">지상간행물</h2>
+	</div>
+	
+<!-- 타이틀 및 네비게이터 종료 -->
+<div id="wrap_content" class="publicationAsosList">
+    
+    <!-- 도움말과 자료 다운로드 표출 시작-->
+    <script src="/resources/module/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+$(document).ready(function() {
+	$.ajax({
+		type : 'post',
+		url : "/cmmn/selectTagAjaxList.do",
+		data : "pgmNo=",
+		dataType : "json",
+		success : function(data) {
+			if(data.code === '00'){
+				var dataList = data.dataList;
+				var len = dataList.length;
+				
+				if(len > 0){
+					var strHtml = '';
+					
+					strHtml = '<div class="wrap_tbl"><table class="tbl"><caption class="blind">지상간행물 자료설명 - 태그 목록</caption><colgroup><col width="10%"><col width="90%"></colgroup><tbody><tr><th scope="row"><strong>태그</strong></th><td>';
+					for (var i = 0; i < len; i++) {
+						strHtml += dataList[i].wordGrupNm;
+						if(i < len -1){
+							strHtml += ', ';
+						}
+					}
+					strHtml += '</td></tr></tbody></table></div>'
+					
+					$("#tagArea").html(strHtml);
+				} else {
+					
+				}
+			}
+		},
+		error : function() {
+			LayerUtil.hide();
+		}
+	});
+});
+
+function downloadManual(mngRprtNo, ctlgNo) {
+	$.ajax({
+		type : 'post',
+		url : "/download/downloadManual.do",
+		//data : $('form[name=schForm]').serialize(),
+		data : "mngRprtNo=" + mngRprtNo + "&ctlgNo=" + ctlgNo,
+		dataType : "html",
+		success : function(data) {
+			LayerUtil.show(data);
+		},
+		error : function() {
+			LayerUtil.hide();
+		}
+	});
+}
+
+
+function downloadPopFile(fileName){
+	
+	$("#fileName").val(fileName);
+	$("#frm").attr("target", "hiddenFrame");
+	$("#frm").attr("action", "/download/downloadPopFile.do").submit();
+	$("#frm").attr("target", "");
+	
+}
+
+function helpPop(){
+	/*
+	var html = '<div id="wrap-datapop" style="width:630px; height:340px; position: relative; top: 0px; overflow-x:hidden;">'
+	html +='<div class="datapop-container">';
+	html +='<div class="datapop-header datapop-header-border">'
+	html +='<h4 class="datapop-title"><체감온도 서비스 변경></h4>'
+	html +='<a href="#" onclick="LayerUtil.hide(); return false;" class="btn-close"><img src="/resources/images/common/btn_close.png" alt="닫기" /></a>'
+	html +='</div>'
+	html +='<table class="table-style"><caption class="blind">체감온도 도움말 보기</caption><tr><td>';
+	html +="ㅇ 기존 ‘더위체감지수’는 2020년 5월 15일을 기준으로 ‘체감온도’로 명칭이 변경되었으며,<br/>"
+	html +="종류별 제공 기간 및 산출식이 다릅니다.<br/><br/>"
+	html +="&nbsp;* ~ 2020년 5월 14일 : 더위체감지수 7종 제공<br/>"
+	html +="&nbsp;&nbsp;- 일반인, 노인, 어린이, 실외작업장, 농촌, 비닐하우스, 취약거주환경<br/>"
+	html +="&nbsp;* 2020년 5월 15일 ~ : 체감온도 8종 제공<br/>"
+	html +="&nbsp;&nbsp;- 노인, 어린이, 농촌, 비닐하우스, 취약거주환경, 도로, 건설현장, 조선소<br/>"
+	html +="&nbsp;&nbsp;- 일반인, 실외작업장 대상 서비스 종료<br/><br/>"
+	html +="ㅇ 제공 기간에 따른 체감온도 산출식은 첨부파일 참고<br/>"
+	html +="&nbsp;&nbsp;- <a href='#' onclick=\"javascript:downloadPopFile('세분화된 체감온도 정의 및 산출식.hwp')\">세분화된 체감온도 정의 및 산출식</a>"
+	html +='</td></tr></table>'
+	html +='</div>'
+	html +='</div>';
+	*/
+	
+	/* var html = '<div class="layer" tabindex="0">';
+	html += '<div class="inr_layer">';
+	html += '<div class="hd_layer">';
+	html += '<h3 class="tit">체감온도 서비스 변경</h3>';
+	html += '<button type="button" class="closeLayer" onclick="LayerUtil.hide(); return false;"><i>닫기</i></button>';
+	html += '</div>';
+	html += '<div class="cont_layer box">';
+	html += '<p>ㅇ 기존 ‘더위체감지수’는 2020년 5월 15일을 기준으로 ‘체감온도’로 명칭이 변경되었으며,<br>종류별 제공 기간 및 산출식이 다릅니다.</p><br/>';
+	html += '<p> * ~ 2020년 5월 14일 : 더위체감지수 7종 제공<Br>';
+	html += '- 일반인, 노인, 어린이, 실외작업장, 농촌, 비닐하우스, 취약거주환경<br>';
+	html += '* 2020년 5월 15일 ~ : 체감온도 8종 제공<br>';
+	html += '- 노인, 어린이, 농촌, 비닐하우스, 취약거주환경, 도로, 건설현장, 조선소<br>';
+	html += '- 일반인, 실외작업장 대상 서비스 종료</p><br/>';
+	//html += '<p>ㅇ 제공 기간에 따른 체감온도 산출식은 첨부파일 참고<br/>';
+	//html += '- <a href="#" onclick="javascript:downloadPopFile(\'세분화된 체감온도 정의 및 산출식.pdf\')">세분화된 체감온도 정의 및 산출식</a>';
+	html += '</p></div></div></div>'; */
+	
+	// 2023.02.16 생활기상지수 자료설명 팝업 수정
+	var html = '<div class="layer" tabindex="0">';
+	html += '<div class="inr_layer">';
+	html += '<div class="hd_layer">';
+	html += '<h3 class="tit">서비스 변경 안내</h3>';
+	html += '<button type="button" class="closeLayer" onclick="LayerUtil.hide(); return false;"><i>닫기</i></button>';
+	html += '</div>';
+	html += '<div class="cont_layer box">';
+	html += '<h3><strong>&lt; 체감온도 서비스 변경 &gt;</strong></h3>'
+	html += '<p>ㅇ 기존 ‘더위체감지수’는 2020년 5월 15일을 기준으로 ‘체감온도’로 명칭이 변경되었으며,<br>종류별 제공 기간 및 산출식이 다릅니다.</p><br/>';
+	html += '<p>&ensp;* ~ 2020년 5월 14일 : 더위체감지수 7종 제공<Br>';
+	html += '&ensp;&ensp;- 일반인, 노인, 어린이, 실외작업장, 농촌, 비닐하우스, 취약거주환경<br>';
+	html += '&ensp;* 2020년 5월 15일 ~ : 체감온도 8종 제공<br>';
+	html += '&ensp;&ensp;- 노인, 어린이, 농촌, 비닐하우스, 취약거주환경, 도로, 건설현장, 조선소<br>';
+	html += '&ensp;&ensp;- 일반인, 실외작업장 대상 서비스 종료</p><br/>';
+	
+	html += '<h3><strong>&lt; 대기정체지수로 서비스 명칭 변경 &gt;</strong></h3>'
+	html += '<p>ㅇ 대기정체지수란? 대기상태에 의해 대기가 정체될 수 있는 가능성을 지수로 나타낸 것</p><br/>';
+	html += '<p>ㅇ (명칭변경) (기존)대기확산지수 → (변경)대기정체지수*</p>';
+	html += '<p>&ensp;* 대기상태에 의해 대기가 정체될 수 있는 가능성을 지수로 나타낸 것</p><br>';
+	html += '</div></div></div>';
+	
+	LayerUtil.show(html);
+}
+
+</script>
+
+
+<div class="wrap_itm">
+	<div class="hd_itm">
+			<h4 class="tit_itm">자료설명</h4>
+			<!-- 20200611 기존 위의 자료설명을 현재 이용할 수 있는 메뉴가 관리자페이지에서 보이지 않아 임의로 생성 -->
+			</div>
+		<div class="cont_itm">
+			<div class="desc">
+			<p style="margin-bottom:20px;">기상청의 지상기상관측 통계자료를 월보 및 연보로 발간하여 제공하고 있습니다.</p>
+
+<p style="margin-bottom:10px;"><strong>* 발간 주기: 기상월보 45일 이내, 기상연보 익년 6월 이내</strong></p>
+<div id="tagArea"></div>
+			</div>
+		</div>	
+		</div><!-- 도움말과 자료 다운로드 표출 종료 -->
+    <!-- 공통 화면 시작 -->
+    <!-- 검색 조건 -->
+<div class="wrap_itm">
+    <div class="hd_itm">
+        <h4 class="tit_itm">검색조건</h4>
+    </div>
+    <div class="box_sch">
+        <form name="downForm" id="downForm" method="post" action="/data/common/downloadPubFile.do">
+            <input type="hidden" id="pubType" name="pubType" />
+            <input type="hidden" id="issDate" name="issDate" />
+            <input type="hidden" id="fileNo" name="fileNo" />
+            <input type="hidden" id="conNo" name="conNo" />
+        </form>
+        <form name="schForm" id="schForm" method="post" action=" /data/common/selectPrposPopup.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5">
+        <!-- 각 화면에서 적용 -->
+        <input type="hidden" id="cmmnCdList" name="cmmnCdList" value="" />
+        <input type="hidden" id="upperCmmnCode" name="upperCmmnCode" value="" />
+
+        <input type="hidden" id="lrgClssCd" name="lrgClssCd" value="SFC" />
+        <input type="hidden" id="mddlClssCd" name="mddlClssCd" value="SFC01" />
+        <input type="hidden" id="pgmNo" name="pgmNo" value="" />
+        <input type="hidden" id="menuNo" name="menuNo" value="457" />
+        <input type="hidden" id="pageIndex" name="pageIndex" value="2" />
+        <input type="hidden" id="schListCnt" name="schListCnt" value="10" />
+        
+        <input type="hidden" id="serviceSe" name="serviceSe" value="F00101" />
+        <div class="wrap_criteria" id="TB_search">
+            <dl>
+                <dt><label for="dataFormCd">구분</label></dt>
+                <dd>
+                    <select id="dataFormCd" name="dataFormCd" class="slt">
+
+                    </select>
+                </dd>
+            </dl>
+            <dl id="dayData">
+                <dt>발행기간</dt>
+                <dd class="wrap_period">
+                    <label for="startDt" class="blind">시작 연도</label>
+                    <select id="startDt" name="startDt" class="slt stdt">
+                        <option value="">
+                            전체</option>
+                        <script>
+							var thisDate = new Date();
+							var current_date = thisDate.getFullYear();
+							var colum = '0';
+
+							var temp_date = '';
+
+							var start_date = 1973;
+							if(temp_date == 'SFC01'){
+								start_date = 1904;
+							}else if(temp_date == 'SFC02'){
+								start_date = 1997;
+							}else if(temp_date == 'HR01'){
+								start_date = 1985;
+							}else if(temp_date == 'HR02'){
+								start_date = 2004;
+							}else if(temp_date == 'SEA01'){
+								start_date = 1996;
+							}else if(temp_date == 'SEA02'){
+								start_date = 2001;
+							}else if(temp_date == 'SEA03'){
+								start_date = 2009;
+							}else if(temp_date == 'OGD03'){
+								start_date = 1973;
+							}
+							for(var i = current_date ; i >= start_date; i--){
+								if(i == colum){
+									document.write('<option value="'+i+'" selected="selected">'+i+'</option>');
+								}else{
+									document.write('<option value="'+i+'">'+i+'</option>');
+								}
+
+							}
+						</script>
+                    </select>
+                    <span>년</span>
+                    <label for="startMt" class="blind">시작 월</label>
+                    <select id="startMt" name="startMt" class="slt stday">
+                        <option value="01" >01</option>
+                        <option value="02" >02</option>
+                        <option value="03" >03</option>
+                        <option value="04" >04</option>
+                        <option value="05" >05</option>
+                        <option value="06" >06</option>
+                        <option value="07" >07</option>
+                        <option value="08" >08</option>
+                        <option value="09" >09</option>
+                        <option value="10" >10</option>
+                        <option value="11" >11</option>
+                        <option value="12" >12</option>
+                    </select>
+                    <span class="stday">월</span>
+                    <span class="wavy">~</span>
+                    <label for="endDt" class="blind">종료 년</label>
+                    <select id="endDt" name="endDt" class="slt eddt">
+                        <option value="">
+                            전체</option>
+                        <script>
+							var thisDate = new Date();
+							var current_date = thisDate.getFullYear();
+							var colum = '0';
+
+							var temp_date = '';
+
+							var start_date = 1973;
+							if(temp_date == 'SFC01'){
+								start_date = 1904;
+							}else if(temp_date == 'SFC02'){
+								start_date = 1997;
+							}else if(temp_date == 'HR01'){
+								start_date = 1985;
+							}else if(temp_date == 'HR02'){
+								start_date = 2004;
+							}else if(temp_date == 'SEA01'){
+								start_date = 1996;
+							}else if(temp_date == 'SEA02'){
+								start_date = 2001;
+							}else if(temp_date == 'SEA03'){
+								start_date = 2009;
+							}else if(temp_date == 'OGD03'){
+								start_date = 1973;
+							}
+							for(var i = current_date ; i >= start_date; i--){
+								if(i == colum){
+									document.write('<option value="'+i+'" selected="selected">'+i+'</option>');
+								}else{
+									document.write('<option value="'+i+'">'+i+'</option>');
+								}
+
+							}
+						</script>
+                    </select>
+                    <span>년</span>
+                    <label for="endMt" class="blind">종료 월</label>                                              
+                    <select id="endMt" name="endMt" class="slt endday">
+                        <option value="01" >01</option>
+                        <option value="02" >02</option>
+                        <option value="03" >03</option>
+                        <option value="04" >04</option>
+                        <option value="05" >05</option>
+                        <option value="06" >06</option>
+                        <option value="07" >07</option>
+                        <option value="08" >08</option>
+                        <option value="09" >09</option>
+                        <option value="10" >10</option>
+                        <option value="11" >11</option>
+                        <option value="12" >12</option>
+                    </select>
+                    <span class="endday">월</span>
+
+                </dd>
+            </dl>
+        </div>
+        <div class="wrap_btn">
+            <button type="button" class="btn" onclick="javascript:goSearch();">조 회</button>
+        </div>
+        </form>
+    </div>
+</div>
+<!-- //검색 조건 -->
+<script>
+	$(document).ready(function () {
+	    $.ajax({
+	        type: 'post',
+	        url: "/data/publication/selectDataTypeListAjax.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5",
+	        /* url: "/data/selectDataTypeListAjax.do;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5", */
+	        data: $('#schForm').serialize(),
+	        dataType : "json",
+
+	        success: function(result) {
+
+	        	var dataFormStr = "";
+
+	        	/* if($("#mddlClssCd").val() != "SEA01" && $("#mddlClssCd").val() != ""){
+	        		dataFormStr += "<option value=''>전체</option>";
+	        	} */		        	
+	        	var data = result.dataMap.dataFormCdList;
+	            var selectDataFormCd = '';
+				
+	            if(result.code === '00'){
+					var flag = true;
+					
+	                $(data).each(function(idx){						
+	                	dataFormStr += "<option value='"+data[idx].cmmnCode+"'";
+						
+	                	if (selectDataFormCd == data[idx].cmmnCode) {
+	                		
+	                		dataFormStr += "selected=selected";	                		
+	                		flag = false;
+						}
+	                		                	       	
+	                	//20200706 최초 화면에서 아무것도 선택 되지않도록
+	                	//if(selectDataFormCd == '' && $("#mddlClssCd").val() == "SFC01" && data[idx].cmmnCode=='PUB03' ) {
+	                	//	dataFormStr += "selected=selected";	                		
+                		//}
+	                	
+	                	dataFormStr += ">"+data[idx].codeNm+"</option>";
+
+	                	/* if(selectDataFormCd == "F00513" || selectDataFormCd == "F00523"){
+                			$("#startMt").show();
+							$("#endMt").show();
+
+							if($("#mddlClssCd").val() == "SFC02"||$("#mddlClssCd").val() == "SFC04"){
+								$(".tb-search-table tr:eq(1)").hide();
+								$(".text_box").hide();
+							}
+	                	}
+	                	else{
+	                		//월 보이지 않게
+						    $("#startMt").hide();
+							$("#endMt").hide();
+
+							if(selectDataFormCd == "F00524" || selectDataFormCd == "F00525"){
+								$(".tb-search-table tr:eq(1)").hide();
+								$(".text_box").hide();
+							}else{
+								$(".tb-search-table tr:eq(1)").show();
+								$(".text_box").show();
+							}
+	                	} */
+	                });
+					
+					//2024-10-04 주경돈 주무관 요청 : default 전체 제거
+	                //if(flag && $("#mddlClssCd").val() != "SFC01"){
+	                	selectDataFormCd = data[0].cmmnCode;
+	                //}
+	                
+	              	//20200706 초기화면에서 구분 선택 보여주기
+	                if(selectDataFormCd == null || selectDataFormCd == ''){
+	                	dataFormStr = "<option>선택</option>"+dataFormStr;
+	                }
+
+	             	// PUB01, PUB04, PUB06, PUB10, PUB12 : 월자료
+    				// PUB02, PUB03, PUB05, PUB07, PUB08, PUB09, PUB11 : 년자료
+    				var monthCdArr = ['PUB01', 'PUB04', 'PUB06', 'PUB10', 'PUB12'];
+					
+    				if ($.inArray(selectDataFormCd, monthCdArr) != -1) {
+    					$("#startMt").show();
+    					$("#endMt").show();
+    					$(".stday").show();
+    					$(".endday").show();
+    					
+    					
+    				}  else {
+    					$("#startMt").hide();
+    					$("#endMt").hide();
+    					$(".stday").hide();
+    					$(".endday").hide();
+    				}
+
+	                $("#dataFormCd").append(dataFormStr);
+	        	}
+	        }
+	     });
+	});
+
+	$(document).on(
+			"change",
+			"#dataFormCd",
+			function() {
+				//  $("select[name='dataFormCd'] option").remove();  // 옵션 제거
+				//  $("select[name='dataFormCd']").append('<option value="">선택</option>');
+				$("#txtElementNm").val("");
+				$("#txtStnNm").val("");
+				$('#elementCds').val("");
+				$('#stnIds').val("");
+
+				// PUB01, PUB04, PUB06, PUB10, PUB12 : 월자료
+				// PUB02, PUB03, PUB05, PUB07, PUB08, PUB09, PUB11 : 년자료
+				var monthCdArr = ['PUB01', 'PUB04', 'PUB06', 'PUB10', 'PUB12'];
+
+				var dataFormCd = $("select[name='dataFormCd'] > option:selected").val();
+				$("#dataFormCd").val(dataFormCd);
+				if ($.inArray(dataFormCd, monthCdArr) != -1) {
+				//if ($("#dataFormCd").val() == 'F00513'|| $("#dataFormCd").val() =='F00523') {//월자료, 기상월보
+						$("#startMt").show();
+						$("#endMt").show();
+						$(".stday").show();
+						$(".endday").show();
+						
+					/* if($("#mddlClssCd").val() == "SFC02" || $("#mddlClssCd").val() == "SFC04"){
+						$(".tb-search-table tr:eq(1)").hide();
+						$(".text_box").hide();
+               		}else{
+						$(".tb-search-table tr:eq(1)").show();
+						$(".text_box").show();
+
+               		} */
+
+				}  else {
+					$("#startMt").hide();
+					$("#endMt").hide();
+					$("stday").hide();
+					$(".endday").hide();
+					
+					/* if(true){
+						if($("#dataFormCd").val() == "F00524" || $("#dataFormCd").val() == "F00525"){
+							$(".tb-search-table tr:eq(1)").hide();
+							$(".text_box").hide();
+						}else{
+							$(".tb-search-table tr:eq(1)").show();
+							$(".text_box").show();
+						}
+					} */
+				}
+				
+				$("#pageIndex").val(1);
+
+			});
+
+    function fnLevel1Chk(elem){
+        $(elem).parent().find('ul>li').find('input[type=checkbox]').each(function(){
+            if( $(elem).is(":checked")){
+                $(this).attr('checked', true);
+            }else{
+                $(this).attr('checked', false);
+            }
+        });
+    }
+
+    function fnLevel2Chk(elem){
+        $(elem).parent().find('ul>li').find('input[type=checkbox]').each(function(){
+            if( $(elem).is(":checked")){
+                $(this).attr('checked', true);
+
+                $(elem).parent().parents('li').find('input[type=checkbox]').eq(0).attr('checked', true)
+            }else{
+                $(this).attr('checked', false);
+            }
+        });
+        if( $(elem).parent().parents('li').find('ul>li').find('input[level=level2]:checked').length == 0){
+            $(elem).parent().parents('li').find('input[type=checkbox]').eq(0).attr('checked', false);
+        }
+    }
+
+    /* function fnStnGrpPopup(formNm, type){
+
+    	//showLoading();
+        $("#txtStnNm").val("");
+        $('#stnIds').val("");
+
+        $.ajax({
+	      type: 'post',
+	      url: "/cmmn/stnGroupPopup.do?type=" + type,
+	      data: $('form[name='+formNm+']').serialize(),
+	      dataType : "html",
+	      success: function(data) {
+	    	      LayerUtil.show(data, (type == 'map'));
+	      },
+	      error: function(){
+	    	  LayerUtil.hide();
+	      }
+	    });
+    }
+
+    function fnElementGrpPopup(formNm){
+    	if($('#dataFormCd').val() == ''){
+    		Message.alert('자료형태를 선택하세요.');
+    		return false;
+    	}
+    	//showLoading();
+    	//<!-- 요소 주석 -->
+        //$("#txtElementNm").val("");
+        $('#elementGroupSns').val("");
+
+        $.ajax({
+	      type: 'post',
+	      url: "/cmmn/selectElementGroupPopup.do",
+	      data: $('form[name='+formNm+']').serialize(),
+	      dataType : "html",
+	      success: function(data) {
+	    	  LayerUtil.show(data);
+	      } ,
+	      error: function(){
+	    	  LayerUtil.hide();
+	      }
+	    });
+    } */
+
+    function fnValidate() {
+    	 /*
+    	  * 날짜 조회 주석 처리
+    	  * 2016.01.26 황명진
+    	if($('#startDt').val() == ''){
+    		Message.alert('시작일자를 입력하세요.');
+    		//$('#startDt').focus();
+    		 return false;
+    	}
+    	if($('#endDt').val() == ''){
+    		Message.alert('종료일자를 입력하세요.');
+            //$('#endDt').focus();
+            return false;
+        }
+
+    	var input1=$('#startDt').val();
+    	var input2=$('#endDt').val();
+
+    	var date1 = new Date(input1.substr(0,4),input1.substr(4,2)-1,input1.substr(6,2));
+    	var date2 = new Date(input2.substr(0,4),input2.substr(4,2)-1,input2.substr(6,2));
+
+    	var interval = date2 - date1;
+    	var day = 1000*60*60*24;
+    	var month = day*30;
+    	var year = month*12;
+		*/
+
+		if($('#startDt').val() != '' && $('#endDt').val() == ''){
+			Message.alert('종료일자를 입력하세요.');
+			return false;
+		}
+
+		if($('#endDt').val() != '' && $('#startDt').val() == ''){
+			Message.alert('시작일자를 입력하세요.');
+			return false;
+		}
+		
+		/* 기간 입력사항 체크부분 추가 : 2017.03.14 */
+		if($("#startDt").val() > $("#endDt").val()){
+  			alert('시작연도가 종료연도 보다 작게 입력하세요.');
+  			return false;
+  		}
+		
+		if($("#startDt").val() == $("#endDt").val()){
+			if ($("#startMt").val() > $("#endMt").val()) {
+  			    alert('시작월을 종료월 보다 작게 입력하세요.');
+  			    return false;
+			}
+  		} 
+    	
+    	var validflagVal = 0;
+
+   /*
+    * 수정자 김세웅
+    * 수정일 2015-03-17
+    * 파일셋 조최 기간 설정 헤제
+    */
+/*     	if($('#mddlClssCd').val()=='SFC01'){//기상관서
+
+    		if( $('#dataFormCd').val()=='F00501') {
+    		   if( parseInt(interval/year) > 10 ){
+                    alert('날짜 조회 기간은 10년을 초과할 수 없습니다.');
+                     $('#endDt').focus();
+                     validflagVal = 1;
+                }
+    		} else if($('#dataFormCd').val()=='F00502'){
+    			  if( parseInt(interval/year) > 1 ){
+    	                alert('날짜 조회 기간은 1년을 초과할 수 없습니다.');
+    	                 $('#endDt').focus();
+    	                 validflagVal = 1;
+    	          }
+    		}
+    		return true;
+    	} else if($('#mddlClssCd').val()=='SFC02'){//방재
+    		if( $('#dataFormCd').val()=='F00501') {
+                if( parseInt(interval/year) > 10 ){
+                     alert('날짜 조회 기간은 10년을 초과할 수 없습니다.');
+                      $('#endDt').focus();
+                      validflagVal = 1;
+                 }
+             } else if($('#dataFormCd').val()=='F00502'){
+                   if( parseInt(interval/year) > 1 ){
+                         alert('날짜 조회 기간은 1년을 초과할 수 없습니다.');
+                          $('#endDt').focus();
+                          validflagVal = 1;
+                   }
+             } else if($('#dataFormCd').val()=='F00503'){
+                 if( parseInt(interval/month) > 1 ){
+                     alert('날짜 조회 기간은 1개월은 초과할 수 없습니다.');
+                      $('#endDt').focus();
+                      validflagVal = 1;
+                 }
+             }
+        } else if($('#lrgClssCd').val()=='HR'){//고층
+            if( $('#dataFormCd').val()=='F00504') {
+                if( parseInt(interval/year) > 1 ){
+                     alert('날짜 조회 기간은 1년을 초과할 수 없습니다.');
+                      $('#endDt').focus();
+                      validflagVal = 1;
+                 }
+             } else if($('#dataFormCd').val()=='F00505'){
+                   if( parseInt(interval/year) > 1 ){
+                         alert('날짜 조회 기간은 1년을 초과할 수 없습니다.');
+                         $('#endDt').focus();
+                         validflagVal = 1;
+                   }
+             }
+        } else if($('#lrgClssCd').val()=='SEA'){//고층
+            if( $('#dataFormCd').val()=='F00501') {
+                if( parseInt(interval/year) > 10 ){
+                     alert('날짜 조회 기간은 10년을 초과할 수 없습니다.');
+                      $('#endDt').focus();
+                      validflagVal = 1;
+                 }
+             } else if($('#dataFormCd').val()=='F00502'){
+                   if( parseInt(interval/year) > 1 ){
+                         alert('날짜 조회 기간은 1년을 초과할 수 없습니다.');
+                         $('#endDt').focus();
+                         validflagVal = 1;
+                   }
+             }
+        }
+    	 */
+    	/*
+    	 if($('#stnIds').val() == ''){
+             alert('지점을 선택하십시오.');
+             return false;
+         }
+
+         if($('#elementGroupSns').val() == ''){
+             alert('요소를 선택하십시오.');
+             return false;
+         }
+         */
+    	//alert("기간 날짜수: " + parseInt(interval/day) + "일");
+    	//alert("기간 개월수: 약 " + parseInt(interval/month) + "개월");
+    	//alert("기간 개년수: 약 " + parseInt(interval/year) + "개년");
+    	if(validflagVal == 0){
+    		return true;
+    	} else {
+    		return false;
+    	}
+    }
+
+
+    $(document).on("change", "#dataFormCd", function(){
+        //  $("select[name='dataFormCd'] option").remove();  // 옵션 제거
+        //  $("select[name='dataFormCd']").append('<option value="">선택</option>');
+
+        //<!-- 요소 주석 -->
+        //$("#txtElementNm").val("");
+        $("#txtStnNm").val("");
+        $('#elementGroupSns').val("");
+        $('#stnIds').val("");
+
+
+        var dataFormCd = $("select[name='dataFormCd'] > option:selected").val();
+        $("#dataFormCd").val(dataFormCd);
+
+     });
+
+    //PDF 다운로드
+    function fn_fileDown(SQNO, ID) {
+		//var url = "http://sts.kma.go.kr/jsp/home/contents/publication/pubOneFileDownView.do?SQNO="+SQNO+"&ID="+ID;
+		//alert(url);
+		//$.fileDownload(url);
+        	/* .fail(function () { Message.alert('File download failed!'); }
+        );  */
+        
+		$('#fileNo').val(SQNO);
+		$('#conNo').val(ID);
+		
+		$("#downForm").attr("target", "hiddenFrame");
+		$("#downForm").attr("action", "/data/common/downloadPubFile.do").submit();
+	}
+
+    //EBOOK
+	function fn_eBookFileDown(ebookNo) {
+
+		var url = "http://book.kma.go.kr/ebook/ebView.asp?eb_no=" + ebookNo;
+		var w = 940;
+	    var h = 780;
+	    var top = ((screen.height - h) / 2) - 1;
+	    var left = ((screen.width - w) / 2) - 1;
+
+	    var menuWin = window.open(url, '_blank', "width="+w+", height="+h+", top="+top+", left="+left+", scrollbars=yes, toolbar=no,directories=no,menubar=no");
+	}
+
+    //EXCEL
+	function fn_xlsFileDown(pubType, issDate) {
+		var dataFormCd = $("select[name='dataFormCd'] > option:selected").val();
+		$("#dataFormCd").val(dataFormCd);
+
+    	switch(dataFormCd){
+    	case 'PUB01':	pubType = 'SYNM';	break;	// 기상월보
+    	case 'PUB02':	pubType = 'SYNY';	break;	// 기상연보
+    	case 'PUB03':	pubType = 'NORM';	break;	// 한국기후표
+    	case 'PUB04':	pubType = 'AWSM';	break;	// 방재기상관측월보
+    	case 'PUB05':	pubType = 'AWSY';	break;	// 방재기상관측연보
+    	case 'PUB06':	pubType = 'AGRM';	break;	// 농업기상월보
+    	case 'PUB07':	pubType = 'NKOY';	break;	// 북한기상연보
+    	case 'PUB08':	pubType = 'NKO_NORM';	break;	// 북한기후표
+    	case 'PUB10':	pubType = 'TEMPM';	break;	// 고층기상월보
+    	case 'PUB11':	pubType = 'TEMPY';	break;	// 고층기상연보
+    	case 'PUB12':	pubType = 'SEAM';	break;	// 해양기상월보
+    	default:		pubType = 'SYNY';	break;
+    	}
+
+		//var url = "http://sts.kma.go.kr/jsp/home/contents/publication/pubXlsFileDownView.do?pubType="+pubType+"&issDate="+issDate;
+		//alert(url);
+		// $.fileDownload(url);
+        	/* .fail(function () { Message.alert('File download failed!'); }
+        ); */
+        
+        	 
+			 
+		//$('#pubType').val(pubType);
+		//$('#issDate').val(issDate);
+		
+		//$("#downForm").attr("target", "hiddenFrame");
+		//$("#downForm").attr("action", "/download/pubXlsFileDownView.do").submit();
+		
+    	$('#pubType').val(pubType);
+		$('#issDate').val(issDate);
+		
+		$("#downForm").attr("target", "hiddenFrame");
+		$("#downForm").attr("action", "/data/common/pubXlsFileDownView.do").submit();
+			 
+	}
+    
+	function explainManual(pgmNo) {
+		 window.open("/cmmn/explainMannual/Mannual.do?pgmNo="+pgmNo+"&type=4","a","width=1000,height=800,left=0,top=0")
+	}
+</script><!-- 공통 화면 끝 -->
+    <!-- 자료 보기 -->
+   <div class="wrap_itm area_data">
+      <div class="hd_itm">
+         <h4 class="blind">자료보기</h4>
+         <span class="allNum">전체 1349건</span>
+         <label for="schListCnt_list" class="blind">자료 개수 선택</label>
+         <select id="schListCnt_list" name="schListCnt_list" class="select" title="갯수 선택" onchange="">
+			<option value="10" >10</option>
+			<option value="20" >20</option>
+			<option value="30" >30</option>
+			<option value="40" >40</option>
+			<option value="50" >50</option>
+			<option value="60" >60</option>
+			<option value="70" >70</option>
+			<option value="80" >80</option>
+			<option value="90" >90</option>
+			<option value="100" >100</option>
+			</select>
+      </div>
+      <div class="cont_itm">
+         <div class="wrap_tbl scroll_x">
+            <table class="tbl">
+               <caption class="blind">지상간행물 자료 조회 결과 - 발행연월, 파일 다운로드</caption>
+               <thead>
+                  <tr>
+                     <th scope="col">발행연월</th>
+                     <th scope="col">다운로드</th>
+                  </tr>
+               </thead>
+               <tbody>
+					<tr>
+									<td>2025-10</td>
+									<td>
+										<a href="javascript:fn_fileDown(3846, 609);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202510');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-09</td>
+									<td>
+										<a href="javascript:fn_fileDown(3806, 611);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202509');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-08</td>
+									<td>
+										<a href="javascript:fn_fileDown(3788, 906);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202508');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-07</td>
+									<td>
+										<a href="javascript:fn_fileDown(3786, 603);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202507');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-06</td>
+									<td>
+										<a href="javascript:fn_fileDown(3780, 1114);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202506');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-05</td>
+									<td>
+										<a href="javascript:fn_fileDown(3771, 710);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202505');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-04</td>
+									<td>
+										<a href="javascript:fn_fileDown(3756, 1218);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202504');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-03</td>
+									<td>
+										<a href="javascript:fn_fileDown(3753, 708);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202503');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-02</td>
+									<td>
+										<a href="javascript:fn_fileDown(3747, 1418);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202502');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							<tr>
+									<td>2025-01</td>
+									<td>
+										<a href="javascript:fn_fileDown(3739, 708);" class="link_file"><i class="ico_pdf" aria-hidden="true"></i>PDF</a>
+										<a href="javascript:fn_xlsFileDown('pub','202501');"  class="link_file"><i class="ico_xls" aria-hidden="true"></i>EXCEL</a>
+										</td>
+								</tr>				                    
+							</tbody>
+            </table>
+         </div>
+         <div class="ft_lst">
+			<div class="wrap_paging">
+				<ul class="lst paging">
+					<li class=first><a href="javascript:;" onclick="goPage(1); return false;" title=처음페이지><i class="ico_comm">처음 페이지</i></a></li><li class=prev><a href="javascript:;" onclick="goPage(1); return false;" title=이전페이지><i class="ico_comm">이전 페이지</i></a></li><li><a href="javascript:;" class="num" onclick="goPage(1); return false;" title="1페이지">1<span class="blind">페이지</span></a></li><li class=on><span class="num">2<span class="blind">페이지</span></span></li><li><a href="javascript:;" class="num" onclick="goPage(3); return false;" title="3페이지">3<span class="blind">페이지</span></a></li><li><a href="javascript:;" class="num" onclick="goPage(4); return false;" title="4페이지">4<span class="blind">페이지</span></a></li><li><a href="javascript:;" class="num" onclick="goPage(5); return false;" title="5페이지">5<span class="blind">페이지</span></a></li><li><a href="javascript:;" class="num" onclick="goPage(6); return false;" title="6페이지">6<span class="blind">페이지</span></a></li><li><a href="javascript:;" class="num" onclick="goPage(7); return false;" title="7페이지">7<span class="blind">페이지</span></a></li><li><a href="javascript:;" class="num" onclick="goPage(8); return false;" title="8페이지">8<span class="blind">페이지</span></a></li><li><a href="javascript:;" class="num" onclick="goPage(9); return false;" title="9페이지">9<span class="blind">페이지</span></a></li><li><a href="javascript:;" class="num" onclick="goPage(10); return false;" title="10페이지">10<span class="blind">페이지</span></a></li><li class=next><a href="javascript:;" onclick="goPage(11); return false;" title=다음페이지><i class="ico_comm">다음 페이지</i></a></li><li class=last><a href="javascript:;" onclick="goPage(135); return false;" title=마지막페이지><i class="ico_comm">끝 페이지</i></a></li>
+</ul>
+			</div>
+		</div>
+      </div>
+   </div>
+   <!-- //자료 보기 -->
+</div>
+<!-- End:Body Area -->
+						<!-- Start:srvEvlPage Area -->
+						<script>
+//로그인 체크
+function checkLogin() {
+	$.ajax({
+		type : 'post',
+		url : '/cmmn/loginSessionCheck.do',
+		dataType : 'json',
+		success : function(result) {
+			if(result.data == 2) {
+				$("#loginYn").val("Y");
+				return;
+			} else {
+				$.ajax({
+					url: "/cmmn/commonLoginLayer.do",
+					type:"post",
+				    dataType:"html",
+				    data: {dataType : 'etc'},
+					success: function(data) {
+						LayerUtil.show(data);
+					}
+				});
+			}
+		},
+		error : function() {
+			alert("실패 하였습니다..");
+			return false;
+		}
+	});
+}
+
+//사용자 평가 기록 횟수 조회
+function checkEvlTerm() {
+
+	/* if(!isMemberLogin()) {
+		checkLogin();
+	}else {
+		$.ajax({
+			type : 'post',
+			url : "/srvEvl/checkEvlTerm.do",
+			data: $("#srvEvlForm").serialize(),
+			dataType : "json",
+			success : function(data) {
+				if(data > 0) { //사용자 평가 일일 횟수 초과
+					alert('서비스별 1일 1회 평가할 수 있습니다.');
+					return;
+				}else {
+					addEvlResult();
+				}
+			}
+		});
+	} */
+	addEvlResult();
+}
+
+//사용자평가 등록
+function addEvlResult() {
+	$("#evlScor").val($("[name='evlScore']:checked").val());
+
+	$.ajax({
+		type : 'post',
+		url : "/srvEvl/insertEvlResult.do",
+		data: $("#srvEvlForm").serialize(),
+		dataType : "json",
+		success : function(data) {
+			alert('평가가 등록되었습니다.');
+			$('#evlConts').val('');
+		}
+	});
+}
+</script>
+	<!-- 평가하기 -->
+<div class="wrap_itm wrap_evaluation" id="content2">
+	<form id="srvEvlForm" name="srvEvlForm" method="post" action="/;jsessionid=weRfEhu7sh0RznYPGecoQuqOR2SwaN2oMFqLocBV2js4mEBcTYVWmFs8TGkI7wBs.was02_servlet_engine5">
+	<div class="hd_itm">
+		<h4 class="tit_itm">평가하기</h4>
+		<span class="blind">5점 만점</span>
+		
+		<input type="hidden" id="pgmNoSrv" name="pgmNo" value="" />
+		<input type="hidden" id="evlScor" name="evlScor" />
+		<ul class="lst">
+			<li><input type="radio" name="evlScore" id="star1" value="1" class="chk star1"><label for="star1"><span class="blind">1점</span></label></li>
+			<li><input type="radio" name="evlScore" id="star2" value="2" class="chk star2"><label for="star2"><span class="blind">2점</span></label></li>
+			<li><input type="radio" name="evlScore" id="star3" value="3" class="chk star3"><label for="star3"><span class="blind">3점</span></label></li>
+			<li><input type="radio" name="evlScore" id="star4" value="4" class="chk star4"><label for="star4"><span class="blind">4점</span></label></li>
+			<li><input type="radio" name="evlScore" id="star5" value="5" class="chk star5" checked><label for="star5"><span class="blind">5점</span></label></li>
+		</ul>
+		
+	</div>
+	<div class="cont_itm">
+		<div class="inp_evaluation">
+			<label for="evlConts" class="blind">평가 작성</label>
+			<textarea id="evlConts" class="inp"></textarea>
+		</div>
+		
+		<button type="button" class="btn" onclick="checkEvlTerm();">등록</button>
+	</div>
+	</form>
+</div>
+<!-- //평가하기 -->
+
+</div>
+					<!-- End:srvEvlPage Area -->
+				</div>
+			</div>
+			<!-- Start:Bottom Area -->
+			<div class="clear">
+</div>
+
+<!-- footer -->
+<footer id="footer">
+	<div class="wfix">
+		<div class="ft_logo"><span class="blind">기상청 국가기후데이터센터</span></div>
+		<div class="ft_info">
+			<ul class="ft_links">
+				<li><a href="#" onclick="goPrivacyLink();return false;">개인정보 처리방침</a></li>
+				<li><a href="/cmmn/static/staticPage.do?page=pageCr">저작권 보호 및 정책</a></li>
+				<li><a href="/cmmn/static/staticPage.do?page=pageWa">웹접근성정책</a></li>
+				<li><a href="/cmmn/static/staticPage.do?page=pageMap">찾아오시는 길</a></li>
+				<li><a href="/community/selectErrorDataList.do?pgmNo=141">데이터품질대화방</a></li>
+				<li><a href="/community/board/selectBoardList.do?bbrdTypeNo=222&pgmNo=139">홈페이지 불편 신고</a></li>
+			</ul>
+			<div class="ft_contact">
+				<span class="address">(35208)대전광역시 서구 청사로 189 정부대전청사 1동 14층</span>
+				<span class="call">기상자료상담문의 : 042-481-7503</span>
+			</div>
+			<p class="copyright">Copyright(c)2015 KMA. All Rights Reserved.</p>
+		</div>
+		<div class="ft_right">
+			<div class="wrap_site">
+				<label for="site" class="blind">사이트 바로가기</label>
+				<select name="site" id="site" class="slt" title="사이트 바로가기">
+					<option>사이트 바로가기</option>
+					<optgroup label="관련사이트">
+								<option value="http://www.kma.go.kr/home/index.jsp">기상청</option>
+									<option value="http://www.weather.go.kr">날씨누리</option>
+									<option value="https://www.data.go.kr/">공공데이터포털</option>
+									<option value="http://www.climate.go.kr">기후정보포털</option>
+									<option value="http://minwon.kma.go.kr">기상청 전자민원</option>
+									<option value="http://nmsc.kma.go.kr">국가기상위성센터</option>
+									</optgroup>					
+						</select>
+				<label for="wsite" class="blind">WMO 세계자료센터</label>
+				<select name="wsite" id="wsite" class="slt" title="사이트 바로가기">
+					<option>WMO 세계자료센터</option>
+					<optgroup label="관련사이트">
+								<option value="https://gaw.kishou.go.jp/">온실가스</option>
+									<option value="https://www.gaw-wdca.org/">반응가스/에어로졸</option>
+									<option value="http://wrdc.mgo.rssi.ru/">대기복사</option>
+									<option value="https://woudc.org/">오존·자외선</option>
+									<option value="http://wdcpc.org/">총대기침적</option>
+									<option value="https://wdc.dlr.de/data_products/VIEWER/">원격탐사</option>
+									</optgroup>					
+						</select>
+				<button type="button" class="goSite" onclick="javascript:goSite()">이동</button>
+			</div>
+			<div class="wrap_license">
+				<!-- a href="javascript:" class="wa" onclick="goPdfPopup()" title="새창"><img src="/resources/images/wa.png" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)"></a-->
+				<a href="http://data.kma.go.kr/community/board/detailBoard.do?bbrdTypeNo=2&pgmNo=40&bbrdNo=69882&fileGrupNo=12962" target="_blank"><img src="/resources/images/common/img_footer3.gif" alt=""></a>
+				<a href="http://www.kogl.or.kr/info/license.do" target="_blank"><img src="/resources/images/common/img_footer2.gif" alt="공공누리 공공저작물 자유이용허 - 출처표시"></a>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+<!-- hidden frame -->
+<iframe width="0" height="0" id="hiddenFrame" name="hiddenFrame" style="display: none;" title="다운로드 사용 용도"></iframe>
+<!-- hidden frame -->
+<div id="loading-mask"><img id="mask_loding_image_bar" src="/resources/images/common/loader.gif" alt="loading..."/></div>
+<script >
+$(document).ready(function(){
+	$("#site").change(function(){
+		$("#wsite").find("option:eq(0)").prop("selected",true);
+	});
+	$("#wsite").change(function(){
+		$("#site").find("option:eq(0)").prop("selected",true);
+	});
+});
+function goSite() {
+	var url = "#";
+	var site = $('#site option:selected').val();
+	var wsite = $('#wsite option:selected').val();
+	
+	if(site != "국내 관련 사이트") url = site;
+	if(wsite != "WMO 세계자료센터") url = wsite;
+	if(url != "#") location.href=url;
+}
+function goPdfPopup() {
+	var url = '/resources/images/POTAL.png';
+	var w = 595;
+	var h = 864;
+	var top = ((screen.height - h) / 2) - 1;
+	var left = ((screen.width - w) / 2) - 1;
+
+	var menuWin = window.open(url, '_blank', "top="+top+", left="+left+", scrollbars=yes, toolbar=no,directories=no,menubar=no,");
+}
+
+function goPrivacyLink(){
+	window.open("http://www.kma.go.kr/kma/guide/privacy.jsp", '_blank');
+	//window.open("http://172.20.171.147/kma/guide/privacy.jsp", '_blank');
+}
+</script><!-- End:Bottom Area -->
+		</div>
+		<!-- Start:login Area -->
+		<script>
+	$(document).ready(function () {
+		if (getCookie("loginId")) {
+			var cookieId = getCookie("loginId");
+
+			if(cookieId.indexOf('jsessionid') != -1){
+				cookieId = "";
+			}
+			$("#loginId").val(cookieId);
+			$("#saveId").prop('checked', true);
+		}
+
+		// 닫기 버튼
+		$("#loginPopCloseBtn").on('click', function(){
+			$("#loginPop").hide();
+			if(beforeFocus != null){
+				beforeFocus.focus();
+			}
+			
+		});
+
+		// 아이디/비번 찾기
+		$("#findIdPw").on('click', function(){
+			$("#aform").attr("method", "post");
+			$("#aform").attr("action", "/cmmn/selectMemberForgotInfo.do").submit();
+		});
+
+		// 회원가입
+		$("#joinMember").on('click', function(){
+			// $("#aform").attr("method", "post");
+			// $("#aform").attr("action", "/cmmn/selectMemberType.do").submit();
+			location.href="/cmmn/selectMemberAgree.do";
+		});
+
+
+		$("input[name=loginId], input[name=passwordNo]").on("keypress", function(e){
+
+			var kcode= (e.keyCode ? e.keyCode : e.which);
+			if (kcode == 13){
+				var eventElementId = $(this).attr('id');
+				fnLogin();
+			}
+			//return false;
+		});
+	});
+
+	function setCookie(name, value, expiredays) //쿠키 저장함수
+	{
+		var todayDate = new Date();
+		todayDate.setDate(todayDate.getDate() + expiredays);
+		document.cookie = name + "=" + escape(value) + "; path=/; expires="
+				+ todayDate.toGMTString() + ";";
+	}
+
+	function getCookie(Name) { // 쿠키 불러오는 함수
+		var search = Name + "=";
+		if (document.cookie.length > 0) { // if there are any cookies
+			offset = document.cookie.indexOf(search);
+			if (offset != -1) { // if cookie exists
+				offset += search.length; // set index of beginning of value
+				end = document.cookie.indexOf(";", offset); // set index of end of cookie value
+				if (end == -1)
+					end = document.cookie.length;
+				return unescape(document.cookie.substring(offset, end));
+			}
+		}
+	}
+
+	function fnLoginInit() {
+		$('#loginId').val('');
+		$('#passwordNo').val('');
+	}
+
+	function fnLogin() {
+
+		if ($('#loginId').val() == null || $('#loginId').val() == '') {
+			Message.alert('아이디를 입력해 주세요.');
+			return false;
+		} else if ($('#passwordNo').val() == null
+				|| $('#passwordNo').val() == '') {
+			Message.alert('비밀번호를 입력해 주세요.');
+			return false;
+		}
+
+		if ($("#saveId").is(":checked")) { // 아이디 저장을 체크 하였을때
+			setCookie("loginId", $('#loginId').val(), 7); //쿠키이름을 id로 아이디입력필드값을 7일동안 저장
+		} else { // 아이디 저장을 체크 하지 않았을때
+			setCookie("loginId", $('#loginId').val(), 0); //날짜를 0으로 저장하여 쿠키삭제
+		}
+
+		$.ajax({
+			type : "post",
+			url : "/login/loginAjax.do",
+			data: $("#aform").serialize(),
+			//crossDomain : true,
+			dataType : "json",
+			error : function() {
+				Message.alert("로그인중 오류가 발생하였습니다.");
+			},
+			success : function(data) {
+
+				if (data.msg == 'stand') {
+					Message.alert('승인되지 않은 회원입니다. 관리자에게 문의하세요');
+					//fnLoginInit();
+				} else if (data.msg == 'failLogin') {
+					Message.alert('로그인 실패하였습니다. 아이디와 비밀번호를 확인하세요.');
+					$(".msg").height("40px");
+					fnLoginInit();
+				} else if (data.msg == 'warnLogin') {
+					Message.alert('로그인실패 2회 초과시 5분간 로그인이 중지됩니다.');
+					fnLoginInit();
+				} else if (data.msg == 'warnLogin1') {
+					Message.alert('로그인실패 1회 초과시 5분간 로그인이 중지됩니다.');
+					fnLoginInit();
+				} else if (data.msg == 'warnLogin2') {
+					Message.alert('다음번 로그인실패시 5분간 로그인이 중지됩니다.');
+					fnLoginInit();
+				} else if (data.msg == 'lockLogin') {
+					Message.alert('5회 이상 로그인 실패로 로그인이 일시 중지되었습니다. 5분 후에 다시 접속하세요.');
+					$(".msg").height("40px");
+					fnLoginInit();
+				} else {
+
+					if(data.data.qscncYn == "Y"){ // 휴면계정인 사용자가 로그인 한 경우....
+						location.href = "/cmmn/quiescence.do";
+					}else if(data.data.reAgreeYn == "Y"){ // 재동의가 필요한 사용자인 경우...(가입 후 23개월이 지난 사용자)
+						location.href = "/cmmn/reagree.do";
+					// 2024-02-05 주경돈 주무관 요청 : 비밀번호 변경주기 체크 로직을 추가했었으나 요청에 의해 다시 주석 처리
+					//}else if(data.data.pwChgTgtYn == "Y"){ // 비밀번호 변경 주기가 3개월 넘겼을 경우
+					//	//location.href = "/member/updateMyInfo.do";
+					//	location.href = "/mypage/member/updatePassword.do?pgmNo=77&pwChgTgtYn=Y";
+					}else{
+						changeLayOut("Y");
+						$("#loginPop").hide();
+						isLogin = true;
+						$("#headerLogin").hide();
+						$("#headerJoin").hide();
+						$("#headerLogout").show();
+						$("#headerMypage").show();
+						$(".header_login_Y").hide();
+						$(".header_login_N").show();
+// 						!!서버적용시 주석제거
+// 						loginSessionChk();
+					}
+				}
+			}
+		});
+	}
+
+</script>
+	<!-- 로그인 팝업 -->
+	<div id="loginPop" class="wrap_layer">
+		<div class="layer" tabindex="0">
+			<div class="inr_layer">
+				<div class="hd_layer">
+					<h3 class="tit">로그인</h3>
+					<button id="loginPopCloseBtn" type="button" class="closeLayer"><i>닫기</i></button>
+				</div>
+				<div class="cont_layer">
+					<form name="aform" id="aform" method="post" onsubmit="return false;" action="/">
+						<div class="inr_frm">
+							<p class="desc">서비스 이용을 위하여 로그인이 필요합니다.</p>
+							<div class="box_frm">
+								<div class="row">
+									<label for="loginId" class="blind">이메일</label>
+									<input type="email" id="loginId" name="loginId" class="inp" placeholder="이메일">
+								</div>
+								<div class="row">
+									<label for="passwordNo" class="blind">비밀번호</label>
+									<input type="password" id="passwordNo" name="passwordNo" class="inp" placeholder="비밀번호">
+								</div>
+								<div class="wrap_chk">
+									<input type="checkbox" name="saveId" id="saveId" class="chk">
+									<label for="saveId">아이디 저장</label>
+								</div>
+								<button type="submit" name="loginbtn" class="btn_login" onclick="javascript:fnLogin(); return false;" id="loginbtn">로그인</button>
+							</div>
+						</div>
+						<div class="wrap_btns">
+							<a href="#" id="joinMember" class="btn">회원가입</a>
+							<a href="#" id="findIdPw" class="btn">아이디/비밀번호 찾기</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //로그인 팝업 -->
+<!-- End:login Area -->
+		
+	
+</body>
+</html>

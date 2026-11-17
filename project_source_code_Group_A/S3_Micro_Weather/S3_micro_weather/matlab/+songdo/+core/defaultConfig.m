@@ -1,0 +1,33 @@
+function cfg = defaultConfig()
+%DEFAULTCONFIG S3 implementation choices; see docs/ASSUMPTIONS.md.
+cfg.fsHz = 10;
+cfg.blockSamples = 10;
+cfg.tempTauSeconds = 12;
+cfg.tempGain = 1;
+cfg.tempLowpassHz = 0.2;
+cfg.tempLowpassPoles = 3;
+cfg.tempValidRangeC = [-80 80];
+cfg.windMeanSeconds = 10;
+cfg.windGustSeconds = 3;
+cfg.windCalmThresholdMps = 1e-6;
+cfg.humidityMedianSamples = 5;
+cfg.humidityMaxRatePctPerSec = 2;
+cfg.elevationM = 6.2;
+cfg.lapseRateKPerM = 0.0065;
+cfg.gravityMPerS2 = 9.80665;
+cfg.molarMassKgPerMol = 0.0289644;
+cfg.gasConstantJPerMolK = 8.3144598;
+cfg.seaLevelTemperatureK = 288.15;
+cfg.pressureValidRangeHpa = [300 1100];
+cfg.stationId = 'STATION_CENTRAL_PARK_WEATHER';
+cfg.latitude = 37.3930;
+cfg.longitude = 126.6345;
+cfg.seed = 42;
+cfg.adcBits = 16;
+cfg.analogOversample = 10;
+cfg.analogCutoffHz = 2;
+cfg.durationSeconds = 180;
+cfg.scenario = 'mixed';
+cfg.startUtc = '2026-01-01T00:00:00.000Z';
+cfg.network.mock_ingest_url = 'http://localhost:8080/api/v1/telemetry';
+end

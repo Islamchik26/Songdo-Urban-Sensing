@@ -1,0 +1,52 @@
+{
+  "station_id": "112",
+  "station_name": "Incheon (인천)",
+  "station_type": "ASOS",
+  "month": "2025-10",
+  "aggregation": "monthly_mean",
+  "period_start_kst": "2025-10-01T00:00:00+09:00",
+  "period_end_exclusive_kst": "2025-11-01T00:00:00+09:00",
+  "station_pressure_hpa": 1011.8,
+  "sea_level_pressure_hpa": 1020.0,
+  "air_temperature_c": 16.4,
+  "relative_humidity_pct": 77.0,
+  "pressure_elevation_m": 70.2,
+  "ground_elevation_m": 69.0,
+  "source_url": "https://data.kma.go.kr/data/common/pubXlsFileDownView.do?pubType=SYNM&issDate=202510",
+  "source_method": "POST",
+  "source_post_fields": {
+    "pubType": "SYNM",
+    "issDate": "202510"
+  },
+  "publication_listing_url": "https://data.kma.go.kr/data/publication/publicationAsosList.do?pageIndex=2",
+  "pressure_elevation_source_url": "https://data.kma.go.kr/data/common/downloadPubFile.do?fileNo=3846&conNo=609",
+  "pressure_elevation_source_method": "POST",
+  "pressure_elevation_source_post_fields": {
+    "fileNo": "3846",
+    "conNo": "609"
+  },
+  "pressure_elevation_temporal_status": "Verified in the October 2025 KMA monthly report, PDF physical pages 8-9; Hb is explicitly height of barometer above mean sea level.",
+  "source_sheet": "월요약자료1",
+  "source_excel_row_1based": 16,
+  "source_columns_1based": {
+    "station_id": 1,
+    "station_name": 2,
+    "station_pressure_hpa": 3,
+    "sea_level_pressure_hpa": 4,
+    "air_temperature_c": 5,
+    "relative_humidity_pct": 16
+  },
+  "source_http_date_utc": "2026-10-22T17:17:43Z",
+  "source_pdf_http_date_utc": "2026-10-22T17:17:48Z",
+  "retrieval_date_utc": "2026-10-22",
+  "retrieval_timestamp_note": "HTTP Date values are server response dates, not asserted exact local receipt times.",
+  "raw_xls_sha256": "5e48309096f2f9c4e5e530060215554771ee92480aa2902a2c632cb631993109",
+  "attribution": "Korea Meteorological Administration, Monthly Meteorological Report, October 2025.",
+  "limitations": [
+    "A single paired monthly-mean comparison is descriptive consistency checking, not instantaneous or high-rate validation.",
+    "The fixed-factor standard-atmosphere calculation may differ from KMA operational time-varying reduction; monthly averaging and rounding limit interpretation.",
+    "Incheon ASOS112 is an explicitly labeled alternative station, not Songdo AWS631 or Incheonyeonsu AWS512.",
+    "Published pressures and temperatures are rounded to 0.1; relative humidity to whole percent. No arbitrary interpolation or replication into minute rows."
+  ],
+  "aggregation_notes": "Official PDF physical page3: KST; daily means use 03,06,09,12,15,18,21,24h observations; daily/monthly statistics require at least80% data availability. Complete coverage is not established by presence of a monthly value."
+}

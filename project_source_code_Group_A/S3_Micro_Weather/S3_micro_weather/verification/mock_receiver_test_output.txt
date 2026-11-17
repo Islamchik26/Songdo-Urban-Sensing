@@ -1,0 +1,18 @@
+test_bad_date (test_mock_receiver.SchemaTests.test_bad_date) ... ok
+test_bad_types (test_mock_receiver.SchemaTests.test_bad_types) ... ok
+test_bad_unit (test_mock_receiver.SchemaTests.test_bad_unit) ... ok
+test_duplicate (test_mock_receiver.SchemaTests.test_duplicate) ... ok
+test_huge_integer (test_mock_receiver.SchemaTests.test_huge_integer) ... ok
+test_json_constants_and_duplicates (test_mock_receiver.SchemaTests.test_json_constants_and_duplicates) ... ok
+test_missing_channel (test_mock_receiver.SchemaTests.test_missing_channel) ... ok
+test_nonfinite (test_mock_receiver.SchemaTests.test_nonfinite) ... ok
+test_null_requires_flag (test_mock_receiver.SchemaTests.test_null_requires_flag) ... ok
+test_pressure_not_primary (test_mock_receiver.SchemaTests.test_pressure_not_primary) ... ok
+test_roundtrip (test_mock_receiver.SchemaTests.test_roundtrip) ... ok
+test_valid (test_mock_receiver.SchemaTests.test_valid) ... ok
+test_wrong_station (test_mock_receiver.SchemaTests.test_wrong_station) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK

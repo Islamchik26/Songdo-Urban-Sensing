@@ -1,0 +1,68 @@
+{
+  "package": "S3 native-cadence update, selected observed station 512",
+  "scope": "Only S3-1 through S3-5; other stations are metadata only",
+  "python_mock_tests": {
+    "executed": true,
+    "passed": 13,
+    "failed": 0
+  },
+  "python_reference_tests": {
+    "executed": true,
+    "passed": 13,
+    "failed": 0
+  },
+  "golden_fixture_regeneration": {
+    "executed": true,
+    "byte_identical_files": 12,
+    "matlab_comparison_executed": false,
+    "cases": [
+      "default",
+      "retuned",
+      "all_invalid",
+      "wind_overflow"
+    ]
+  },
+  "matlab_test_suites": {
+    "authored": [
+      "test_dsp",
+      "test_io",
+      "test_adversarial",
+      "test_golden",
+      "test_observations"
+    ],
+    "executed": false,
+    "reason": "Updated five-group suite not executed here; MATLAB and Octave unavailable. Historical v2 user log recorded separately."
+  },
+  "matlab_code_analyzer": {
+    "executed": false,
+    "reason": "Not installed here; run_online_check invokes it in user MATLAB"
+  },
+  "matlab_gui_tests": {
+    "executed": false,
+    "reason": "MATLAB runtime unavailable"
+  },
+  "official_KMA_benchmark": {
+    "exact_station_512_pressure_comparison_completed": false,
+    "selected_observation_station": "512 Incheonyeonsu AWS",
+    "official_observation_rows_verified": 361,
+    "reason": "Station 512 public minute table has no station pressure; independent paired reduction benchmark unavailable.",
+    "alternative_112_monthly_comparison": "Independent Python source/formula verification passed; descriptive +0.262884 hPa, not station 512 completion or MATLAB execution"
+  },
+  "matlab_package_reference_check": {
+    "executed": true,
+    "missing_references": 0,
+    "source_file_count": 31,
+    "not_a_parser_or_runtime_check": true,
+    "historical_v2_only": true
+  },
+  "v1_archive_unchanged_sha256": "7e37260381b9b0641828e18c3cd1a454634f4602a336541a2c8cd12d556edee5",
+  "historical_v2_user_runtime": {
+    "source": "User-provided Windows MATLAB R2026b log, 2026-10-23 01:21 KST",
+    "test_groups_passed": 4,
+    "scenario_samples": 1800,
+    "t50_reduction_percent": 75.66,
+    "generated_json_locally_validated": true,
+    "external_http_post_verified": false,
+    "covers_new_update": false
+  }
+}

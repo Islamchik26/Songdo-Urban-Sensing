@@ -1,0 +1,4817 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-24T15:29:06.291Z",
+  "station_id": "STATION_CONVENSIA",
+  "latitude": 37.3888,
+  "longitude": 126.6534,
+  "records": [
+    {
+      "timestamp": "2026-10-24T15:29:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 0,
+      "filtered_value": 0,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 0,
+      "filtered_value": 0,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 0,
+      "filtered_value": 0,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 0,
+      "filtered_value": 0,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 0,
+      "filtered_value": 0,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 0,
+      "filtered_value": 0,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 2,
+      "filtered_value": 2,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 4,
+      "filtered_value": 4,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 6,
+      "filtered_value": 6,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 8,
+      "filtered_value": 8,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 10,
+      "filtered_value": 10,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 12,
+      "filtered_value": 12,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 14,
+      "filtered_value": 14,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 16,
+      "filtered_value": 16,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 18,
+      "filtered_value": 18,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 19,
+      "filtered_value": 19,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 21,
+      "filtered_value": 21,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 23,
+      "filtered_value": 23,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 25,
+      "filtered_value": 25,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 28,
+      "filtered_value": 28,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 30,
+      "filtered_value": 30,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 32,
+      "filtered_value": 32,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 33,
+      "filtered_value": 33,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 35,
+      "filtered_value": 35,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 37,
+      "filtered_value": 37,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 39,
+      "filtered_value": 39,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 41,
+      "filtered_value": 41,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 43,
+      "filtered_value": 43,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 45,
+      "filtered_value": 45,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 47,
+      "filtered_value": 47,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 49,
+      "filtered_value": 49,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 51,
+      "filtered_value": 51,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 53,
+      "filtered_value": 53,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 55,
+      "filtered_value": 55,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 57,
+      "filtered_value": 57,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 59,
+      "filtered_value": 59,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 61,
+      "filtered_value": 61,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 64,
+      "filtered_value": 64,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 65,
+      "filtered_value": 65,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 67,
+      "filtered_value": 67,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 69,
+      "filtered_value": 69,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 72,
+      "filtered_value": 72,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 74,
+      "filtered_value": 74,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 75,
+      "filtered_value": 75,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 77,
+      "filtered_value": 77,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 79,
+      "filtered_value": 79,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 81,
+      "filtered_value": 81,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 83,
+      "filtered_value": 83,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 84,
+      "filtered_value": 84,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 86,
+      "filtered_value": 86,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 88,
+      "filtered_value": 88,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 90,
+      "filtered_value": 90,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 92,
+      "filtered_value": 92,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:29:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 94,
+      "filtered_value": 94,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 96,
+      "filtered_value": 96,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 97,
+      "filtered_value": 97,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 99,
+      "filtered_value": 99,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 101,
+      "filtered_value": 101,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 103,
+      "filtered_value": 103,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 105,
+      "filtered_value": 105,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 107,
+      "filtered_value": 107,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 109,
+      "filtered_value": 109,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 111,
+      "filtered_value": 111,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 113,
+      "filtered_value": 113,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 115,
+      "filtered_value": 115,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 117,
+      "filtered_value": 117,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 119,
+      "filtered_value": 119,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 121,
+      "filtered_value": 121,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 123,
+      "filtered_value": 123,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 125,
+      "filtered_value": 125,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 127,
+      "filtered_value": 127,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 127,
+      "filtered_value": 127,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 127,
+      "filtered_value": 127,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 127,
+      "filtered_value": 127,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 127,
+      "filtered_value": 127,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 127,
+      "filtered_value": 127,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 131,
+      "filtered_value": 131,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 133,
+      "filtered_value": 133,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 136,
+      "filtered_value": 136,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 140,
+      "filtered_value": 140,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 142,
+      "filtered_value": 142,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 145,
+      "filtered_value": 145,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 149,
+      "filtered_value": 149,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 152,
+      "filtered_value": 152,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 155,
+      "filtered_value": 155,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 158,
+      "filtered_value": 158,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 161,
+      "filtered_value": 161,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 165,
+      "filtered_value": 165,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 168,
+      "filtered_value": 168,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 171,
+      "filtered_value": 171,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 175,
+      "filtered_value": 175,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 178,
+      "filtered_value": 178,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 181,
+      "filtered_value": 181,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 184,
+      "filtered_value": 184,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 188,
+      "filtered_value": 188,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 190,
+      "filtered_value": 190,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 194,
+      "filtered_value": 194,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 197,
+      "filtered_value": 197,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 200,
+      "filtered_value": 200,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 204,
+      "filtered_value": 204,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 208,
+      "filtered_value": 208,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 211,
+      "filtered_value": 211,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 214,
+      "filtered_value": 214,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 217,
+      "filtered_value": 217,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 221,
+      "filtered_value": 221,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 224,
+      "filtered_value": 224,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 227,
+      "filtered_value": 227,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 230,
+      "filtered_value": 230,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 233,
+      "filtered_value": 233,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 236,
+      "filtered_value": 236,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 239,
+      "filtered_value": 239,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 242,
+      "filtered_value": 242,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 245,
+      "filtered_value": 245,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:30:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 249,
+      "filtered_value": 249,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 252,
+      "filtered_value": 252,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 255,
+      "filtered_value": 255,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 259,
+      "filtered_value": 259,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 262,
+      "filtered_value": 262,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 265,
+      "filtered_value": 265,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 268,
+      "filtered_value": 268,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 271,
+      "filtered_value": 271,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 275,
+      "filtered_value": 275,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 278,
+      "filtered_value": 278,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 281,
+      "filtered_value": 281,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 284,
+      "filtered_value": 284,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 287,
+      "filtered_value": 287,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 290,
+      "filtered_value": 290,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 294,
+      "filtered_value": 294,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 297,
+      "filtered_value": 297,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 300,
+      "filtered_value": 300,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 304,
+      "filtered_value": 304,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 307,
+      "filtered_value": 307,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 310,
+      "filtered_value": 310,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 313,
+      "filtered_value": 313,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 317,
+      "filtered_value": 317,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 319,
+      "filtered_value": 319,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 320,
+      "filtered_value": 320,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 320,
+      "filtered_value": 320,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 320,
+      "filtered_value": 320,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 320,
+      "filtered_value": 320,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 320,
+      "filtered_value": 320,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 323,
+      "filtered_value": 323,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 325,
+      "filtered_value": 325,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 327,
+      "filtered_value": 327,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 330,
+      "filtered_value": 330,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 332,
+      "filtered_value": 332,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 335,
+      "filtered_value": 335,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 338,
+      "filtered_value": 338,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 340,
+      "filtered_value": 340,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 343,
+      "filtered_value": 343,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 346,
+      "filtered_value": 346,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 348,
+      "filtered_value": 348,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 351,
+      "filtered_value": 351,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 353,
+      "filtered_value": 353,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 355,
+      "filtered_value": 355,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 358,
+      "filtered_value": 358,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 360,
+      "filtered_value": 360,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 363,
+      "filtered_value": 363,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 365,
+      "filtered_value": 365,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 368,
+      "filtered_value": 368,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 370,
+      "filtered_value": 370,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 372,
+      "filtered_value": 372,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 375,
+      "filtered_value": 375,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 377,
+      "filtered_value": 377,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 380,
+      "filtered_value": 380,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 382,
+      "filtered_value": 382,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 384,
+      "filtered_value": 384,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 386,
+      "filtered_value": 386,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 389,
+      "filtered_value": 389,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 391,
+      "filtered_value": 391,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 394,
+      "filtered_value": 394,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 396,
+      "filtered_value": 396,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 399,
+      "filtered_value": 399,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:31:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 401,
+      "filtered_value": 401,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 403,
+      "filtered_value": 403,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 405,
+      "filtered_value": 405,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 408,
+      "filtered_value": 408,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 410,
+      "filtered_value": 410,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 412,
+      "filtered_value": 412,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 414,
+      "filtered_value": 414,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 417,
+      "filtered_value": 417,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 419,
+      "filtered_value": 419,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 421,
+      "filtered_value": 421,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 424,
+      "filtered_value": 424,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 426,
+      "filtered_value": 426,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 428,
+      "filtered_value": 428,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 431,
+      "filtered_value": 431,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 433,
+      "filtered_value": 433,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 435,
+      "filtered_value": 435,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 437,
+      "filtered_value": 437,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 440,
+      "filtered_value": 440,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 440,
+      "filtered_value": 440,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 440,
+      "filtered_value": 440,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 439,
+      "filtered_value": 439,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 437,
+      "filtered_value": 437,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 436,
+      "filtered_value": 436,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 435,
+      "filtered_value": 435,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 434,
+      "filtered_value": 434,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 433,
+      "filtered_value": 433,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 431,
+      "filtered_value": 431,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 431,
+      "filtered_value": 431,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 435,
+      "filtered_value": 435,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 438,
+      "filtered_value": 438,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 441,
+      "filtered_value": 441,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 445,
+      "filtered_value": 445,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 448,
+      "filtered_value": 448,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 451,
+      "filtered_value": 451,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 454,
+      "filtered_value": 454,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 458,
+      "filtered_value": 458,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 461,
+      "filtered_value": 461,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 465,
+      "filtered_value": 465,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 469,
+      "filtered_value": 469,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 472,
+      "filtered_value": 472,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 476,
+      "filtered_value": 476,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 479,
+      "filtered_value": 479,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 482,
+      "filtered_value": 482,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 485,
+      "filtered_value": 485,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 489,
+      "filtered_value": 489,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 493,
+      "filtered_value": 493,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 496,
+      "filtered_value": 496,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 499,
+      "filtered_value": 499,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 502,
+      "filtered_value": 502,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 506,
+      "filtered_value": 506,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 509,
+      "filtered_value": 509,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 513,
+      "filtered_value": 513,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 516,
+      "filtered_value": 516,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 519,
+      "filtered_value": 519,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 522,
+      "filtered_value": 522,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 526,
+      "filtered_value": 526,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 530,
+      "filtered_value": 530,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 533,
+      "filtered_value": 533,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 536,
+      "filtered_value": 536,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 540,
+      "filtered_value": 540,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:32:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 543,
+      "filtered_value": 543,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 547,
+      "filtered_value": 547,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 551,
+      "filtered_value": 551,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 553,
+      "filtered_value": 553,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 557,
+      "filtered_value": 557,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 560,
+      "filtered_value": 560,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 563,
+      "filtered_value": 563,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 566,
+      "filtered_value": 566,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 567,
+      "filtered_value": 567,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 567,
+      "filtered_value": 567,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 565,
+      "filtered_value": 565,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 563,
+      "filtered_value": 563,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 561,
+      "filtered_value": 561,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 559,
+      "filtered_value": 559,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 558,
+      "filtered_value": 558,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 556,
+      "filtered_value": 556,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 554,
+      "filtered_value": 554,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 552,
+      "filtered_value": 552,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 550,
+      "filtered_value": 550,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 548,
+      "filtered_value": 548,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 546,
+      "filtered_value": 546,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 544,
+      "filtered_value": 544,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 543,
+      "filtered_value": 543,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 541,
+      "filtered_value": 541,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 539,
+      "filtered_value": 539,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 537,
+      "filtered_value": 537,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 535,
+      "filtered_value": 535,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 533,
+      "filtered_value": 533,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 531,
+      "filtered_value": 531,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 530,
+      "filtered_value": 530,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 528,
+      "filtered_value": 528,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 526,
+      "filtered_value": 526,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 524,
+      "filtered_value": 524,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 522,
+      "filtered_value": 522,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 520,
+      "filtered_value": 520,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 518,
+      "filtered_value": 518,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 516,
+      "filtered_value": 516,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 515,
+      "filtered_value": 515,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 514,
+      "filtered_value": 514,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 514,
+      "filtered_value": 514,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 514,
+      "filtered_value": 514,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 514,
+      "filtered_value": 514,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 514,
+      "filtered_value": 514,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 517,
+      "filtered_value": 517,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 520,
+      "filtered_value": 520,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 523,
+      "filtered_value": 523,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 526,
+      "filtered_value": 526,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 528,
+      "filtered_value": 528,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 531,
+      "filtered_value": 531,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 534,
+      "filtered_value": 534,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 537,
+      "filtered_value": 537,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 539,
+      "filtered_value": 539,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 542,
+      "filtered_value": 542,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 545,
+      "filtered_value": 545,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 548,
+      "filtered_value": 548,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 551,
+      "filtered_value": 551,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 554,
+      "filtered_value": 554,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 556,
+      "filtered_value": 556,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 559,
+      "filtered_value": 559,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 562,
+      "filtered_value": 562,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:33:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 565,
+      "filtered_value": 565,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 568,
+      "filtered_value": 568,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 572,
+      "filtered_value": 572,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 575,
+      "filtered_value": 575,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 578,
+      "filtered_value": 578,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 580,
+      "filtered_value": 580,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 583,
+      "filtered_value": 583,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 585,
+      "filtered_value": 585,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 588,
+      "filtered_value": 588,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 591,
+      "filtered_value": 591,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 594,
+      "filtered_value": 594,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 597,
+      "filtered_value": 597,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 600,
+      "filtered_value": 600,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 603,
+      "filtered_value": 603,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 607,
+      "filtered_value": 607,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 610,
+      "filtered_value": 610,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 612,
+      "filtered_value": 612,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 615,
+      "filtered_value": 615,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 619,
+      "filtered_value": 619,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 621,
+      "filtered_value": 621,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 624,
+      "filtered_value": 624,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 627,
+      "filtered_value": 627,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 630,
+      "filtered_value": 630,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 633,
+      "filtered_value": 633,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 636,
+      "filtered_value": 636,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 639,
+      "filtered_value": 639,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 641,
+      "filtered_value": 641,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 644,
+      "filtered_value": 644,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 647,
+      "filtered_value": 647,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 650,
+      "filtered_value": 650,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 652,
+      "filtered_value": 652,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 656,
+      "filtered_value": 656,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 658,
+      "filtered_value": 658,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 661,
+      "filtered_value": 661,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 664,
+      "filtered_value": 664,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 667,
+      "filtered_value": 667,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 670,
+      "filtered_value": 670,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 673,
+      "filtered_value": 673,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 673,
+      "filtered_value": 673,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 673,
+      "filtered_value": 673,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 671,
+      "filtered_value": 671,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 669,
+      "filtered_value": 669,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 668,
+      "filtered_value": 668,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 666,
+      "filtered_value": 666,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 665,
+      "filtered_value": 665,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 663,
+      "filtered_value": 663,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 661,
+      "filtered_value": 661,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 659,
+      "filtered_value": 659,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 657,
+      "filtered_value": 657,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 656,
+      "filtered_value": 656,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 654,
+      "filtered_value": 654,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 652,
+      "filtered_value": 652,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 650,
+      "filtered_value": 650,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 648,
+      "filtered_value": 648,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 646,
+      "filtered_value": 646,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 644,
+      "filtered_value": 644,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 643,
+      "filtered_value": 643,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 641,
+      "filtered_value": 641,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 639,
+      "filtered_value": 639,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 637,
+      "filtered_value": 637,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:34:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 636,
+      "filtered_value": 636,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 634,
+      "filtered_value": 634,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 632,
+      "filtered_value": 632,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 630,
+      "filtered_value": 630,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 628,
+      "filtered_value": 628,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 626,
+      "filtered_value": 626,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 624,
+      "filtered_value": 624,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 623,
+      "filtered_value": 623,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 621,
+      "filtered_value": 621,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 620,
+      "filtered_value": 620,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 618,
+      "filtered_value": 618,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 616,
+      "filtered_value": 616,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 615,
+      "filtered_value": 615,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 613,
+      "filtered_value": 613,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 612,
+      "filtered_value": 612,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 610,
+      "filtered_value": 610,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 608,
+      "filtered_value": 608,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 606,
+      "filtered_value": 606,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 605,
+      "filtered_value": 605,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 603,
+      "filtered_value": 603,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 601,
+      "filtered_value": 601,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 599,
+      "filtered_value": 599,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 597,
+      "filtered_value": 597,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 596,
+      "filtered_value": 596,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 594,
+      "filtered_value": 594,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 594,
+      "filtered_value": 594,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 594,
+      "filtered_value": 594,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 594,
+      "filtered_value": 594,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 597,
+      "filtered_value": 597,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 600,
+      "filtered_value": 600,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 602,
+      "filtered_value": 602,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 605,
+      "filtered_value": 605,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 607,
+      "filtered_value": 607,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 610,
+      "filtered_value": 610,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 612,
+      "filtered_value": 612,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 615,
+      "filtered_value": 615,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 617,
+      "filtered_value": 617,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 620,
+      "filtered_value": 620,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 622,
+      "filtered_value": 622,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 625,
+      "filtered_value": 625,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 627,
+      "filtered_value": 627,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 630,
+      "filtered_value": 630,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 632,
+      "filtered_value": 632,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 634,
+      "filtered_value": 634,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 637,
+      "filtered_value": 637,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 640,
+      "filtered_value": 640,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 642,
+      "filtered_value": 642,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 645,
+      "filtered_value": 645,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 647,
+      "filtered_value": 647,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 650,
+      "filtered_value": 650,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 652,
+      "filtered_value": 652,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 655,
+      "filtered_value": 655,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 657,
+      "filtered_value": 657,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 660,
+      "filtered_value": 660,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 663,
+      "filtered_value": 663,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 665,
+      "filtered_value": 665,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 667,
+      "filtered_value": 667,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 670,
+      "filtered_value": 670,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 673,
+      "filtered_value": 673,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 675,
+      "filtered_value": 675,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:35:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 678,
+      "filtered_value": 678,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 680,
+      "filtered_value": 680,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 683,
+      "filtered_value": 683,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 685,
+      "filtered_value": 685,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 688,
+      "filtered_value": 688,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 691,
+      "filtered_value": 691,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 693,
+      "filtered_value": 693,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 696,
+      "filtered_value": 696,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 699,
+      "filtered_value": 699,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 701,
+      "filtered_value": 701,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 704,
+      "filtered_value": 704,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 706,
+      "filtered_value": 706,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 709,
+      "filtered_value": 709,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 709,
+      "filtered_value": 709,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 709,
+      "filtered_value": 709,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 709,
+      "filtered_value": 709,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 707,
+      "filtered_value": 707,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 705,
+      "filtered_value": 705,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 704,
+      "filtered_value": 704,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 702,
+      "filtered_value": 702,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 700,
+      "filtered_value": 700,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 698,
+      "filtered_value": 698,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 696,
+      "filtered_value": 696,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 694,
+      "filtered_value": 694,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 692,
+      "filtered_value": 692,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 690,
+      "filtered_value": 690,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 689,
+      "filtered_value": 689,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 687,
+      "filtered_value": 687,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 685,
+      "filtered_value": 685,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 683,
+      "filtered_value": 683,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 682,
+      "filtered_value": 682,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 680,
+      "filtered_value": 680,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 678,
+      "filtered_value": 678,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 676,
+      "filtered_value": 676,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 674,
+      "filtered_value": 674,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 673,
+      "filtered_value": 673,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 671,
+      "filtered_value": 671,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 669,
+      "filtered_value": 669,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 667,
+      "filtered_value": 667,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 666,
+      "filtered_value": 666,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 664,
+      "filtered_value": 664,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 662,
+      "filtered_value": 662,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 660,
+      "filtered_value": 660,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 658,
+      "filtered_value": 658,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 657,
+      "filtered_value": 657,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 654,
+      "filtered_value": 654,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 653,
+      "filtered_value": 653,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 651,
+      "filtered_value": 651,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 651,
+      "filtered_value": 651,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 651,
+      "filtered_value": 651,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 651,
+      "filtered_value": 651,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 651,
+      "filtered_value": 651,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 651,
+      "filtered_value": 651,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 654,
+      "filtered_value": 654,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 657,
+      "filtered_value": 657,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 661,
+      "filtered_value": 661,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 664,
+      "filtered_value": 664,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 667,
+      "filtered_value": 667,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 670,
+      "filtered_value": 670,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 674,
+      "filtered_value": 674,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:36:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 676,
+      "filtered_value": 676,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 680,
+      "filtered_value": 680,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 683,
+      "filtered_value": 683,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 686,
+      "filtered_value": 686,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 690,
+      "filtered_value": 690,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 693,
+      "filtered_value": 693,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 697,
+      "filtered_value": 697,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 700,
+      "filtered_value": 700,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 703,
+      "filtered_value": 703,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 706,
+      "filtered_value": 706,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 709,
+      "filtered_value": 709,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 712,
+      "filtered_value": 712,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 715,
+      "filtered_value": 715,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 718,
+      "filtered_value": 718,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 722,
+      "filtered_value": 722,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 725,
+      "filtered_value": 725,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 729,
+      "filtered_value": 729,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 732,
+      "filtered_value": 732,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 735,
+      "filtered_value": 735,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 739,
+      "filtered_value": 739,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 742,
+      "filtered_value": 742,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 745,
+      "filtered_value": 745,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 748,
+      "filtered_value": 748,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 751,
+      "filtered_value": 751,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 755,
+      "filtered_value": 755,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 758,
+      "filtered_value": 758,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 762,
+      "filtered_value": 762,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 765,
+      "filtered_value": 765,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 768,
+      "filtered_value": 768,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 771,
+      "filtered_value": 771,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 774,
+      "filtered_value": 774,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 778,
+      "filtered_value": 778,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 781,
+      "filtered_value": 781,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 784,
+      "filtered_value": 784,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 787,
+      "filtered_value": 787,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 791,
+      "filtered_value": 791,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 794,
+      "filtered_value": 794,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 797,
+      "filtered_value": 797,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 800,
+      "filtered_value": 800,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 804,
+      "filtered_value": 804,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 808,
+      "filtered_value": 808,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 811,
+      "filtered_value": 811,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 814,
+      "filtered_value": 814,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 815,
+      "filtered_value": 815,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 815,
+      "filtered_value": 815,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 815,
+      "filtered_value": 815,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 812,
+      "filtered_value": 812,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 810,
+      "filtered_value": 810,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 807,
+      "filtered_value": 807,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 805,
+      "filtered_value": 805,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 802,
+      "filtered_value": 802,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 799,
+      "filtered_value": 799,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 797,
+      "filtered_value": 797,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 794,
+      "filtered_value": 794,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 792,
+      "filtered_value": 792,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 789,
+      "filtered_value": 789,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 787,
+      "filtered_value": 787,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 787,
+      "filtered_value": 787,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 789,
+      "filtered_value": 789,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 791,
+      "filtered_value": 791,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:37:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 793,
+      "filtered_value": 793,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 795,
+      "filtered_value": 795,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 797,
+      "filtered_value": 797,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 799,
+      "filtered_value": 799,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 801,
+      "filtered_value": 801,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 803,
+      "filtered_value": 803,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 805,
+      "filtered_value": 805,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:06.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 807,
+      "filtered_value": 807,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:07.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 809,
+      "filtered_value": 809,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:08.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 812,
+      "filtered_value": 812,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:09.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 814,
+      "filtered_value": 814,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:10.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 815,
+      "filtered_value": 815,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:11.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 817,
+      "filtered_value": 817,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:12.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 820,
+      "filtered_value": 820,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:13.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 822,
+      "filtered_value": 822,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:14.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 824,
+      "filtered_value": 824,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:15.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 824,
+      "filtered_value": 824,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:16.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 824,
+      "filtered_value": 824,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:17.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 818,
+      "filtered_value": 818,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:18.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 814,
+      "filtered_value": 814,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:19.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 808,
+      "filtered_value": 808,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:20.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 803,
+      "filtered_value": 803,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:21.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 798,
+      "filtered_value": 798,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:22.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 792,
+      "filtered_value": 792,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:23.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 788,
+      "filtered_value": 788,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:24.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 783,
+      "filtered_value": 783,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:25.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 778,
+      "filtered_value": 778,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:26.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 773,
+      "filtered_value": 773,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:27.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 768,
+      "filtered_value": 768,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:28.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 763,
+      "filtered_value": 763,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:29.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 758,
+      "filtered_value": 758,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:30.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 753,
+      "filtered_value": 753,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:31.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 748,
+      "filtered_value": 748,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:32.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 742,
+      "filtered_value": 742,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:33.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 737,
+      "filtered_value": 737,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:34.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 732,
+      "filtered_value": 732,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:35.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 727,
+      "filtered_value": 727,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:36.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 723,
+      "filtered_value": 723,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:37.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 717,
+      "filtered_value": 717,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:38.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 713,
+      "filtered_value": 713,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:39.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 708,
+      "filtered_value": 708,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:40.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 703,
+      "filtered_value": 703,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:41.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 698,
+      "filtered_value": 698,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:42.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 693,
+      "filtered_value": 693,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:43.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 688,
+      "filtered_value": 688,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:44.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 683,
+      "filtered_value": 683,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:45.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 678,
+      "filtered_value": 678,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:46.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 672,
+      "filtered_value": 672,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:47.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 667,
+      "filtered_value": 667,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:48.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 663,
+      "filtered_value": 663,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:49.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 658,
+      "filtered_value": 658,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:50.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 652,
+      "filtered_value": 652,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:51.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 647,
+      "filtered_value": 647,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:52.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 643,
+      "filtered_value": 643,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:53.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 638,
+      "filtered_value": 638,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:54.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 633,
+      "filtered_value": 633,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:55.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 628,
+      "filtered_value": 628,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:56.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 623,
+      "filtered_value": 623,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:57.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 618,
+      "filtered_value": 618,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:58.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 613,
+      "filtered_value": 613,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:38:59.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 608,
+      "filtered_value": 608,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:39:00.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 603,
+      "filtered_value": 603,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:39:01.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 598,
+      "filtered_value": 598,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:39:02.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 593,
+      "filtered_value": 593,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:39:03.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 588,
+      "filtered_value": 588,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:39:04.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 583,
+      "filtered_value": 583,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:39:05.291Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 578,
+      "filtered_value": 578,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-10-24T15:39:06.286Z",
+      "channel": "PED_PIR_COUNT",
+      "raw_value": 577,
+      "filtered_value": 577,
+      "unit": "people",
+      "quality_flag": "GOOD"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "matlab_release": "2026b",
+  "matlab_version": "26.2.0.3386108 (R2026b)",
+  "tests_passed": true,
+  "scenario_completed": true,
+  "gui_tested": false,
+  "real_KMA_benchmark_completed": false,
+  "log_file": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\validation_20261023_184123_479\\S3_validation_log.txt",
+  "output_folder": "D:\\Downloads\\Songdo_Urban_Sensing\\outputs\\validation_20261023_184123_479",
+  "code_analyzer_files": 37,
+  "code_analyzer_diagnostics": 21,
+  "temperature_delay_reduction_percent": 75.659486261954825,
+  "plot_export_status": "EXPORTED"
+}

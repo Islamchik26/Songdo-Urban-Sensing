@@ -1,0 +1,71 @@
+S3 MATLAB validation started: 23-Oct-2026 18:41:23
+Release: 2026b
+Version: 26.2.0.3386108 (R2026b)
+Platform: PCWIN64
+Scope: S3 only. No GUI or real KMA benchmark is validated by this command.
+
+Code Analyzer: run_KMA_monthly_pressure_benchmark.m
+  Line 16: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: run_KMA_observations.m
+  Line 32: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 66: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: run_S3.m
+  Line 33: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 71: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: run_online_check.m
+  Line 9: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: validateState.m
+  Line 50: This keyword might not be aligned with its matching END on line 53.
+
+Code Analyzer: exportTelemetry.m
+  Line 20: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: export_sensor_grid_json.m
+  Line 11: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: generateScenario.m
+  Line 14: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: SongdoSensorApp.m
+  Line 98: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 177: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 212: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 604: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: test_adversarial.m
+  Line 7: Value assigned to variable might be unused.
+  Line 95: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+  Line 104: To improve performance, use 'isscalar' instead of length comparison.
+
+Code Analyzer: test_dsp.m
+  Line 8: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: test_io.m
+  Line 19: This keyword might not be aligned with its matching END on line 22.
+  Line 49: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Code Analyzer: test_observations.m
+  Line 3: A Code Analyzer message was once suppressed here, but the message is no longer generated.
+
+Running MATLAB tests, including cross-language golden comparisons...
+test_dsp: 14 groups passed. Clean t50 delay reduction: 75.7%.
+PASS test_io: registry, minutes, directions, schema and CSV replay.
+PASS test_adversarial: numeric types, shapes, timing, state, overflow, nulls and minute edges.
+PASS test_golden: independent default/retuned and invalid-minute vectors agree in MATLAB.
+PASS test_observations: native timestamps, gaps, missing values, station identity and pressure gates.
+All 5 MATLAB test groups passed. This does not implement other teams.
+
+Running headless S3 simulation and local exports...
+S3: 1800 samples; 75.66% t50 delay reduction; JSON validated.
+Files: D:\Downloads\Songdo_Urban_Sensing\outputs\validation_20261023_184123_479
+Real KMA benchmark is pending.
+
+PASS: numerical tests and scenario completed in this MATLAB session.
+GUI lifecycle and real KMA comparison are separate, still unverified.
+
+Validation log: D:\Downloads\Songdo_Urban_Sensing\outputs\validation_20261023_184123_479\S3_validation_log.txt
+After this function returns, download the log and summary from the Files panel.

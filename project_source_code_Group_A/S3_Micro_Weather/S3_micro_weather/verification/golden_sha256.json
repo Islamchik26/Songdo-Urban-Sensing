@@ -1,0 +1,14 @@
+{
+  "adversarial_input.csv": "a34fa097d55b89dbac0487ad98c314888f4bf4693edcb4dc8bffb7c593815f04",
+  "all_invalid_input.csv": "becda77dbdc45c24cb90e749837cc2d2e102295f8acce9aed845f798ea7b790c",
+  "expected_all_invalid_minutes.json": "89adcc4cdc50c61a2fe7fcf99f095c2a1de708554ee891f586d13707de398c15",
+  "expected_all_invalid_samples.csv": "3469254fd7e7fd32faeae29f1e0d4c3ec12b9754787ee741e5bdc3c2056e834a",
+  "expected_default_minutes.json": "7a1332b68412d1dd4ce0b5389e2989e1c010226567ebe404e471ff515ef5e354",
+  "expected_default_samples.csv": "d6cbf15a1a958437a3a4f1601e0ee49881c9ed4570afe22ccc0097e76b9256fa",
+  "expected_retuned_minutes.json": "08188647c7c6db16b069cc8000f5111a3d6c29dee345dca3c653f65887a3c3d2",
+  "expected_retuned_samples.csv": "189692a588fa89948b47f3db7b722c4f37aa0850c9e9d34a09c78603b71eb733",
+  "expected_wind_overflow_minutes.json": "787599c4e92d6181fe69fb9a141f933d97b8cf841ca78f93bc4349ab2db76e60",
+  "expected_wind_overflow_samples.csv": "66386f96b4f17005664b485aa78813298d5049da57170429e5d93ac1b1531770",
+  "manifest.json": "3bf566c830f29252e72524a4f734290f1dbd0081ae2e6c00598f68d01df6c089",
+  "wind_overflow_input.csv": "90cf28c11215b9e3133cc0e7c7eeb29911beb4b1949d3ae0d8387f0924492064"
+}
