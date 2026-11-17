@@ -2,7 +2,7 @@
   "schema_version": "s3-kma-mock-1.0",
   "schema_notice": "Project-defined KMA-style mock only; no official ASOS conformance or observed station identity asserted.",
   "source_type": "SYNTHETIC",
-  "generated_at": "2026-11-17T14:53:22.444Z",
+  "generated_at": "2026-11-17T17:05:19.756Z",
   "station_id": "STATION_CENTRAL_PARK_WEATHER",
   "records": [
     {

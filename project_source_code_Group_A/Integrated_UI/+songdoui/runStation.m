@@ -37,6 +37,15 @@ try
             [c3, views]  = callCaptured(@() songdoui.s3Views(kma));
             res.console = [c1 newline c2 newline c3];
             res.data = struct('report', report, 'kma', kma, 'views', views);
+        case 'S4'
+            % run_S4 creates the S4-1..S4-3 figures, then runs S4-4, whose
+            % own "close all" would delete them. While S4 runs, new figures
+            % only hide when closed, so every scenario figure is kept.
+            oldClose = get(groot, 'DefaultFigureCloseRequestFcn');
+            set(groot, 'DefaultFigureCloseRequestFcn', @(f, ~) set(f, 'Visible', 'off'));
+            restoreClose = onCleanup(@() set(groot, 'DefaultFigureCloseRequestFcn', oldClose));
+            [res.console, res.data] = callCaptured(@() run_S4('Plot', true));
+            clear restoreClose
         case 'script'
             res.console = songdoui.runScriptIsolated(st.script);
         otherwise

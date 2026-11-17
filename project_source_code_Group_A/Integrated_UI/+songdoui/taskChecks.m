@@ -81,6 +81,34 @@ try
             kma = res.data.kma;
             C = add(C, 'Real KMA station 512 rows replayed', '> 0, no interpolation', sprintf('%d rows', kma.row_count), pf(kma.row_count > 0));
         % ---------------------------------------------------------- S4
+        case 'S4-1'
+            r1 = res.data.s1;
+            for f = {'pm25', 'co2'}
+                q = r1.(f{1}); nm = upper(f{1});
+                C = add(C, sprintf('%s exact ZOH vs continuous y(t)', nm), '< 1e-9 V', sprintf('%.1e V', q.zoh_err), pf(q.zoh_err < 1e-9));
+                C = add(C, sprintf('%s t63 = tau', nm), sprintf('%g s', q.tau), sprintf('%.2f s', q.t63), pf(abs(q.t63 - q.tau) < 0.05));
+                C = add(C, sprintf('%s t10-90 = tau ln 9', nm), sprintf('%.2f s', q.tau*log(9)), sprintf('%.2f s', q.t1090), pf(abs(q.t1090 - q.tau*log(9)) < 0.1));
+                C = add(C, sprintf('%s 2 %% settling = tau ln 50', nm), sprintf('%.2f s', q.tau*log(50)), sprintf('%.2f s', q.ts2), pf(abs(q.ts2 - q.tau*log(50)) < 0.2));
+                C = add(C, sprintf('%s tau identified from noisy step', nm), 'within 5 %', sprintf('%.2f s (%+.1f %%)', q.tau_hat, 100*(q.tau_hat/q.tau - 1)), pf(abs(q.tau_hat/q.tau - 1) < 0.05));
+            end
+        case 'S4-2'
+            r2 = res.data.s2;
+            C = add(C, '12-bit LSB = 3.3/4096 V', sprintf('%.4f mV', 1e3*3.3/4096), sprintf('%.4f mV', 1e3*r2.lsb_V), pf(abs(r2.lsb_V - 3.3/4096) < 1e-12));
+            C = add(C, 'Resolution per LSB', 'info', sprintf('%.3f ug/m3 (PM2.5), %.3f ppm (CO2)', r2.lsb_pm25, r2.lsb_co2), 'INFO');
+            C = add(C, 'Max |quantization error| <= LSB/2', '<= 0.5 LSB', sprintf('%.3f LSB', r2.err_max/r2.lsb_V), pf(r2.err_max <= r2.lsb_V/2 + 1e-12));
+            C = add(C, 'Error std = LSB/sqrt(12)', sprintf('%.4f LSB', 1/sqrt(12)), sprintf('%.4f LSB', r2.err_std/r2.lsb_V), pf(abs(r2.err_std/(r2.lsb_V/sqrt(12)) - 1) < 0.03));
+            C = add(C, 'SQNR vs 6.02B + 1.76 (B = 6..16)', '< 0.5 dB dev.', sprintf('%.2f dB max dev.', r2.sqnr_maxdev), pf(r2.sqnr_maxdev < 0.5));
+            C = add(C, 'Alias of 0.95 Hz ripple at Fs = 1 Hz', sprintf('%.3f Hz', r2.f_alias_theory), sprintf('%.3f Hz', r2.f_alias_meas), pf(abs(r2.f_alias_meas - r2.f_alias_theory) < 1e-3));
+            C = add(C, 'Boxcar anti-alias attenuation', sprintf('%.1f dB (theory)', r2.aa_atten_theory_dB), sprintf('%.1f dB', r2.aa_atten_dB), pf(abs(r2.aa_atten_dB - r2.aa_atten_theory_dB) < 1));
+        case 'S4-3'
+            r3 = res.data.s3;
+            C = add(C, 'FIR length / cutoff', 'M = 241', sprintf('M = %d, fc = %.2f mHz', r3.M, 1e3*r3.fc_hz), 'INFO');
+            C = add(C, 'FIR linear phase (symmetric h)', 'symmetric', sprintf('max asym. %.1e', max(abs(r3.h - flipud(r3.h)))), pf(max(abs(r3.h - flipud(r3.h))) < 1e-15));
+            C = add(C, 'FIR unity DC gain sum(h)', '1', sprintf('%.12f', sum(r3.h)), pf(abs(sum(r3.h) - 1) < 1e-12));
+            C = add(C, 'FIR stopband attenuation', '>= 50 dB', sprintf('%.1f dB', r3.stop_atten_dB), pf(r3.stop_atten_dB >= 50));
+            C = add(C, 'Group delay (M-1)/2', sprintf('%g samples', (r3.M - 1)/2), sprintf('%.2f samples = %.1f min', r3.group_delay_samples, r3.group_delay_s/60), pf(abs(r3.group_delay_samples - (r3.M - 1)/2) < 0.01));
+            C = add(C, 'Block streaming (zi->zf) == batch', '< 1e-9', sprintf('FIR %.1e, IIR %.1e', r3.stream_err_fir, r3.stream_err_iir), pf(max(r3.stream_err_fir, r3.stream_err_iir) < 1e-9));
+            C = add(C, 'RMS error vs truth', 'FIR < raw/2', sprintf('raw %.2f | FIR %.2f | IIR %.2f ppm', r3.rms_raw, r3.rms_fir, r3.rms_iir), pf(r3.rms_fir < r3.rms_raw/2));
         case 'S4-4'
             txt = res.console;
             C = add(C, 'Embedded self-tests (schema, FIR, CAI breakpoints, hysteresis)', 'all pass', ...
@@ -97,6 +125,20 @@ try
             end
             tok = regexp(txt, 'Peak CAI:\s*(\d+)\s*\(([^)]+)\)', 'tokens', 'once');
             if ~isempty(tok), C = add(C, 'Peak CAI', 'info', sprintf('%s (%s)', tok{1}, tok{2}), 'INFO'); end
+            % run_S4 intends output/, but RUN(fullpath) executes the script
+            % in its own folder, so take whichever copy is newest.
+            st44 = st; st44.jsonFile = newestFile({fullfile(st.folder, 'output', 'S4_4_telemetry.json'), ...
+                fullfile(st.folder, 'S4_4_telemetry.json')});
+            C = jsonRow(C, st44, R);
+        case 'S4-5'
+            r5 = res.data.s5;
+            C = add(C, 'Hours matched to AirKorea #131233', 'all 72', sprintf('%d', r5.n_matched), pf(r5.n_matched == 72));
+            C = add(C, 'PM2.5 Pearson r', '> 0.95', sprintf('%.3f', r5.pm25.r), pf(r5.pm25.r > 0.95));
+            C = add(C, 'PM2.5 RMSE', '< 5 ug/m3', sprintf('%.2f ug/m3 (bias %+.2f)', r5.pm25.rmse, r5.pm25.bias), pf(r5.pm25.rmse < 5));
+            C = add(C, 'PM10 RMSE / r', 'info', sprintf('%.2f ug/m3, r = %.3f', r5.pm10.rmse, r5.pm10.r), 'INFO');
+            C = add(C, 'CAI grade agreement', '>= 80 %', sprintf('%.1f %%', 100*r5.grade_agreement), pf(r5.grade_agreement >= 0.80));
+            C = add(C, 'Hourly completeness (AirKorea rule)', '>= 75 %', sprintf('%.0f %%', 100*r5.hours_valid), pf(r5.completeness_ok));
+            C = add(C, 'Member schema check, 4 channels x 72 h', '288 records', sprintf('%d records', r5.n_records), pf(r5.schema_ok && r5.n_records == 288));
             C = jsonRow(C, st, R);
         % ---------------------------------------------------------- S5
         case 'S5-1'
@@ -141,6 +183,14 @@ end
 
 function s = yesno(tf)
 if tf, s = 'passed'; else, s = 'not confirmed'; end
+end
+
+function f = newestFile(candidates)
+f = candidates{1}; best = -inf;
+for k = 1:numel(candidates)
+    d = dir(candidates{k});
+    if ~isempty(d) && d.datenum > best, f = candidates{k}; best = d.datenum; end
+end
 end
 
 function s = regexpOr(txt, pat)

@@ -6,7 +6,7 @@ function [T, log] = runVerification(R, progressFcn)
 %   S1  tests/test_S1.m                (member script)
 %   S2  tests/test_S2.m                (member function, 38 checks)
 %   S3  tests/run_all_tests.m          (member function, 5 groups)
-%   S4  self-tests embedded in S4_4_cai_categorization.m (member asserts)
+%   S4  tests/test_S4.m (31 checks) + S4-4 embedded asserts + run_S4 R.Checks
 %   S5  no member test file: output-based checks on run_S5 figures/JSON
 %   ALL Sensor Grid JSON schema for all five stations + station registry
 
@@ -47,13 +47,23 @@ rows(end+1, :) = {'S3', 'tests/run_all_tests.m (member)', pf(ok), detail};
 log = [log banner('S3 run_all_tests') txt];
 
 % ---- S4 ---------------------------------------------------------------
-progressFcn(0.6, 'S4: embedded self-tests');
+progressFcn(0.6, 'S4: tests/test_S4.m + run_S4');
 st = byCode('S4');
+[ok, txt] = captured(st, @() songdoui.runScriptIsolated(fullfile(st.folder, 'tests', 'test_S4.m')));
+tok = regexp(txt, '(\d+) passed, (\d+) failed', 'tokens', 'once');
+detail = 'see log';
+if ~isempty(tok), detail = sprintf('%s passed, %s failed', tok{1}, tok{2}); ok = ok && strcmp(tok{2}, '0'); end
+rows(end+1, :) = {'S4', 'tests/test_S4.m (member, S4-1/2/3/5)', pf(ok), detail};
+log = [log banner('S4 test_S4') txt];
 res = songdoui.runStation(st);
 okS4 = res.ok && contains(res.console, 'All self-tests passed');
 rows(end+1, :) = {'S4', 'S4-4 embedded self-tests (member asserts)', pf(okS4), ...
     'schema, FIR symmetry, streaming==batch, CAI breakpoints, hysteresis'};
-log = [log banner('S4 S4_4_cai_categorization') res.console];
+tok = regexp(res.console, '(\d+) / (\d+) checks passed', 'tokens', 'once');
+okRun = res.ok && ~isempty(tok) && strcmp(tok{1}, tok{2});
+detail = 'see log'; if ~isempty(tok), detail = sprintf('%s / %s checks passed', tok{1}, tok{2}); end
+rows(end+1, :) = {'S4', 'run_S4 R.Checks (member, S4-1..S4-5)', pf(okRun), detail};
+log = [log banner('S4 run_S4') res.console];
 delete(res.figures(isvalid(res.figures)));
 
 % ---- S5 ---------------------------------------------------------------

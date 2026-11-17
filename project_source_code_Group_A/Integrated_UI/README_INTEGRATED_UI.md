@@ -16,9 +16,9 @@ Base MATLAB R2023b or later (tested on R2025b). No toolboxes. The launcher adds 
 
 | Tab | What it does |
 |-----|--------------|
-| **Task Runner** | Tree of 5 stations × 5 handbook scenarios. Select a task, press **Run**. The member's original entry point runs (`run_S1`, `run_S2`, `run_S3` + `run_KMA_observations`, `S4_4_cai_categorization.m`, `run_S5.m`). Its figures are shown embedded (or **Pop out** as interactive MATLAB figures), with a **handbook target vs measured** check table, the console lines for that scenario, and a JSON preview with schema validation. |
+| **Task Runner** | Tree of 5 stations × 5 handbook scenarios. Select a task, press **Run**. The member's original entry point runs (`run_S1`, `run_S2`, `run_S3` + `run_KMA_observations`, `run_S4` (S4-1…S4-5, from `S4_Air_Quality_updated/`), `run_S5.m`). Its figures are shown embedded (or **Pop out** as interactive MATLAB figures), with a **handbook target vs measured** check table, the console lines for that scenario, and a JSON preview with schema validation. |
 | **Live Instrument** | Handbook §5 oscilloscope for every station: 7‑stage signal‑chain strip, dual trace (raw vs causal filtered), Hann‑corrected one‑sided spectrum with Nyquist marker, live cutoff tuning (state kept), telemetry buffer table, **EXPORT JSON** (Sensor Grid §5.3 + CSV). Uses S2 `AcousticChain` and S3 `processBlock` directly; S1/S4/S5 filters are reproduced with the members' parameters because those were delivered as scripts. All block processing is causal with persistent `zi → zf` state. |
-| **Verification** | Runs every member test suite (S1 `test_S1`, S2 `test_S2`, S3 `run_all_tests`, S4 embedded asserts), output‑based checks for S5 (which has no test file), Sensor Grid JSON schema for all five stations, station registry and Haversine checks. |
+| **Verification** | Runs every member test suite (S1 `test_S1`, S2 `test_S2`, S3 `run_all_tests`, S4 `test_S4` + S4-4 embedded asserts + `run_S4` checks), output‑based checks for S5 (which has no test file), Sensor Grid JSON schema for all five stations, station registry and Haversine checks. |
 | **Station Map & Sensor Grid** | Clickable WGS84 map of the five stations, Haversine distance matrix, conformance table of every station's exported JSON. |
 | **Console Log** | Everything every member script printed, with timestamps; can be saved. |
 
@@ -51,6 +51,6 @@ Integrated_UI/
 ## Notes
 
 * Running a station regenerates that member's own outputs in their folder, exactly as running their script by hand does.
-* **S4‑1, S4‑2, S4‑3, S4‑5 were not in the midterm submission.** They appear greyed out as *not implemented*. When added, register the new figure names in `+songdoui/registry.m`.
+* S4 now comes from `S4_Air_Quality_updated/S4_Air_Quality_Standalone` (all five scenarios). `run_S4` creates the S4‑1…S4‑3 figures before S4‑4's own `close all`; the UI keeps them by making figures hide instead of close while S4 runs.
 * Adding a new scenario or station only requires editing `registry.m` (plus a `case` in `taskChecks.m` for numeric checks).
 * Headless tests: `test_integrated_backend` (≈1 min) and `test_integrated_app(true)` (≈7 min, full run).
