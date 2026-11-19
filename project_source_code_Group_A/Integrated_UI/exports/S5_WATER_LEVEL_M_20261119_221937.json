@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-19T13:19:37.599Z",
+  "station_id": "STATION_WATERFRONT_CANAL",
+  "latitude": 37.398,
+  "longitude": 126.621,
+  "records": [
+    {
+      "timestamp": "2026-11-19T13:20:06.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.9023789377956677,
+      "filtered_value": 1.8558586200209095,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:20:36.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.7225658138820519,
+      "filtered_value": 1.8269209837603819,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:21:06.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.9250810978148267,
+      "filtered_value": 1.7967156456008417,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:21:36.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.8454009122291763,
+      "filtered_value": 1.8567500407788571,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:22:06.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.563388043186736,
+      "filtered_value": 1.8267748939737429,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:22:36.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 2.1184434530293097,
+      "filtered_value": 1.8452995565911585,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:23:06.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.4677493632477974,
+      "filtered_value": 1.821394563268246,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:23:36.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 2.1552135554437424,
+      "filtered_value": 1.8393984176560643,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:24:06.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.7928682005073666,
+      "filtered_value": 1.8434164359725791,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    },
+    {
+      "timestamp": "2026-11-19T13:24:36.280Z",
+      "channel": "WATER_LEVEL_M",
+      "raw_value": 1.7777370085241635,
+      "filtered_value": 1.8475643555531041,
+      "unit": "m",
+      "quality_flag": "GOOD"
+    }
+  ]
+}
