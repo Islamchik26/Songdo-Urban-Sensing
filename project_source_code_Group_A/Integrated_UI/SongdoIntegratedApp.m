@@ -595,6 +595,7 @@ classdef SongdoIntegratedApp < handle
             end
             res = songdoui.runStation(st);
             app.Cache(st.code) = res;
+            app.prerender(st, res, d);
             app.log(sprintf('=== %s %s  (%s, %.1f s, %d figures) ===\n%s', st.code, st.name, ...
                 okText(res.ok), res.elapsed, numel(res.figures), res.console));
             node = app.NodeByKey(st.code); node.Text = stationText(st, res);
@@ -604,6 +605,39 @@ classdef SongdoIntegratedApp < handle
                 uialert(app.UIFigure, res.error, sprintf('%s failed', st.code));
             end
             app.validateAllExports();
+        end
+
+        function prerender(app, st, res, d)
+            %PRERENDER  Render every view of a station once, right after it runs,
+            %   so switching between its tasks afterwards is instant.
+            figs = res.figures(isvalid(res.figures));
+            figs = figs(:).';
+            for tk = st.tasks.'
+                if startsWith(tk.view, 'S5-')
+                    f = app.cropAxes(res, tk);
+                    if ~isempty(f), figs(end+1) = f; end %#ok<AGROW>
+                end
+            end
+            for k = 1:numel(figs)
+                msg = sprintf('Preparing views for fast switching: %d / %d  (%s)', k, numel(figs), figs(k).Name);
+                app.status(msg);
+                if ~isempty(d) && isvalid(d)
+                    d.Indeterminate = 'off'; d.Value = (k - 1)/numel(figs); d.Message = msg;
+                end
+                drawnow limitrate
+                app.figurePng(figs(k));
+            end
+        end
+
+        function png = figurePng(app, f)
+            %FIGUREPNG  Image of a member figure, rendered once and kept with the figure.
+            png = '';
+            if isappdata(f, 'songdoui_png'), png = getappdata(f, 'songdoui_png'); end
+            if isempty(png) || ~isfile(png)
+                png = [tempname(app.ViewDir) '.png'];
+                exportgraphics(f, png, 'Resolution', 110);
+                setappdata(f, 'songdoui_png', png);
+            end
         end
 
         function setViews(app, st, tk, res)
@@ -659,12 +693,8 @@ classdef SongdoIntegratedApp < handle
             app.PopButton.Enable = app.onOff(isFig);
             if isFig
                 if isempty(v.png) || ~isfile(v.png)
-                    app.status('Rendering member figure ...'); drawnow;
-                    v.png = fullfile(app.ViewDir, sprintf('%s_%s.png', ...
-                        regexprep(v.label, '[^A-Za-z0-9]+', '_'), char(datetime('now', 'Format', 'HHmmssSSS'))));
-                    exportgraphics(v.fig, v.png, 'Resolution', 110);
+                    v.png = app.figurePng(v.fig);     % instant if pre-rendered
                     app.Views(k).png = v.png;
-                    app.status('Ready');
                 end
                 app.ViewImage.ImageSource = v.png;
                 app.ViewImage.Visible = 'on'; app.ViewText.Visible = 'off';
